@@ -1,0 +1,64 @@
+{
+  "run_date": "2026-08-04",
+  "run_source": "Two example screenshots pasted into the chat session (NOT files in ./screenshots/ — those directories are empty). Filenames below are provenance labels assigned at transcription time.",
+  "files_processed": [
+    "chat-example-listing-01.png",
+    "chat-example-detail-newmont-01.png"
+  ],
+  "run_notes": "Live site https://www.dnb.com/... is unreachable from this environment (network policy denies www.dnb.com:443 — verified via curl, WebFetch and headless Chromium). No pages were browsed. On the listing screenshot the SALES REVENUE column is covered by the D&B live-chat widget, so no revenue value was legible for any of the three visible rows.",
+  "rows": [
+    {
+      "_page_type": "listing",
+      "company_name": "Newmont Corporation",
+      "revenue_raw": null,
+      "revenue_usd_millions": null,
+      "city": "Vancouver",
+      "province": "British Columbia",
+      "country": "Canada",
+      "source_file": "chat-example-listing-01.png",
+      "date_captured": "2026-08-04",
+      "notes": "ILLEGIBLE: revenue_raw — SALES REVENUE column obscured by D&B live-chat widget overlay"
+    },
+    {
+      "_page_type": "listing",
+      "company_name": "Teck Resources Limited",
+      "revenue_raw": null,
+      "revenue_usd_millions": null,
+      "city": "Vancouver",
+      "province": "British Columbia",
+      "country": "Canada",
+      "source_file": "chat-example-listing-01.png",
+      "date_captured": "2026-08-04",
+      "notes": "ILLEGIBLE: revenue_raw — SALES REVENUE column obscured by D&B live-chat widget overlay"
+    },
+    {
+      "_page_type": "listing",
+      "company_name": "First Quantum Minerals Ltd",
+      "revenue_raw": null,
+      "revenue_usd_millions": null,
+      "city": "Vancouver",
+      "province": "British Columbia",
+      "country": "Canada",
+      "source_file": "chat-example-listing-01.png",
+      "date_captured": "2026-08-04",
+      "notes": "ILLEGIBLE: revenue_raw — value partially covered by the floating phone-number button; only a trailing fragment is visible and partial numbers are not transcribed"
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Newmont Corporation",
+      "street_address": "800-1066 Hastings St W",
+      "city": "Vancouver",
+      "province": "BC",
+      "postal_code": "V6E 3X1",
+      "country": "Canada",
+      "key_principal": "Natascha Viljoen",
+      "key_principal_title": null,
+      "website": "www.newmont.com",
+      "industry_tags": "Metal Ore Mining; Mining (except Oil and Gas); Mining, Quarrying, and Oil and Gas Extraction; Gold bullion production",
+      "company_description": "Newmont Corporation is a gold producer and also engaged in the production of copper, silver, lead and zinc. The Company's world-class portfolio of assets, prospects and talent is anchored in favorable mining jurisdictions in Africa, Australia, Latin America & Caribbean, North America, and Papua New Guinea.",
+      "source_file": "chat-example-detail-newmont-01.png",
+      "date_captured": "2026-08-04",
+      "notes": "key_principal_title blank — no title printed next to Key Principal. Revenue on this page is behind a lock icon (paywalled), as expected. industry_tags: first three are links, 'Gold bullion production' is printed as plain text. Detail page prints province as 'BC'; listing prints 'British Columbia'."
+    }
+  ]
+}
