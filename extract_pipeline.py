@@ -45,6 +45,8 @@ COLUMNS = [
     "country",
     "key_principal",
     "key_principal_title",
+    "contact_email",
+    "contact_phone",
     "website",
     "industry_tags",
     "company_description",
@@ -56,7 +58,7 @@ COLUMNS = [
 
 # Fields that carry real extracted data. source_file / date_captured / status /
 # notes are accumulated rather than merged cell-by-cell.
-DATA_FIELDS = COLUMNS[:13]
+DATA_FIELDS = COLUMNS[:15]
 
 LISTING_FIELDS = {"revenue_raw", "revenue_usd_millions", "city", "province", "country"}
 DETAIL_FIELDS = {
@@ -67,6 +69,8 @@ DETAIL_FIELDS = {
     "country",
     "key_principal",
     "key_principal_title",
+    "contact_email",
+    "contact_phone",
     "website",
     "industry_tags",
     "company_description",
@@ -140,6 +144,7 @@ def save_rows(rows: list[dict]) -> None:
         "company_name": 34, "revenue_raw": 13, "revenue_usd_millions": 20,
         "street_address": 28, "city": 14, "province": 18, "postal_code": 12,
         "country": 10, "key_principal": 22, "key_principal_title": 20,
+        "contact_email": 28, "contact_phone": 18,
         "website": 24, "industry_tags": 46, "company_description": 62,
         "source_file": 34, "date_captured": 14, "status": 14, "notes": 60,
     }

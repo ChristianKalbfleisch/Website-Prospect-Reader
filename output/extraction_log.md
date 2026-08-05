@@ -50,3 +50,30 @@ treated as already processed and are skipped on re-run.
 **Running total:** 66 unique companies — {'complete': 1, 'listing_only': 65}
 
 **Notes:** Screenshot 5 is cut off mid-list (page shows a total count badge partially obscured, '(83x' overlapping the corner); rows visible above the fold were transcribed, nothing below the visible cutoff was inferred.
+
+## Run 2026-08-05
+
+**Source:** Live fetch of each company's own official investor-relations/contact page (curl, respectful pace, cached). Verified against the primary source only — third-party data-broker sites (RocketReach, LeadIQ, GetProspect, etc.) surfaced in search results were NOT used, since they are unverified scraped aggregations, not the company's own published data.
+
+**Files processed:**
+- `https://www.teck.com/investors/contact-us/`
+- `https://www.first-quantum.com/contact/`
+- `https://www.lundinmining.com/about/contact/`
+
+- Rows added: 0
+- Rows updated: 3
+- Rows unchanged: 0
+- Conflicts: 2
+  - First Quantum Minerals Ltd: CONFLICT: province=British Columbia|BC (https://www.first-quantum.com/contact/)
+  - Lundin Mining Corporation: CONFLICT: province=British Columbia|BC (https://www.lundinmining.com/about/contact/)
+- ILLEGIBLE flags: 5
+  - Newmont Corporation: ILLEGIBLE: revenue_raw — SALES REVENUE column obscured by D&B live-chat widget overlay
+  - Teck Resources Limited: ILLEGIBLE: revenue_raw — SALES REVENUE column obscured by D&B live-chat widget overlay
+  - Teck Resources Limited: ILLEGIBLE: street_address — Vancouver HQ address not present in static HTML (site footer renders address via JavaScript, not fetched).
+  - First Quantum Minerals Ltd: ILLEGIBLE: revenue_raw — value partially covered by the floating phone-number button
+  - First Quantum Minerals Ltd: ILLEGIBLE: contact_email for Bonita To — no personal email published on official contact page
+- Quality flags: 0
+
+**Running total:** 66 unique companies — {'complete': 4, 'listing_only': 62}
+
+**Notes:** Newmont Corporation and B2Gold Corp contact pages returned an active Cloudflare bot-challenge (cf-mitigated: challenge) rather than page content — treated the same as the earlier SEDAR+ active bot-block: not attempted to bypass. Left both companies' contact_email/contact_phone blank for this run rather than use unverified data-broker figures found in search results.
