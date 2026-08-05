@@ -333,3 +333,36 @@ treated as already processed and are skipped on re-run.
 **Running total:** 66 unique companies — {'complete': 38, 'listing_only': 1, 'detail_only': 27}
 
 **Notes:** This is the final batch of the 66-company set. 8 of 10 rows flagged REVIEW: two unverifiable/likely-shell entities (17411979 Canada Inc, Ridgetop Forwarding), and six historical/relocated/subsidiary entities whose D&B Vancouver listing does not reflect current independent operations (Puna Operations, Pretium Exploration, New Guinea Gold, Queen's Road Capital [confirmed Hong Kong, not Vancouver], Rockgate Capital, Newmont Canada Corporation). Only Bear Creek Mining and Lucara Diamond Corp were fully verified as independent, active Vancouver companies in this batch.
+
+## Run 2026-08-06
+
+**Source:** Five more listing-page screenshots pasted into the chat session (two of the five, screenshots 4 and 5, were the same view and overlapped with screenshot 1's top rows — deduplicated). Filenames are provenance labels assigned at transcription time.
+
+**Files processed:**
+- `chat-listing-2026-08-06-01.png`
+- `chat-listing-2026-08-06-02.png`
+- `chat-listing-2026-08-06-03.png`
+- `chat-listing-2026-08-06-04.png`
+
+- Rows added: 38
+- Rows updated: 0
+- Rows unchanged: 0
+- Conflicts: 0
+- ILLEGIBLE flags: 12
+  - Newmont Corporation: ILLEGIBLE: revenue_raw — SALES REVENUE column obscured by D&B live-chat widget overlay
+  - Teck Resources Limited: ILLEGIBLE: revenue_raw — SALES REVENUE column obscured by D&B live-chat widget overlay
+  - Teck Resources Limited: ILLEGIBLE: street_address — Vancouver HQ address not present in static HTML (site footer renders address via JavaScript, not fetched).
+  - First Quantum Minerals Ltd: ILLEGIBLE: revenue_raw — value partially covered by the floating phone-number button
+  - First Quantum Minerals Ltd: ILLEGIBLE: contact_email for Bonita To — no personal email published on official contact page
+  - Pan American Silver Corp: ILLEGIBLE: contact_email — page uses email obfuscation (renders as '*protected email*' in fetched HTML rather than an address)
+  - Capstone Copper Corp: ILLEGIBLE: contact_email — page uses email obfuscation ('[email protected]' placeholder in fetched HTML)
+  - Wheaton Precious Metals Corp: ILLEGIBLE: contact_email, contact_phone — wheatonpm.com contact page returned an active Cloudflare bot-challenge (cf-mitigated: challenge)
+  - EVR Operations Limited: ILLEGIBLE: street_address.
+  - China Gold International Resources Corp Ltd: ILLEGIBLE: contact_email — page uses email obfuscation ('[email protected]' placeholder)
+  - Artemis Gold Inc: ILLEGIBLE: contact_email — page uses email obfuscation ('[email protected]' placeholder)
+  - Amerigo Resources Ltd: ILLEGIBLE: contact_email — both the general and CEO email addresses render as obfuscated placeholders in the fetched HTML
+- Quality flags: 0
+
+**Running total:** 104 unique companies — {'complete': 38, 'listing_only': 39, 'detail_only': 27}
+
+**Notes:** Screenshots 4 and 5 pasted by the user were identical views (one a wider crop) covering $116.99M-$83.56M, overlapping the top of screenshot 1 (Central Sun Mining, Energold Drilling, 0908113 B.C. Ltd appeared in both) — deduplicated to a single row per company. Batch stops at Lion One Metals Limited ($42.21M), which is above the user's requested $40M cutoff; the next screenshot batch should pick up below this row to reach $40M.
