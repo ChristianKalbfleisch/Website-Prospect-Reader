@@ -50,6 +50,8 @@ COLUMNS = [
     "website",
     "industry_tags",
     "company_description",
+    "recent_news",
+    "news_source_urls",
     "source_file",
     "date_captured",
     "status",
@@ -57,7 +59,12 @@ COLUMNS = [
 ]
 
 # Fields that carry real extracted data. source_file / date_captured / status /
-# notes are accumulated rather than merged cell-by-cell.
+# notes are accumulated rather than merged cell-by-cell. recent_news and
+# news_source_urls are excluded too: unlike the other detail fields they're
+# expected to change over time (new corporate-action news on a later run),
+# so they need append-style handling like notes, not blank-fill-once-and-
+# conflict semantics. No stage-3 runner exists yet to drive that logic —
+# add it there when it's actually built, not speculatively here.
 DATA_FIELDS = COLUMNS[:15]
 
 LISTING_FIELDS = {"revenue_raw", "revenue_usd_millions", "city", "province", "country"}
@@ -146,6 +153,7 @@ def save_rows(rows: list[dict]) -> None:
         "country": 10, "key_principal": 22, "key_principal_title": 20,
         "contact_email": 28, "contact_phone": 18,
         "website": 24, "industry_tags": 46, "company_description": 62,
+        "recent_news": 60, "news_source_urls": 40,
         "source_file": 34, "date_captured": 14, "status": 14, "notes": 60,
     }
     for i, col in enumerate(COLUMNS, start=1):

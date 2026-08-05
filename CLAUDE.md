@@ -99,6 +99,36 @@ company's historical address would need BC Registry's paid search product.
 fields. Extend `COLUMNS`/`DATA_FIELDS`/`DETAIL_FIELDS`/`widths` together if
 a future task needs another field — don't bolt it on elsewhere.
 
+## Stage 3: recent news / corporate actions
+
+An optional third stage on top of contact enrichment: for each company,
+search for material corporate-action news and record it in two columns —
+`recent_news` and `news_source_urls` — not a separate sheet.
+
+- **Lookback window: 12 months** from the date the check is run. Don't
+  report older news as if current; if the only thing findable is stale,
+  leave it blank rather than padding the cell with old news.
+- **Fixed category list** (use these labels verbatim so the column stays
+  scannable): `acquisition/merger`, `capital raise`, `IPO/listing change`,
+  `expansion/new project`, `management change`, `insolvency/receivership`.
+  Prefix each item in `recent_news` with its category, e.g.
+  `"acquisition/merger: acquired by X Corp (2026-03-14)"`. Multiple items
+  for one company go in the same cell, semicolon-separated, each with its
+  own category prefix and date.
+- **Every item needs a source URL** in `news_source_urls` (semicolon-
+  separated, same order as the items in `recent_news`), same as every
+  other populated field in this workbook — no asserting a corporate
+  action without a link to back it up.
+- **This overlaps with REVIEW-flagging.** An `insolvency/receivership` or
+  `acquisition/merger` hit found during this stage is exactly the kind of
+  thing that should also produce/update a REVIEW note if it means the
+  company isn't a live independent prospect — don't record it as a news
+  item only and leave the row looking like a normal active lead.
+- **Cost scales with company count, same as contact enrichment** — one
+  search+read per company. Always ask (or wait to be told) how many
+  companies/which subset to run this against before starting; don't
+  assume "the whole workbook" by default.
+
 ## Generalizing beyond Vancouver mining
 
 The contact-enrichment half of this pipeline (stage 2 above) is already
