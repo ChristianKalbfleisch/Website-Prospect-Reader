@@ -1,0 +1,142 @@
+{
+  "run_date": "2026-08-05",
+  "run_source": "Mix of direct official-page fetches and search-engine snippets where noted. Several entities flagged REVIEW as historical/inactive/dormant/domain-hijacked.",
+  "files_processed": [
+    "https://www.amerigoresources.com/company/contact/",
+    "https://osinoresources.com/contact-3/",
+    "https://thorexpl.com/contact-us/"
+  ],
+  "rows": [
+    {
+      "_page_type": "detail",
+      "company_name": "Azure Resources Corporation",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "no active official website located",
+      "date_captured": "2026-08-05",
+      "notes": "REVIEW: no current official website could be located; search results returned only an unrelated Australia-based 'Azure Minerals' and generic mining directory listings. Recommend manual verification before treating as a live Vancouver prospect."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Cache Exploration Inc",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "cacheexploration.com (domain no longer belongs to the company)",
+      "date_captured": "2026-08-05",
+      "notes": "REVIEW: cacheexploration.com has been taken over/squatted — it now serves unrelated online-casino affiliate content (7Bit, Bitstarz, Jackbit, etc.), not the mining company. Did not use this domain for anything. No current verified official site located; recommend manual verification."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Galiano Gold Inc",
+      "street_address": "Suite 1640, 1066 West Hastings",
+      "city": "Vancouver",
+      "province": "BC",
+      "postal_code": "V6E 3X1",
+      "country": "Canada",
+      "key_principal": null,
+      "key_principal_title": null,
+      "contact_email": null,
+      "contact_phone": "(604) 683-8193; toll-free 1-855-246-7341",
+      "website": "www.galianogold.com",
+      "source_file": "galianogold.com/contact/contact-us/default.aspx (live fetch 403'd; sourced from search-engine snippet of the company's own official page)",
+      "date_captured": "2026-08-05",
+      "notes": "Live fetch returned 403; data sourced from a search-engine snippet of the same official page. Recommend re-verifying directly if precision matters."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Trevali Mining Corporation",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "cfcanada.fticonsulting.com/trevali (court-appointed receiver's case site, not fetched directly)",
+      "date_captured": "2026-08-05",
+      "notes": "REVIEW: Trevali entered CCAA insolvency proceedings in August 2022 and its Caribou Mine assets went into receivership under FTI Consulting in 2023, with sale agreements finalized in 2024. This is not a going-concern Vancouver prospect."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Amerigo Resources Ltd",
+      "street_address": "The MNP Tower, 1021 West Hastings Street, 9th floor",
+      "city": "Vancouver",
+      "province": "BC",
+      "postal_code": "V6E 0C3",
+      "country": "Canada",
+      "key_principal": "Aurora Davidson",
+      "key_principal_title": "President & CEO",
+      "contact_email": null,
+      "contact_phone": "604-697-6207 (President & CEO direct line); 604-681-2802 (general office)",
+      "website": "www.amerigoresources.com",
+      "source_file": "https://www.amerigoresources.com/company/contact/",
+      "date_captured": "2026-08-05",
+      "notes": "ILLEGIBLE: contact_email — both the general and CEO email addresses render as obfuscated placeholders in the fetched HTML; not decoded."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Aurcana Silver Corporation",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "https://www.aurcana.com/ (fetched directly; data quality concerns noted below)",
+      "date_captured": "2026-08-05",
+      "notes": "REVIEW: aurcana.com's contact page shows a stale 2016 copyright footer and a Victoria, BC address, conflicting with third-party sources citing a Vancouver address — and the homepage's most recent news item is from November 2022 (director/officer resignation, TSX-V tier downgrade). Site appears dormant. Declined to record an address/phone that may be years out of date; recommend manual verification."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Osino Resources Corp",
+      "street_address": "Suite 810, 789 West Pender Street",
+      "city": "Vancouver",
+      "province": "BC",
+      "postal_code": "V6C 1H2",
+      "country": "Canada",
+      "key_principal": "Julia Becker",
+      "key_principal_title": "Manager, Investor Relations",
+      "contact_email": "jbecker@osinoresources.com",
+      "contact_phone": "+1 (604) 785 0850",
+      "website": "www.osinoresources.com",
+      "source_file": "https://osinoresources.com/contact-3/",
+      "date_captured": "2026-08-05",
+      "notes": ""
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Thor Explorations Ltd",
+      "street_address": "#404 – 119 West Pender Street",
+      "city": "Vancouver",
+      "province": "BC",
+      "postal_code": "V6B 1S5",
+      "country": "Canada",
+      "key_principal": null,
+      "key_principal_title": null,
+      "contact_email": null,
+      "contact_phone": "+1-778-658-6391",
+      "website": "www.thorexpl.com",
+      "source_file": "https://thorexpl.com/contact-us/",
+      "date_captured": "2026-08-05",
+      "notes": "No email published on the official contact page (IR handled externally by Fig House Communications per other pages, not a company-owned address). No named individual confirmed on this page."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "SRK Consulting (Canada) Inc",
+      "street_address": "1066 Hastings St W, Suite 2200",
+      "city": "Vancouver",
+      "province": "BC",
+      "postal_code": "V6E 3X2",
+      "country": "Canada",
+      "key_principal": null,
+      "key_principal_title": null,
+      "contact_email": "vancouver@srk.com",
+      "contact_phone": "+1 604 681 4196",
+      "website": "www.srk.com",
+      "source_file": "srk.com/en/contact-us/vancouver (live fetch returned a page whose address block renders via JavaScript; sourced from a search-engine snippet of the same official page)",
+      "date_captured": "2026-08-05",
+      "notes": "Live fetch succeeded (200) but the address/phone block is client-side rendered and not present in the static HTML; data sourced from a search-engine snippet of the same official page. Recommend re-verifying directly if precision matters."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Sunward Resources Ltd",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "secondary sources (NovaCopper/Trilogy Metals acquisition news, not fetched directly)",
+      "date_captured": "2026-08-05",
+      "notes": "REVIEW: Sunward Resources became a wholly-owned subsidiary of NovaCopper Inc. (now Trilogy Metals) via a 2015 plan of arrangement. Not an independently operating Vancouver prospect."
+    }
+  ],
+  "run_notes": "Cache Exploration's former domain has been taken over by an unrelated online-gambling affiliate site — flagged explicitly so it is never mistaken for the company's real site in a future run. 4 of 10 companies in this batch flagged REVIEW as historical/inactive/dormant: Azure Resources (no site found), Trevali Mining (receivership), Aurcana Silver (apparently dormant since 2022), Sunward Resources (subsidiary since 2015)."
+}

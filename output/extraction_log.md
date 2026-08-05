@@ -260,3 +260,40 @@ treated as already processed and are skipped on re-run.
 **Running total:** 66 unique companies — {'complete': 30, 'listing_only': 21, 'detail_only': 15}
 
 **Notes:** 6 of 10 companies in this batch flagged REVIEW as historical, inactive, or subsidiary entities rather than independent Vancouver prospects: Nevsun Resources, Target Exploration and Mining Corp, Aris Mining Holdings Corp, Teck-Bullmoose Coal, Huckleberry Mines, Continental Minerals.
+
+## Run 2026-08-05
+
+**Source:** Mix of direct official-page fetches and search-engine snippets where noted. Several entities flagged REVIEW as historical/inactive/dormant/domain-hijacked.
+
+**Files processed:**
+- `https://www.amerigoresources.com/company/contact/`
+- `https://osinoresources.com/contact-3/`
+- `https://thorexpl.com/contact-us/`
+
+- Rows added: 0
+- Rows updated: 10
+- Rows unchanged: 0
+- Conflicts: 5
+  - Galiano Gold Inc: CONFLICT: province=British Columbia|BC (galianogold.com/contact/contact-us/default.aspx (live fetch 403'd; sourced from search-engine snippet of the company's own official page))
+  - Amerigo Resources Ltd: CONFLICT: province=British Columbia|BC (https://www.amerigoresources.com/company/contact/)
+  - Osino Resources Corp: CONFLICT: province=British Columbia|BC (https://osinoresources.com/contact-3/)
+  - Thor Explorations Ltd: CONFLICT: province=British Columbia|BC (https://thorexpl.com/contact-us/)
+  - SRK Consulting (Canada) Inc: CONFLICT: province=British Columbia|BC (srk.com/en/contact-us/vancouver (live fetch returned a page whose address block renders via JavaScript; sourced from a search-engine snippet of the same official page))
+- ILLEGIBLE flags: 12
+  - Newmont Corporation: ILLEGIBLE: revenue_raw — SALES REVENUE column obscured by D&B live-chat widget overlay
+  - Teck Resources Limited: ILLEGIBLE: revenue_raw — SALES REVENUE column obscured by D&B live-chat widget overlay
+  - Teck Resources Limited: ILLEGIBLE: street_address — Vancouver HQ address not present in static HTML (site footer renders address via JavaScript, not fetched).
+  - First Quantum Minerals Ltd: ILLEGIBLE: revenue_raw — value partially covered by the floating phone-number button
+  - First Quantum Minerals Ltd: ILLEGIBLE: contact_email for Bonita To — no personal email published on official contact page
+  - Pan American Silver Corp: ILLEGIBLE: contact_email — page uses email obfuscation (renders as '*protected email*' in fetched HTML rather than an address)
+  - Capstone Copper Corp: ILLEGIBLE: contact_email — page uses email obfuscation ('[email protected]' placeholder in fetched HTML)
+  - Wheaton Precious Metals Corp: ILLEGIBLE: contact_email, contact_phone — wheatonpm.com contact page returned an active Cloudflare bot-challenge (cf-mitigated: challenge)
+  - EVR Operations Limited: ILLEGIBLE: street_address.
+  - China Gold International Resources Corp Ltd: ILLEGIBLE: contact_email — page uses email obfuscation ('[email protected]' placeholder)
+  - Artemis Gold Inc: ILLEGIBLE: contact_email — page uses email obfuscation ('[email protected]' placeholder)
+  - Amerigo Resources Ltd: ILLEGIBLE: contact_email — both the general and CEO email addresses render as obfuscated placeholders in the fetched HTML
+- Quality flags: 0
+
+**Running total:** 66 unique companies — {'complete': 35, 'listing_only': 11, 'detail_only': 20}
+
+**Notes:** Cache Exploration's former domain has been taken over by an unrelated online-gambling affiliate site — flagged explicitly so it is never mistaken for the company's real site in a future run. 4 of 10 companies in this batch flagged REVIEW as historical/inactive/dormant: Azure Resources (no site found), Trevali Mining (receivership), Aurcana Silver (apparently dormant since 2022), Sunward Resources (subsidiary since 2015).
