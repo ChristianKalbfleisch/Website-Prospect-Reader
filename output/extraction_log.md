@@ -108,3 +108,41 @@ treated as already processed and are skipped on re-run.
 **Running total:** 66 unique companies — {'complete': 7, 'listing_only': 57, 'detail_only': 2}
 
 **Notes:** 2 of 5 in this batch (Yamana, Wheaton) yielded no contact data — one due to an expired TLS cert on the company's own domain (declined to connect insecurely), one due to active Cloudflare bot-challenge (declined to bypass).
+
+## Run 2026-08-05
+
+**Source:** Mix of direct official-page fetches and, where the live page returned a 403, the company's own official-domain content as surfaced in search-engine result snippets (never third-party data-broker sites). Provenance noted per-row.
+
+**Files processed:**
+- `https://www.ero.com/contact-us/`
+- `https://www.glencore.ca/en/evr`
+- `https://www.chinagoldintl.com/contact/`
+- `https://lundingold.com/contact/`
+- `https://oceanagold.com/contact-us`
+
+- Rows added: 0
+- Rows updated: 8
+- Rows unchanged: 0
+- Conflicts: 6
+  - Eldorado Gold Corporation: CONFLICT: province=British Columbia|BC (eldoradogold.com/contact-us (live fetch 403'd; sourced from search-engine snippet of the company's own official page, not a data broker))
+  - OceanaGold Corporation: CONFLICT: province=British Columbia|BC (https://oceanagold.com/contact-us)
+  - Lundin Gold Inc: CONFLICT: province=British Columbia|BC (https://lundingold.com/contact/)
+  - Fortuna Mining Corp: CONFLICT: province=British Columbia|BC (fortunamining.com/contact/ (live fetch 403'd; sourced from search-engine snippet of the company's own official page))
+  - Ero Copper Corp: CONFLICT: province=British Columbia|BC (https://www.ero.com/contact-us/)
+  - China Gold International Resources Corp Ltd: CONFLICT: province=British Columbia|BC (https://www.chinagoldintl.com/contact/)
+- ILLEGIBLE flags: 10
+  - Newmont Corporation: ILLEGIBLE: revenue_raw — SALES REVENUE column obscured by D&B live-chat widget overlay
+  - Teck Resources Limited: ILLEGIBLE: revenue_raw — SALES REVENUE column obscured by D&B live-chat widget overlay
+  - Teck Resources Limited: ILLEGIBLE: street_address — Vancouver HQ address not present in static HTML (site footer renders address via JavaScript, not fetched).
+  - First Quantum Minerals Ltd: ILLEGIBLE: revenue_raw — value partially covered by the floating phone-number button
+  - First Quantum Minerals Ltd: ILLEGIBLE: contact_email for Bonita To — no personal email published on official contact page
+  - Pan American Silver Corp: ILLEGIBLE: contact_email — page uses email obfuscation (renders as '*protected email*' in fetched HTML rather than an address)
+  - Capstone Copper Corp: ILLEGIBLE: contact_email — page uses email obfuscation ('[email protected]' placeholder in fetched HTML)
+  - Wheaton Precious Metals Corp: ILLEGIBLE: contact_email, contact_phone — wheatonpm.com contact page returned an active Cloudflare bot-challenge (cf-mitigated: challenge)
+  - EVR Operations Limited: ILLEGIBLE: street_address.
+  - China Gold International Resources Corp Ltd: ILLEGIBLE: contact_email — page uses email obfuscation ('[email protected]' placeholder)
+- Quality flags: 0
+
+**Running total:** 66 unique companies — {'complete': 14, 'listing_only': 49, 'detail_only': 3}
+
+**Notes:** Two rows (Eldorado, Fortuna) sourced from search-engine snippets of the company's own official page because the live page itself 403'd on fetch — flagged per-row rather than treated as equally verified as a direct fetch. Atlatsa Resources flagged for manual review; its Vancouver presence looks stale post-2019 restructuring.
