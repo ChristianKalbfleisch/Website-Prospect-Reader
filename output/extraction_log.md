@@ -366,3 +366,42 @@ treated as already processed and are skipped on re-run.
 **Running total:** 104 unique companies — {'complete': 38, 'listing_only': 39, 'detail_only': 27}
 
 **Notes:** Screenshots 4 and 5 pasted by the user were identical views (one a wider crop) covering $116.99M-$83.56M, overlapping the top of screenshot 1 (Central Sun Mining, Energold Drilling, 0908113 B.C. Ltd appeared in both) — deduplicated to a single row per company. Batch stops at Lion One Metals Limited ($42.21M), which is above the user's requested $40M cutoff; the next screenshot batch should pick up below this row to reach $40M.
+
+## Run 2026-08-06
+
+**Source:** Mix of direct official-page fetches and search-engine snippets where noted. Several entities flagged REVIEW as historical/merged/subsidiary/domain-parked.
+
+**Files processed:**
+- `https://www.tridentresourcescorp.com/corporate/overview/`
+- `https://shamaranpetroleum.com/contact/contact-info/`
+- `https://lucamining.com/contact/`
+- `https://www.hivedigitaltechnologies.com/contact`
+
+- Rows added: 0
+- Rows updated: 10
+- Rows unchanged: 0
+- Conflicts: 6
+  - Trident Resources Corp.: CONFLICT: province=British Columbia|BC (https://www.tridentresourcescorp.com/corporate/overview/)
+  - HIVE Digital Technologies Ltd: CONFLICT: province=British Columbia|BC (https://www.hivedigitaltechnologies.com/contact (email/phone fetched directly; street address sourced from a search-engine snippet of the same official site, not present on the contact page itself))
+  - Shamaran Petroleum Corp: CONFLICT: company_name=Shamaran Petroleum Corp|ShaMaran Petroleum Corp (https://shamaranpetroleum.com/contact/contact-info/)
+  - Shamaran Petroleum Corp: CONFLICT: province=British Columbia|BC (https://shamaranpetroleum.com/contact/contact-info/)
+  - Copper Mountain Mining Inc: CONFLICT: province=British Columbia|BC (cumtn.com/investors/contact/ (live fetch 403'd; sourced from search-engine snippet of the company's own official page))
+  - Luca Mining Corp: CONFLICT: province=British Columbia|BC (https://lucamining.com/contact/)
+- ILLEGIBLE flags: 12
+  - Newmont Corporation: ILLEGIBLE: revenue_raw — SALES REVENUE column obscured by D&B live-chat widget overlay
+  - Teck Resources Limited: ILLEGIBLE: revenue_raw — SALES REVENUE column obscured by D&B live-chat widget overlay
+  - Teck Resources Limited: ILLEGIBLE: street_address — Vancouver HQ address not present in static HTML (site footer renders address via JavaScript, not fetched).
+  - First Quantum Minerals Ltd: ILLEGIBLE: revenue_raw — value partially covered by the floating phone-number button
+  - First Quantum Minerals Ltd: ILLEGIBLE: contact_email for Bonita To — no personal email published on official contact page
+  - Pan American Silver Corp: ILLEGIBLE: contact_email — page uses email obfuscation (renders as '*protected email*' in fetched HTML rather than an address)
+  - Capstone Copper Corp: ILLEGIBLE: contact_email — page uses email obfuscation ('[email protected]' placeholder in fetched HTML)
+  - Wheaton Precious Metals Corp: ILLEGIBLE: contact_email, contact_phone — wheatonpm.com contact page returned an active Cloudflare bot-challenge (cf-mitigated: challenge)
+  - EVR Operations Limited: ILLEGIBLE: street_address.
+  - China Gold International Resources Corp Ltd: ILLEGIBLE: contact_email — page uses email obfuscation ('[email protected]' placeholder)
+  - Artemis Gold Inc: ILLEGIBLE: contact_email — page uses email obfuscation ('[email protected]' placeholder)
+  - Amerigo Resources Ltd: ILLEGIBLE: contact_email — both the general and CEO email addresses render as obfuscated placeholders in the fetched HTML
+- Quality flags: 0
+
+**Running total:** 104 unique companies — {'complete': 43, 'listing_only': 29, 'detail_only': 32}
+
+**Notes:** 5 of 10 companies in this batch flagged REVIEW as historical/merged/defunct/domain-parked: Magellan Minerals (parked domain), Mcilvenna Bay Operating (Foran Mining/Eldorado Gold subsidiary), Queenstake Resources (defunct since 2007/2014), Veris Gold (bankrupt since 2014), Klondex Mines (acquired by Hecla 2018).
