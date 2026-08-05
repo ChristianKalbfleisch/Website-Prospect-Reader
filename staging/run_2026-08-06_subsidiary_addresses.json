@@ -1,0 +1,104 @@
+{
+  "run_date": "2026-08-06",
+  "run_source": "No new fetches — filling subsidiary rows with the parent company's address already verified elsewhere in this workbook, per documented corporate relationships established in earlier REVIEW notes.",
+  "files_processed": [],
+  "rows": [
+    {
+      "_page_type": "detail",
+      "company_name": "Mcilvenna Bay Operating Ltd",
+      "street_address": "550 Burrard Street, 11th Floor",
+      "city": "Vancouver",
+      "province": "BC",
+      "postal_code": "V6C 2B5",
+      "country": "Canada",
+      "source_file": "derived from Eldorado Gold Corporation's verified address (already a row in this workbook)",
+      "date_captured": "2026-08-06",
+      "notes": "Same registered office as parent Eldorado Gold Corporation (via its 2026 acquisition of Foran Mining, which held McIlvenna Bay). Not independently verified as this entity's own filed address."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "0908113 B.C. Ltd",
+      "street_address": "Suite 2100 – 510 West Georgia Street",
+      "city": "Vancouver",
+      "province": "BC",
+      "postal_code": "V6B 0M3",
+      "country": "Canada",
+      "source_file": "derived from Capstone Copper Corp's verified address (already a row in this workbook)",
+      "date_captured": "2026-08-06",
+      "notes": "Same registered office as parent Capstone Copper Corp (this entity is Capstone's 'JVCo' vehicle for the Santo Domingo project). Not independently verified as this entity's own filed address."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Newcastle Gold Ltd",
+      "street_address": "Suite 1501 – 700 West Pender Street",
+      "city": "Vancouver",
+      "province": "BC",
+      "postal_code": "V6C 1G8",
+      "country": "Canada",
+      "source_file": "derived from Equinox Gold Corp's verified address (already a row in this workbook)",
+      "date_captured": "2026-08-06",
+      "notes": "Same registered office as Equinox Gold Corp, formed from the 2017 merger of Newcastle Gold, Anfield Gold, and Trek Mining. Not independently verified as this entity's own filed address."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Aris Mining Holdings Corp",
+      "street_address": "550 Burrard Street, Suite 2900",
+      "city": "Vancouver",
+      "province": "BC",
+      "postal_code": "V6C 0A3",
+      "country": "Canada",
+      "source_file": "derived from Aris Mining Corporation's verified address (already a row in this workbook)",
+      "date_captured": "2026-08-06",
+      "notes": "Same registered office as parent Aris Mining Corporation. Not independently verified as this entity's own filed address."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Huckleberry Mines Ltd",
+      "street_address": "580 Hornby Street, Suite 900",
+      "city": "Vancouver",
+      "province": "BC",
+      "postal_code": "V6C 3B6",
+      "country": "Canada",
+      "source_file": "derived from Imperial Metals Corporation's verified address (already a row in this workbook)",
+      "date_captured": "2026-08-06",
+      "notes": "Same registered office as parent Imperial Metals Corporation. Not independently verified as this entity's own filed address."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Silvermex Resources Inc",
+      "street_address": "1800 - 925 West Georgia Street",
+      "city": "Vancouver",
+      "province": "BC",
+      "postal_code": "V6C 3L2",
+      "country": "Canada",
+      "source_file": "derived from First Majestic Silver Corp's verified address (already a row in this workbook)",
+      "date_captured": "2026-08-06",
+      "notes": "Same registered office as acquirer First Majestic Silver Corp (acquired Silvermex in 2012). Not independently verified as this entity's own filed address."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Goldcorp Canada Ltd",
+      "street_address": "800-1066 Hastings St W",
+      "city": "Vancouver",
+      "province": "BC",
+      "postal_code": "V6E 3X1",
+      "country": "Canada",
+      "source_file": "derived from Newmont Corporation's verified address (already a row in this workbook)",
+      "date_captured": "2026-08-06",
+      "notes": "Same registered office as acquirer Newmont Corporation (acquired Goldcorp in 2019). Not independently verified as this entity's own filed address."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Newmont Canada Corporation",
+      "street_address": "800-1066 Hastings St W",
+      "city": "Vancouver",
+      "province": "BC",
+      "postal_code": "V6E 3X1",
+      "country": "Canada",
+      "source_file": "derived from Newmont Corporation's verified address (already a row in this workbook)",
+      "date_captured": "2026-08-06",
+      "notes": "Same registered office as Newmont Corporation — reflects Newmont's Canadian corporate structure, not a distinct physical office."
+    }
+  ],
+  "run_notes": "These 8 rows are true subsidiaries/successor-holders of companies already verified elsewhere in this workbook. Their addresses are recorded as 'same as parent' rather than independently confirmed filings for the subsidiary name itself — flagged accordingly in each row's notes."
+}
