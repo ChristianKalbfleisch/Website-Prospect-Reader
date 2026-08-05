@@ -187,3 +187,41 @@ treated as already processed and are skipped on re-run.
 **Running total:** 66 unique companies — {'complete': 20, 'listing_only': 41, 'detail_only': 5}
 
 **Notes:** Two companies flagged REVIEW rather than treated as independent prospects: Goldcorp Canada Ltd (folded into Newmont after the 2019 acquisition) and Calibre Mining Corp (merged into Equinox Gold, confirmed via a live 301 redirect from calibremining.com to equinoxgold.com). Both entities' listing-page revenue figures may reflect historical/parent-company data rather than a currently independent Vancouver operation.
+
+## Run 2026-08-05
+
+**Source:** Mix of direct official-page fetches and, where blocked, search-engine snippets of the same official pages. Several companies in this batch are historical/merged entities identified via secondary sources and flagged rather than treated as live prospects.
+
+**Files processed:**
+- `https://asantegold.com/contact`
+- `https://www.trekormetals.com/contact/`
+- `https://k92mining.com/contact/`
+
+- Rows added: 0
+- Rows updated: 10
+- Rows unchanged: 0
+- Conflicts: 7
+  - Endeavour Silver Corp: CONFLICT: province=British Columbia|BC (edrsilver.com/contact-us/contact-us/ (live fetch 403'd; sourced from search-engine snippet of the company's own official page))
+  - Asante Gold Corporation: CONFLICT: province=British Columbia|BC (https://asantegold.com/contact)
+  - Trekor Metals Limited: CONFLICT: province=British Columbia|BC (https://www.trekormetals.com/contact/)
+  - K92 Mining Inc: CONFLICT: province=British Columbia|BC (https://k92mining.com/contact/)
+  - Orla Mining Ltd: CONFLICT: province=British Columbia|BC (orlamining.com contact page (live fetch 404'd on the paths tried; sourced from search-engine snippet of the company's own official page))
+  - Teck Highland Valley Copper Partnership: CONFLICT: city=Vancouver|Logan Lake (secondary sources (teck.com project pages, not fetched directly))
+  - Teck Highland Valley Copper Partnership: CONFLICT: province=British Columbia|BC (secondary sources (teck.com project pages, not fetched directly))
+- ILLEGIBLE flags: 11
+  - Newmont Corporation: ILLEGIBLE: revenue_raw — SALES REVENUE column obscured by D&B live-chat widget overlay
+  - Teck Resources Limited: ILLEGIBLE: revenue_raw — SALES REVENUE column obscured by D&B live-chat widget overlay
+  - Teck Resources Limited: ILLEGIBLE: street_address — Vancouver HQ address not present in static HTML (site footer renders address via JavaScript, not fetched).
+  - First Quantum Minerals Ltd: ILLEGIBLE: revenue_raw — value partially covered by the floating phone-number button
+  - First Quantum Minerals Ltd: ILLEGIBLE: contact_email for Bonita To — no personal email published on official contact page
+  - Pan American Silver Corp: ILLEGIBLE: contact_email — page uses email obfuscation (renders as '*protected email*' in fetched HTML rather than an address)
+  - Capstone Copper Corp: ILLEGIBLE: contact_email — page uses email obfuscation ('[email protected]' placeholder in fetched HTML)
+  - Wheaton Precious Metals Corp: ILLEGIBLE: contact_email, contact_phone — wheatonpm.com contact page returned an active Cloudflare bot-challenge (cf-mitigated: challenge)
+  - EVR Operations Limited: ILLEGIBLE: street_address.
+  - China Gold International Resources Corp Ltd: ILLEGIBLE: contact_email — page uses email obfuscation ('[email protected]' placeholder)
+  - Artemis Gold Inc: ILLEGIBLE: contact_email — page uses email obfuscation ('[email protected]' placeholder)
+- Quality flags: 0
+
+**Running total:** 66 unique companies — {'complete': 26, 'listing_only': 31, 'detail_only': 9}
+
+**Notes:** 5 of 10 companies in this batch are historical, merged, or non-Vancouver entities (Northgate Minerals, Petaquilla Minerals, Leagold Mining, Silvermex Resources, Teck Highland Valley Copper Partnership) — flagged REVIEW rather than populated with fabricated current data.
