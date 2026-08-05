@@ -447,3 +447,87 @@ treated as already processed and are skipped on re-run.
 **Running total:** 104 unique companies — {'complete': 49, 'listing_only': 19, 'detail_only': 36}
 
 **Notes:** 5 of 10 companies in this batch flagged REVIEW as historical/merged/subsidiary/inactive: Pretium Resources (same Newcrest/Newmont chain as Pretium Exploration, flagged previously), Central Sun Mining (inactive/amalgamated since 2009, Toronto-registered), 0908113 B.C. Ltd (Capstone Copper subsidiary), Atlantic Gold Corporation (acquired by St Barbara Limited 2019).
+
+## Run 2026-08-06
+
+**Source:** Mix of direct official-page fetches and search-engine snippets where noted. Several entities flagged REVIEW as historical/defunct/subsidiary/misclassified.
+
+**Files processed:**
+- `https://aticomining.com/contact-us/contact-information/`
+- `https://www.uraniumenergy.com/contact`
+- `https://avino.com/contact`
+
+- Rows added: 0
+- Rows updated: 8
+- Rows unchanged: 0
+- Conflicts: 4
+  - Atico Mining Corporation: CONFLICT: province=British Columbia|BC (https://aticomining.com/contact-us/contact-information/)
+  - Uranium Energy Corp: CONFLICT: province=British Columbia|BC (https://www.uraniumenergy.com/contact)
+  - Avino Silver & Gold Mines Ltd: CONFLICT: province=British Columbia|BC (https://avino.com/contact)
+  - MineSense Technologies Ltd: CONFLICT: province=British Columbia|BC (minesense.com/contact-us/ (live fetch 403'd; sourced from search-engine snippet of the company's own official site))
+- ILLEGIBLE flags: 15
+  - Newmont Corporation: ILLEGIBLE: revenue_raw — SALES REVENUE column obscured by D&B live-chat widget overlay
+  - Teck Resources Limited: ILLEGIBLE: revenue_raw — SALES REVENUE column obscured by D&B live-chat widget overlay
+  - Teck Resources Limited: ILLEGIBLE: street_address — Vancouver HQ address not present in static HTML (site footer renders address via JavaScript, not fetched).
+  - First Quantum Minerals Ltd: ILLEGIBLE: revenue_raw — value partially covered by the floating phone-number button
+  - First Quantum Minerals Ltd: ILLEGIBLE: contact_email for Bonita To — no personal email published on official contact page
+  - Pan American Silver Corp: ILLEGIBLE: contact_email — page uses email obfuscation (renders as '*protected email*' in fetched HTML rather than an address)
+  - Capstone Copper Corp: ILLEGIBLE: contact_email — page uses email obfuscation ('[email protected]' placeholder in fetched HTML)
+  - Wheaton Precious Metals Corp: ILLEGIBLE: contact_email, contact_phone — wheatonpm.com contact page returned an active Cloudflare bot-challenge (cf-mitigated: challenge)
+  - EVR Operations Limited: ILLEGIBLE: street_address.
+  - China Gold International Resources Corp Ltd: ILLEGIBLE: contact_email — page uses email obfuscation ('[email protected]' placeholder)
+  - Artemis Gold Inc: ILLEGIBLE: contact_email — page uses email obfuscation ('[email protected]' placeholder)
+  - Amerigo Resources Ltd: ILLEGIBLE: contact_email — both the general and CEO email addresses render as obfuscated placeholders in the fetched HTML
+  - Guanajuato Silver Company Ltd: ILLEGIBLE: contact_email — page uses JavaScript-based spambot protection instead of a plain-text address
+  - Titan Mining Corporation: ILLEGIBLE: street_address — the fetched contact page only lists the company's US mine-site address (Gouverneur, NY) alongside a Canadian phone/email
+  - Atico Mining Corporation: ILLEGIBLE: contact_email — no email published alongside the named Corporate Development contact on the official page.
+- Quality flags: 0
+
+**Running total:** 104 unique companies — {'complete': 53, 'listing_only': 11, 'detail_only': 40}
+
+**Notes:** 3 of 8 companies fully verified against official sources (Atico, Avino, Uranium Energy's Canadian office); TAAT flagged as a likely NAICS misclassification (not a mining company); Elevation Gold, Oromin Explorations, and Eskay Creek Mining flagged REVIEW as default-status, historically-acquired, or subsidiary entities respectively.
+
+## Run 2026-08-06
+
+**Source:** Mix of direct official-page fetches and secondary sources for historical/relocated/misidentified entities. This is the final batch of the second listing-screenshot set.
+
+**Files processed:**
+- `https://www.eastplats.com/contacts/`
+- `https://somagoldcorp.com/contact/`
+- `https://liononemetals.com/contact/contact-info/`
+- `https://www.ngenergyintl.com/contact/contact-details/`
+- `https://encoreuranium.com/corporate/corporate-directory/`
+
+- Rows added: 0
+- Rows updated: 10
+- Rows unchanged: 0
+- Conflicts: 8
+  - Eastern Platinum Limited: CONFLICT: province=British Columbia|BC (https://www.eastplats.com/contacts/)
+  - Soma Gold Corp: CONFLICT: province=British Columbia|BC (https://somagoldcorp.com/contact/)
+  - NG Energy International Corp: CONFLICT: city=Vancouver|Calgary (https://www.ngenergyintl.com/contact/contact-details/)
+  - NG Energy International Corp: CONFLICT: province=British Columbia|AB (https://www.ngenergyintl.com/contact/contact-details/)
+  - enCore Energy Corp: CONFLICT: city=Vancouver|Dallas (https://encoreuranium.com/corporate/corporate-directory/)
+  - enCore Energy Corp: CONFLICT: province=British Columbia|TX (https://encoreuranium.com/corporate/corporate-directory/)
+  - enCore Energy Corp: CONFLICT: country=Canada|United States (https://encoreuranium.com/corporate/corporate-directory/)
+  - Lion One Metals Limited: CONFLICT: province=British Columbia|BC (https://liononemetals.com/contact/contact-info/)
+- ILLEGIBLE flags: 15
+  - Newmont Corporation: ILLEGIBLE: revenue_raw — SALES REVENUE column obscured by D&B live-chat widget overlay
+  - Teck Resources Limited: ILLEGIBLE: revenue_raw — SALES REVENUE column obscured by D&B live-chat widget overlay
+  - Teck Resources Limited: ILLEGIBLE: street_address — Vancouver HQ address not present in static HTML (site footer renders address via JavaScript, not fetched).
+  - First Quantum Minerals Ltd: ILLEGIBLE: revenue_raw — value partially covered by the floating phone-number button
+  - First Quantum Minerals Ltd: ILLEGIBLE: contact_email for Bonita To — no personal email published on official contact page
+  - Pan American Silver Corp: ILLEGIBLE: contact_email — page uses email obfuscation (renders as '*protected email*' in fetched HTML rather than an address)
+  - Capstone Copper Corp: ILLEGIBLE: contact_email — page uses email obfuscation ('[email protected]' placeholder in fetched HTML)
+  - Wheaton Precious Metals Corp: ILLEGIBLE: contact_email, contact_phone — wheatonpm.com contact page returned an active Cloudflare bot-challenge (cf-mitigated: challenge)
+  - EVR Operations Limited: ILLEGIBLE: street_address.
+  - China Gold International Resources Corp Ltd: ILLEGIBLE: contact_email — page uses email obfuscation ('[email protected]' placeholder)
+  - Artemis Gold Inc: ILLEGIBLE: contact_email — page uses email obfuscation ('[email protected]' placeholder)
+  - Amerigo Resources Ltd: ILLEGIBLE: contact_email — both the general and CEO email addresses render as obfuscated placeholders in the fetched HTML
+  - Guanajuato Silver Company Ltd: ILLEGIBLE: contact_email — page uses JavaScript-based spambot protection instead of a plain-text address
+  - Titan Mining Corporation: ILLEGIBLE: street_address — the fetched contact page only lists the company's US mine-site address (Gouverneur, NY) alongside a Canadian phone/email
+  - Atico Mining Corporation: ILLEGIBLE: contact_email — no email published alongside the named Corporate Development contact on the official page.
+- Quality flags: 0
+
+**Running total:** 104 unique companies — {'complete': 58, 'listing_only': 1, 'detail_only': 45}
+
+**Notes:** This is the final batch of the second listing-screenshot set (down to Lion One Metals at $42.21M). 5 of 10 flagged REVIEW as historical/defunct/merged (Golden Queen, North American Tungsten, Newcastle Gold, Alio Gold) or newly-uncertain (Hemlo Mining). Two more — NG Energy International and enCore Energy — are NOT actually Vancouver companies: their own official sites list Calgary and Dallas head offices respectively, directly contradicting the D&B listing's Vancouver location.
