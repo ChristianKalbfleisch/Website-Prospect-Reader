@@ -1,0 +1,134 @@
+{
+  "run_date": "2026-08-05",
+  "run_source": "Mix of direct official-page fetches and search-engine snippets where noted. Several entities flagged REVIEW as historical/inactive/subsidiary.",
+  "files_processed": [
+    "https://silvercorpmetals.com/contact-details/",
+    "https://orezone.com/contact/",
+    "https://santacruzsilver.com/contact/contact-information/"
+  ],
+  "rows": [
+    {
+      "_page_type": "detail",
+      "company_name": "Nevsun Resources Ltd",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "secondary sources (Zijin Mining acquisition press releases, not fetched directly)",
+      "date_captured": "2026-08-05",
+      "notes": "REVIEW: Nevsun Resources was fully acquired by Zijin Mining in a compulsory acquisition completed March 2019 and delisted; it has been a wholly-owned Zijin subsidiary for years. The D&B listing entry is almost certainly stale, not a current independent Vancouver prospect."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Silvercorp Metals Inc",
+      "street_address": "Suite 1750, 1066 W. Hastings Street",
+      "city": "Vancouver",
+      "province": "BC",
+      "postal_code": "V6E 3X1",
+      "country": "Canada",
+      "key_principal": null,
+      "key_principal_title": null,
+      "contact_email": "investor@silvercorp.ca",
+      "contact_phone": "604-669-9397; toll-free 1-888-224-1881",
+      "website": "www.silvercorpmetals.com",
+      "source_file": "https://silvercorpmetals.com/contact-details/",
+      "date_captured": "2026-08-05",
+      "notes": "General public email used; no named individual confirmed on the official contact page itself."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Target Exploration and Mining Corp",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "opengovca.com Vancouver business licence listing (not the company's own site; no official site located)",
+      "date_captured": "2026-08-05",
+      "notes": "REVIEW: could not locate an active official company website. Secondary sources describe it as formerly 'Leicester Diamond Mines' and reference an acquisition/merger. Likely an inactive shell or renamed entity; recommend manual verification before treating as a live prospect."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Orezone Gold Corporation",
+      "street_address": "450-505 Burrard Street",
+      "city": "Vancouver",
+      "province": "BC",
+      "postal_code": "V7X 1M3",
+      "country": "Canada",
+      "key_principal": null,
+      "key_principal_title": null,
+      "contact_email": "info@orezone.com",
+      "contact_phone": "+1 778-945-8977",
+      "website": "www.orezone.com",
+      "source_file": "https://orezone.com/contact/",
+      "date_captured": "2026-08-05",
+      "notes": "General public email used; no named individual confirmed on the official contact page itself (a Kevin MacKenzie, VP Corporate Development and IR, appeared in older search results but was not present on the current official contact page, so not recorded)."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "SantaCruz Silver Mining Ltd",
+      "street_address": "Suite 480, 1140 West Pender St.",
+      "city": "Vancouver",
+      "province": "BC",
+      "postal_code": "V6E 4G1",
+      "country": "Canada",
+      "key_principal": "Arturo Préstamo",
+      "key_principal_title": "Executive Chairman & CEO",
+      "contact_email": "info@santacruzsilver.com",
+      "contact_phone": "1-888-883-2011 (Canada office); +52 81 83 785707 (Mexico line listed alongside the CEO's name)",
+      "website": "www.santacruzsilver.com",
+      "source_file": "https://santacruzsilver.com/contact/contact-information/",
+      "date_captured": "2026-08-05",
+      "notes": "The CEO's contact block on the official page lists a Mexico phone number and the general info@ email rather than a personal address/direct Vancouver line — recorded as published, not inferred further."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Aris Mining Holdings Corp",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "secondary sources (Fasken/Aris Mining corporate history, not fetched directly)",
+      "date_captured": "2026-08-05",
+      "notes": "REVIEW: Aris Mining Holdings Corp is a wholly-owned subsidiary formed in the 2022 Aris Gold/GCM Mining amalgamation; the parent, Aris Mining Corporation, is already a separate row in this workbook (same Vancouver office). Recommend treating this as the same entity rather than an independent prospect."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Steppe Gold Ltd",
+      "street_address": "Suite 248, 1489 Marine Dr",
+      "city": "West Vancouver",
+      "province": "BC",
+      "postal_code": "V7T 1B8",
+      "country": "Canada",
+      "key_principal": "Aneel Waraich",
+      "key_principal_title": "EVP and Director",
+      "contact_email": "aneel@steppegold.com",
+      "contact_phone": "+1 (604) 926 7739",
+      "website": "www.steppegold.com",
+      "source_file": "steppegold.com/contact/ (live fetch returned a page without the contact block; data sourced from a search-engine snippet of the same official domain)",
+      "date_captured": "2026-08-05",
+      "notes": "Live fetch of the contact page did not surface an address/phone block (possibly rendered via JS); data sourced from a search-engine snippet referencing the company's own site. Recommend re-verifying directly if precision matters."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Teck-Bullmoose Coal Inc",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "secondary sources (mine closure reporting, not fetched directly)",
+      "date_captured": "2026-08-05",
+      "notes": "REVIEW: the Bullmoose coal mine near Tumbler Ridge, BC closed in 2000. This entity has had no active operations for a quarter century; the D&B listing entry is stale. Any current contact would route through Teck Resources Limited (already a row in this workbook)."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Huckleberry Mines Ltd",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "secondary sources (Imperial Metals operational updates, not fetched directly)",
+      "date_captured": "2026-08-05",
+      "notes": "REVIEW: Huckleberry Mines Ltd is a wholly-owned Imperial Metals Corporation subsidiary; the Huckleberry mine has been on care-and-maintenance (inactive) since August 2016. Imperial Metals Corporation is already a separate row in this workbook with the same Vancouver office — recommend treating this as the same entity rather than an independent prospect."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Continental Minerals Corporation",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "secondary sources (Jinchuan Group acquisition press releases, not fetched directly)",
+      "date_captured": "2026-08-05",
+      "notes": "REVIEW: Continental Minerals Corporation was acquired by Jinchuan Group in April 2011 and delisted. This entity has not existed independently for over a decade; the D&B listing entry is stale."
+    }
+  ],
+  "run_notes": "6 of 10 companies in this batch flagged REVIEW as historical, inactive, or subsidiary entities rather than independent Vancouver prospects: Nevsun Resources, Target Exploration and Mining Corp, Aris Mining Holdings Corp, Teck-Bullmoose Coal, Huckleberry Mines, Continental Minerals."
+}

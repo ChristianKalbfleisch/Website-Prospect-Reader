@@ -225,3 +225,38 @@ treated as already processed and are skipped on re-run.
 **Running total:** 66 unique companies — {'complete': 26, 'listing_only': 31, 'detail_only': 9}
 
 **Notes:** 5 of 10 companies in this batch are historical, merged, or non-Vancouver entities (Northgate Minerals, Petaquilla Minerals, Leagold Mining, Silvermex Resources, Teck Highland Valley Copper Partnership) — flagged REVIEW rather than populated with fabricated current data.
+
+## Run 2026-08-05
+
+**Source:** Mix of direct official-page fetches and search-engine snippets where noted. Several entities flagged REVIEW as historical/inactive/subsidiary.
+
+**Files processed:**
+- `https://silvercorpmetals.com/contact-details/`
+- `https://orezone.com/contact/`
+- `https://santacruzsilver.com/contact/contact-information/`
+
+- Rows added: 0
+- Rows updated: 10
+- Rows unchanged: 0
+- Conflicts: 4
+  - Silvercorp Metals Inc: CONFLICT: province=British Columbia|BC (https://silvercorpmetals.com/contact-details/)
+  - Orezone Gold Corporation: CONFLICT: province=British Columbia|BC (https://orezone.com/contact/)
+  - SantaCruz Silver Mining Ltd: CONFLICT: province=British Columbia|BC (https://santacruzsilver.com/contact/contact-information/)
+  - Steppe Gold Ltd: CONFLICT: province=British Columbia|BC (steppegold.com/contact/ (live fetch returned a page without the contact block; data sourced from a search-engine snippet of the same official domain))
+- ILLEGIBLE flags: 11
+  - Newmont Corporation: ILLEGIBLE: revenue_raw — SALES REVENUE column obscured by D&B live-chat widget overlay
+  - Teck Resources Limited: ILLEGIBLE: revenue_raw — SALES REVENUE column obscured by D&B live-chat widget overlay
+  - Teck Resources Limited: ILLEGIBLE: street_address — Vancouver HQ address not present in static HTML (site footer renders address via JavaScript, not fetched).
+  - First Quantum Minerals Ltd: ILLEGIBLE: revenue_raw — value partially covered by the floating phone-number button
+  - First Quantum Minerals Ltd: ILLEGIBLE: contact_email for Bonita To — no personal email published on official contact page
+  - Pan American Silver Corp: ILLEGIBLE: contact_email — page uses email obfuscation (renders as '*protected email*' in fetched HTML rather than an address)
+  - Capstone Copper Corp: ILLEGIBLE: contact_email — page uses email obfuscation ('[email protected]' placeholder in fetched HTML)
+  - Wheaton Precious Metals Corp: ILLEGIBLE: contact_email, contact_phone — wheatonpm.com contact page returned an active Cloudflare bot-challenge (cf-mitigated: challenge)
+  - EVR Operations Limited: ILLEGIBLE: street_address.
+  - China Gold International Resources Corp Ltd: ILLEGIBLE: contact_email — page uses email obfuscation ('[email protected]' placeholder)
+  - Artemis Gold Inc: ILLEGIBLE: contact_email — page uses email obfuscation ('[email protected]' placeholder)
+- Quality flags: 0
+
+**Running total:** 66 unique companies — {'complete': 30, 'listing_only': 21, 'detail_only': 15}
+
+**Notes:** 6 of 10 companies in this batch flagged REVIEW as historical, inactive, or subsidiary entities rather than independent Vancouver prospects: Nevsun Resources, Target Exploration and Mining Corp, Aris Mining Holdings Corp, Teck-Bullmoose Coal, Huckleberry Mines, Continental Minerals.
