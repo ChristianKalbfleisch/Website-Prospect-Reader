@@ -233,6 +233,22 @@ def merge(existing: list[dict], incoming: list[dict]) -> tuple[list[dict], dict]
                 append_note(row, note)
                 changed = True
 
+        # recent_news / news_source_urls accumulate like notes (news changes
+        # over time; unlike an address, a re-run should add rather than
+        # conflict-check). Items and URLs are paired by position.
+        incoming_news = [n.strip() for n in str(new.get("recent_news") or "").split(";") if n.strip()]
+        incoming_urls = [u.strip() for u in str(new.get("news_source_urls") or "").split(";") if u.strip()]
+        if incoming_news:
+            existing_news = [n.strip() for n in str(row.get("recent_news") or "").split(";") if n.strip()]
+            existing_urls = [u.strip() for u in str(row.get("news_source_urls") or "").split(";") if u.strip()]
+            for i, item in enumerate(incoming_news):
+                if item not in existing_news:
+                    existing_news.append(item)
+                    existing_urls.append(incoming_urls[i] if i < len(incoming_urls) else "")
+                    changed = True
+            row["recent_news"] = "; ".join(existing_news)
+            row["news_source_urls"] = "; ".join(existing_urls)
+
         sources = [s.strip() for s in str(row.get("source_file") or "").split(";") if s.strip()]
         if source and source not in sources:
             sources.append(source)
