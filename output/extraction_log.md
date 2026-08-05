@@ -77,3 +77,34 @@ treated as already processed and are skipped on re-run.
 **Running total:** 66 unique companies — {'complete': 4, 'listing_only': 62}
 
 **Notes:** Newmont Corporation and B2Gold Corp contact pages returned an active Cloudflare bot-challenge (cf-mitigated: challenge) rather than page content — treated the same as the earlier SEDAR+ active bot-block: not attempted to bypass. Left both companies' contact_email/contact_phone blank for this run rather than use unverified data-broker figures found in search results.
+
+## Run 2026-08-05
+
+**Source:** Live fetch of each company's own official contact page (curl, respectful pace, cached). Data-broker sites not used.
+
+**Files processed:**
+- `https://panamericansilver.com/about/contact/`
+- `https://capstonecopper.com/contact-us/`
+- `https://www.equinoxgold.com/contact/`
+
+- Rows added: 0
+- Rows updated: 5
+- Rows unchanged: 0
+- Conflicts: 3
+  - Pan American Silver Corp: CONFLICT: province=British Columbia|BC (https://panamericansilver.com/about/contact/)
+  - Capstone Copper Corp: CONFLICT: province=British Columbia|BC (https://capstonecopper.com/contact-us/)
+  - Equinox Gold Corp: CONFLICT: province=British Columbia|BC (https://www.equinoxgold.com/contact/)
+- ILLEGIBLE flags: 8
+  - Newmont Corporation: ILLEGIBLE: revenue_raw — SALES REVENUE column obscured by D&B live-chat widget overlay
+  - Teck Resources Limited: ILLEGIBLE: revenue_raw — SALES REVENUE column obscured by D&B live-chat widget overlay
+  - Teck Resources Limited: ILLEGIBLE: street_address — Vancouver HQ address not present in static HTML (site footer renders address via JavaScript, not fetched).
+  - First Quantum Minerals Ltd: ILLEGIBLE: revenue_raw — value partially covered by the floating phone-number button
+  - First Quantum Minerals Ltd: ILLEGIBLE: contact_email for Bonita To — no personal email published on official contact page
+  - Pan American Silver Corp: ILLEGIBLE: contact_email — page uses email obfuscation (renders as '*protected email*' in fetched HTML rather than an address)
+  - Capstone Copper Corp: ILLEGIBLE: contact_email — page uses email obfuscation ('[email protected]' placeholder in fetched HTML)
+  - Wheaton Precious Metals Corp: ILLEGIBLE: contact_email, contact_phone — wheatonpm.com contact page returned an active Cloudflare bot-challenge (cf-mitigated: challenge)
+- Quality flags: 0
+
+**Running total:** 66 unique companies — {'complete': 7, 'listing_only': 57, 'detail_only': 2}
+
+**Notes:** 2 of 5 in this batch (Yamana, Wheaton) yielded no contact data — one due to an expired TLS cert on the company's own domain (declined to connect insecurely), one due to active Cloudflare bot-challenge (declined to bypass).
