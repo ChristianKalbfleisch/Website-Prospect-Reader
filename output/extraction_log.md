@@ -146,3 +146,44 @@ treated as already processed and are skipped on re-run.
 **Running total:** 66 unique companies — {'complete': 14, 'listing_only': 49, 'detail_only': 3}
 
 **Notes:** Two rows (Eldorado, Fortuna) sourced from search-engine snippets of the company's own official page because the live page itself 403'd on fetch — flagged per-row rather than treated as equally verified as a direct fetch. Atlatsa Resources flagged for manual review; its Vancouver presence looks stale post-2019 restructuring.
+
+## Run 2026-08-05
+
+**Source:** Direct fetches of each company's own official contact page.
+
+**Files processed:**
+- `https://www.international-petroleum.com/contact-us`
+- `https://www.artemisgoldinc.com/contact/contact-details/`
+- `https://mereninc.com/contact-us/`
+- `https://www.firstmajestic.com/contact/contact-details/`
+- `https://aris-mining.com/contact-us/`
+- `https://imperialmetals.com/contact/`
+- `https://www.calibremining.com/`
+
+- Rows added: 0
+- Rows updated: 8
+- Rows unchanged: 0
+- Conflicts: 6
+  - International Petroleum Corporation: CONFLICT: province=British Columbia|BC (https://www.international-petroleum.com/contact-us)
+  - Artemis Gold Inc: CONFLICT: province=British Columbia|BC (https://www.artemisgoldinc.com/contact/contact-details/)
+  - Meren Energy Inc: CONFLICT: province=British Columbia|BC (https://mereninc.com/contact-us/)
+  - First Majestic Silver Corp: CONFLICT: province=British Columbia|BC (https://www.firstmajestic.com/contact/contact-details/)
+  - Aris Mining Corporation: CONFLICT: province=British Columbia|BC (https://aris-mining.com/contact-us/)
+  - Imperial Metals Corporation: CONFLICT: province=British Columbia|BC (https://imperialmetals.com/contact/)
+- ILLEGIBLE flags: 11
+  - Newmont Corporation: ILLEGIBLE: revenue_raw — SALES REVENUE column obscured by D&B live-chat widget overlay
+  - Teck Resources Limited: ILLEGIBLE: revenue_raw — SALES REVENUE column obscured by D&B live-chat widget overlay
+  - Teck Resources Limited: ILLEGIBLE: street_address — Vancouver HQ address not present in static HTML (site footer renders address via JavaScript, not fetched).
+  - First Quantum Minerals Ltd: ILLEGIBLE: revenue_raw — value partially covered by the floating phone-number button
+  - First Quantum Minerals Ltd: ILLEGIBLE: contact_email for Bonita To — no personal email published on official contact page
+  - Pan American Silver Corp: ILLEGIBLE: contact_email — page uses email obfuscation (renders as '*protected email*' in fetched HTML rather than an address)
+  - Capstone Copper Corp: ILLEGIBLE: contact_email — page uses email obfuscation ('[email protected]' placeholder in fetched HTML)
+  - Wheaton Precious Metals Corp: ILLEGIBLE: contact_email, contact_phone — wheatonpm.com contact page returned an active Cloudflare bot-challenge (cf-mitigated: challenge)
+  - EVR Operations Limited: ILLEGIBLE: street_address.
+  - China Gold International Resources Corp Ltd: ILLEGIBLE: contact_email — page uses email obfuscation ('[email protected]' placeholder)
+  - Artemis Gold Inc: ILLEGIBLE: contact_email — page uses email obfuscation ('[email protected]' placeholder)
+- Quality flags: 0
+
+**Running total:** 66 unique companies — {'complete': 20, 'listing_only': 41, 'detail_only': 5}
+
+**Notes:** Two companies flagged REVIEW rather than treated as independent prospects: Goldcorp Canada Ltd (folded into Newmont after the 2019 acquisition) and Calibre Mining Corp (merged into Equinox Gold, confirmed via a live 301 redirect from calibremining.com to equinoxgold.com). Both entities' listing-page revenue figures may reflect historical/parent-company data rather than a currently independent Vancouver operation.
