@@ -714,3 +714,41 @@ treated as already processed and are skipped on re-run.
 **Running total:** 140 unique companies — {'complete': 90, 'listing_only': 1, 'detail_only': 49}
 
 **Notes:** 16 of 36 companies flagged REVIEW: misclassified non-mining entries (BioHarvest Sciences, Leef Brands, Sixth Wave Innovations), historically acquired/merged/subsidiary entities (Pacific Rim Mining, Core Gold, EMX Royalty->Elemental Royalty, Polaris Materials, Renaissance Oil, Hillsborough Resources, Golden Lake Exploration, Quintette Coal, Peace River Coal not in this file but flagged separately), project-name vs. entity-name confusion (Red Lake Madsen Mine -> West Red Lake Gold), mine-site operating vehicles (Afton Operating Corporation), an unlocatable entity (NEOS Canada Services), and one confirmed NOT-actually-Vancouver company (Gunnison Copper, real HQ Phoenix AZ). One company (Cambria Gold Mines) is blocked by an active bot-challenge, not bypassed. A registered-agent-suite cluster was identified at 1188 West Georgia St, Suite 1830 (Uranium Royalty Corp, Gold Royalty Corp, Uranium Energy Corp).
+
+## Run 2026-08-07
+
+**Source:** Stage-3 corporate-action + hiring/expansion-signal news check (12-month lookback) for the top 10 companies by revenue. First batch of the full-workbook stage-3 rollout.
+
+**Files processed:**
+- none
+
+- Rows added: 0
+- Rows updated: 11
+- Rows unchanged: 0
+- Conflicts: 0
+- ILLEGIBLE flags: 20
+  - Newmont Corporation: ILLEGIBLE: revenue_raw — SALES REVENUE column obscured by D&B live-chat widget overlay
+  - Teck Resources Limited: ILLEGIBLE: revenue_raw — SALES REVENUE column obscured by D&B live-chat widget overlay
+  - Teck Resources Limited: ILLEGIBLE: street_address — Vancouver HQ address not present in static HTML (site footer renders address via JavaScript, not fetched).
+  - First Quantum Minerals Ltd: ILLEGIBLE: revenue_raw — value partially covered by the floating phone-number button
+  - First Quantum Minerals Ltd: ILLEGIBLE: contact_email for Bonita To — no personal email published on official contact page
+  - Pan American Silver Corp: ILLEGIBLE: contact_email — page uses email obfuscation (renders as '*protected email*' in fetched HTML rather than an address)
+  - Capstone Copper Corp: ILLEGIBLE: contact_email — page uses email obfuscation ('[email protected]' placeholder in fetched HTML)
+  - Wheaton Precious Metals Corp: ILLEGIBLE: contact_email, contact_phone — wheatonpm.com contact page returned an active Cloudflare bot-challenge (cf-mitigated: challenge)
+  - EVR Operations Limited: ILLEGIBLE: street_address.
+  - China Gold International Resources Corp Ltd: ILLEGIBLE: contact_email — page uses email obfuscation ('[email protected]' placeholder)
+  - Artemis Gold Inc: ILLEGIBLE: contact_email — page uses email obfuscation ('[email protected]' placeholder)
+  - Amerigo Resources Ltd: ILLEGIBLE: contact_email — both the general and CEO email addresses render as obfuscated placeholders in the fetched HTML
+  - Guanajuato Silver Company Ltd: ILLEGIBLE: contact_email — page uses JavaScript-based spambot protection instead of a plain-text address
+  - Titan Mining Corporation: ILLEGIBLE: street_address — the fetched contact page only lists the company's US mine-site address (Gouverneur, NY) alongside a Canadian phone/email
+  - Atico Mining Corporation: ILLEGIBLE: contact_email — no email published alongside the named Corporate Development contact on the official page.
+  - Heliostar Metals Ltd: ILLEGIBLE: Rob Grey's personal email — obfuscated on the official page
+  - Lida Resources Inc: ILLEGIBLE: street_address, contact_email, contact_phone, website — no official company site could be located distinct from third-party listings (CSE, BNamericas, TradingView). Company has a Vancouver corporate HQ and Lima, Peru administrative HQ per secondary sources
+  - Uranium Royalty Corp: Shares the same 1188 West Georgia Street, Suite 1830 address as Gold Royalty Corp and Uranium Energy Corp's Vancouver office (both already rows in this workbook) — a known registered-agent-suite cluster, not an error. ILLEGIBLE: contact_email — obfuscated on the official page. The company's own news feed shows a 'Sweetwater Transaction' completed and a shareholder-approved 'Arrangement' both in July 2026 — a material recent corporate action worth a stage-3 news check if this company is of interest.
+  - Gunnison Copper Corp: REVIEW: the company's own official contact page lists its head office in Phoenix, Arizona — not Vancouver — directly conflicting with the D&B listing. Recorded the verified Phoenix address rather than inferring a Vancouver one. ILLEGIBLE: contact_email — obfuscated on the official page.
+  - Gold Royalty Corp: ILLEGIBLE: contact_email — obfuscated on the official page. Same building/suite as Uranium Royalty Corp and Uranium Energy Corp's Vancouver office (registered-agent-suite cluster). A separate 'Registered and Records Office' is listed at 1000 Cathedral Place, 925 West Georgia Street — a law-firm-style address, likely legal counsel rather than an operating office.
+- Quality flags: 0
+
+**Running total:** 140 unique companies — {'complete': 90, 'detail_only': 50}
+
+**Notes:** First batch (top 10 by revenue plus one cross-reference correction) of the full stage-3 rollout across the 140-company workbook. All 10 primary companies are large, active, well-covered producers with abundant real news — no 'REVIEW' needed for any of them. One important catch: Orla Mining Ltd (a separately verified row) has merged into Equinox Gold Corp and is now flagged REVIEW as a result of this pass.

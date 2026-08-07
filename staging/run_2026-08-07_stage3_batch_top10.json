@@ -1,0 +1,107 @@
+{
+  "run_date": "2026-08-07",
+  "run_source": "Stage-3 corporate-action + hiring/expansion-signal news check (12-month lookback) for the top 10 companies by revenue. First batch of the full-workbook stage-3 rollout.",
+  "files_processed": [],
+  "rows": [
+    {
+      "_page_type": "detail",
+      "company_name": "Newmont Corporation",
+      "recent_news": "capital raise: announced enhanced capital allocation framework including a $6 billion share repurchase program and $1.1 billion annual dividend payout, alongside FY2025 results and 2026 guidance; management change: appointed Brian Tabolt as CFO, Mark Rodgers as COO, and David Thornton as CTO, effective July 1, 2026",
+      "news_source_urls": "https://www.newmont.com/investors/news-release/news-details/2026/Newmont-Reports-Fourth-Quarter-and-Full-Year-2025-Results-Provides-2026-Guidance-and-Announces-Enhanced-Capital-Allocation-Framework/default.aspx; https://www.businesswire.com/news/home/20260615487768/en/Newmont-Announces-Key-Executive-Appointments-for-the-Next-Phase-of-Delivery",
+      "date_captured": "2026-08-07",
+      "source_file": "stage-3 news check",
+      "notes": ""
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Teck Resources Limited",
+      "recent_news": "expansion/new project: board approved construction of the Highland Valley Copper Mine Life Extension, a US$2.1-2.4 billion investment extending the mine's life to 2046, construction began August 2025; hiring/expansion signal: the Highland Valley Copper Mine Life Extension project is expected to generate approximately 2,900 jobs during the construction phase",
+      "news_source_urls": "https://www.teck.com/news/news-releases/2025/teck-announces-construction-of-highland-valley-copper-mine-life-extension-to-proceed; https://www.teck.com/news/news-releases/2025/teck-announces-construction-of-highland-valley-copper-mine-life-extension-to-proceed",
+      "date_captured": "2026-08-07",
+      "source_file": "stage-3 news check",
+      "notes": ""
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "First Quantum Minerals Ltd",
+      "recent_news": "expansion/new project: achieved commercial production of the Kansanshi S3 Expansion (Zambia) at the end of 2025; hiring/expansion signal: adding approximately 1,000 jobs as the Cobre Panama mine restart nears, with stockpile processing and hiring underway",
+      "news_source_urls": "https://www.first-quantum.com/news/first-quantum-minerals-announces-2025-preliminary-production-and-2026-2028-guidance/; https://www.mining.com/first-quantum-adds-1000-jobs-as-cobre-panama-restart-nears/",
+      "date_captured": "2026-08-07",
+      "source_file": "stage-3 news check",
+      "notes": ""
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Lundin Mining Corporation",
+      "recent_news": "capital raise: expanded its committed credit facility from US$1.75 billion to US$4.5 billion (a 157% increase), backed by an international banking syndicate; expansion/new project: published the Vicuna Project technical report (Feb 16, 2026) describing a potential top-five global copper/gold/silver mine, with $395 million in 2026 capex forecast (50% basis) ahead of a year-end sanctioning decision",
+      "news_source_urls": "https://simplywall.st/stocks/ca/materials/tsx-lun/lundin-mining-shares/news/lundin-mining-refines-identity-and-credit-to-back-vicua-copp; https://www.lundinmining.com/news/2026/lundin-mining-capital-markets-day-highlights-strategic-vision-for-leading-growth-and-shareholder-returns",
+      "date_captured": "2026-08-07",
+      "source_file": "stage-3 news check",
+      "notes": ""
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "B2Gold Corp",
+      "recent_news": "expansion/new project: achieved commercial production at the Goose Mine in Nunavut, early October 2025 (B2Gold's first Canadian gold-producing mine); expansion/new project: approved a development decision on the Antelope underground deposit at the Otjikoto Mine (Namibia), announced September 15, 2025, to extend mine life",
+      "news_source_urls": "https://www.b2gold.com/news-media/news-releases/news-details/2025/B2Gold-Reports-Q3-2025-Results/default.aspx; https://www.miningnewsnorth.com/story/2026/01/15/mining-explorers-2025/b2gold-opens-golden-goose-mine-in-nunavut/9451.html",
+      "date_captured": "2026-08-07",
+      "source_file": "stage-3 news check",
+      "notes": "Contact page remains blocked by an active Cloudflare bot-challenge (per earlier batch); this news check used general search results, not a direct b2gold.com fetch."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Pan American Silver Corp",
+      "recent_news": "acquisition/merger: acquired the Juanicipio mine (Mexico), completed September 2025, since producing 2.5 million ounces of silver and generating a $44 million dividend in December; expansion/new project: advancing a conceptual plan for phased development of new mineral resources at the Timmins operation to extend mine life",
+      "news_source_urls": "https://panamericansilver.com/news/pan-american-silver-achieves-2025-production-guidance-and-provides-guidance-for-2026/; https://panamericansilver.com/news/pan-american-silver-achieves-2025-production-guidance-and-provides-guidance-for-2026/",
+      "date_captured": "2026-08-07",
+      "source_file": "stage-3 news check",
+      "notes": ""
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Capstone Copper Corp",
+      "recent_news": "capital raise: Orion investment of up to $360 million for a 25% interest in the Santo Domingo project; expansion/new project: Mantoverde Optimized Project construction underway (sanctioned August 2025); Santo Domingo final investment decision expected H2 2026",
+      "news_source_urls": "https://capstonecopper.com/news/capstone-copper-announces-up-to-360-million-investment-from-orion-for-25-interest-in-santo-domingo/; https://capstonecopper.com/news/capstone-copper-announces-2026-guidance/",
+      "date_captured": "2026-08-07",
+      "source_file": "stage-3 news check",
+      "notes": ""
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Wheaton Precious Metals Corp",
+      "recent_news": "acquisition/merger: acquired an additional silver stream on the Antamina mine (Peru) through a new partnership with BHP, valued at US$4.3 billion, Q1 2026; acquisition/merger: acquired a gold and silver stream on the Jervois Project (Australia) with KGL Resources, announced April 1, 2026 — Wheaton's first Australian streaming deal",
+      "news_source_urls": "https://www.wheatonpm.com/news/news-details/2026/Wheaton-Precious-Metals-Announces-Acquisition-of-Additional-Silver-Stream-on-Antamina-Through-New-Partnership-with-BHP/default.aspx; https://www.wheatonpm.com/news/news-details/2026/Wheaton-Precious-Metals-Announces-Acquisition-of-a-Gold-and-Silver-Stream-on-the-Jervois-Project-Through-a-Partnership-with-KGL-Resources/default.aspx",
+      "date_captured": "2026-08-07",
+      "source_file": "stage-3 news check",
+      "notes": "Note: wheatonpm.com/news/ pages loaded fine for this check even though /contact/ remains behind an active Cloudflare challenge — the block appears path-specific, not site-wide."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Equinox Gold Corp",
+      "recent_news": "acquisition/merger: completed merger with Orla Mining Ltd, July 31, 2026, creating a combined ~700,000 oz/year Canadian gold producer; expansion/new project: Valentine Phase 2 expansion starting Q4 2026; South Railroad (Nevada) permits/start expected Q3 2026; Castle Mountain Phase 2 (California) federal Record of Decision expected December 2026",
+      "news_source_urls": "https://www.equinoxgold.com/news/equinox-and-orla-mining-combine-to-create-north-americas-new-senior-gold-producer-built-to-grow-built-to-last/; https://www.equinoxgold.com/news/equinox-gold-delivers-strong-second-quarter-results-increases-2026-production-guidance-following-successful-completion-of-the-orla-mining-merger-quarterly-dividend-increased-by-50/",
+      "date_captured": "2026-08-07",
+      "source_file": "stage-3 news check",
+      "notes": "This confirms Orla Mining Ltd (a separate row in this workbook) merged into Equinox Gold effective July 31, 2026 — see the corresponding REVIEW update on that row."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Eldorado Gold Corporation",
+      "recent_news": "expansion/new project: Skouries project (Greece) construction ~90% complete overall (78% for phase 2) as of Dec 31, 2025; first concentrate now expected Q3 2026, commercial production Q4 2026; capital cost estimate $1.16 billion; mill expansion to 650 ktpa underway as part of 2026 growth capital plan",
+      "news_source_urls": "https://www.eldoradogold.com/investors/news-releases/eldorado-gold-transformational-growth-greece-2026",
+      "date_captured": "2026-08-07",
+      "source_file": "stage-3 news check",
+      "notes": ""
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Orla Mining Ltd",
+      "recent_news": "acquisition/merger: merged into Equinox Gold Corp, completed July 31, 2026",
+      "news_source_urls": "https://www.equinoxgold.com/news/equinox-and-orla-mining-combine-to-create-north-americas-new-senior-gold-producer-built-to-grow-built-to-last/",
+      "date_captured": "2026-08-07",
+      "source_file": "stage-3 news check",
+      "notes": "REVIEW: Orla Mining merged into Equinox Gold Corp (already a verified row in this workbook) effective July 31, 2026, and is no longer an independent entity. This was caught while researching Equinox Gold's own stage-3 news — an example of the stage-3/REVIEW-flag overlap documented in CLAUDE.md."
+    }
+  ],
+  "run_notes": "First batch (top 10 by revenue plus one cross-reference correction) of the full stage-3 rollout across the 140-company workbook. All 10 primary companies are large, active, well-covered producers with abundant real news — no 'REVIEW' needed for any of them. One important catch: Orla Mining Ltd (a separately verified row) has merged into Equinox Gold Corp and is now flagged REVIEW as a result of this pass."
+}
