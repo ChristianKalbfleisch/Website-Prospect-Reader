@@ -7,6 +7,17 @@ outreach. See `README.md` for the screenshot-transcription pipeline mechanics
 *web contact-enrichment* workflow layered on top of that, and the ground rules
 for doing this kind of prospecting work in general.
 
+## Why this exists
+
+The end user is an industrial CRE broker (CBRE). The point of this whole
+pipeline isn't "build a company database" for its own sake — it's to hand
+their brokerage team a warm-outreach list: which companies, which contact,
+and *why now* (a signal suggesting they might need industrial space —
+expanding, raising capital, hiring for a new site, being acquired, etc.).
+When a stage-3 signal and a CRE opportunity read differently, favor framing
+that answers "why would this company need to lease/buy/sell industrial real
+estate right now" over generic corporate-news framing.
+
 ## The two-stage pipeline
 
 1. **Candidate list.** Get a raw list of company names for the target
@@ -110,11 +121,25 @@ search for material corporate-action news and record it in two columns —
   leave it blank rather than padding the cell with old news.
 - **Fixed category list** (use these labels verbatim so the column stays
   scannable): `acquisition/merger`, `capital raise`, `IPO/listing change`,
-  `expansion/new project`, `management change`, `insolvency/receivership`.
-  Prefix each item in `recent_news` with its category, e.g.
-  `"acquisition/merger: acquired by X Corp (2026-03-14)"`. Multiple items
-  for one company go in the same cell, semicolon-separated, each with its
-  own category prefix and date.
+  `expansion/new project`, `management change`, `insolvency/receivership`,
+  `hiring/expansion signal`. Prefix each item in `recent_news` with its
+  category, e.g. `"acquisition/merger: acquired by X Corp (2026-03-14)"`.
+  Multiple items for one company go in the same cell, semicolon-separated,
+  each with its own category prefix and date.
+- **`hiring/expansion signal` is the CRE-specific category** — added for
+  the CBRE-outreach use case above. This means postings for roles like
+  site/plant/facility manager, warehouse operations lead, or a hiring
+  surge at a specific location — a real leading indicator that a company
+  is scaling up a physical footprint before any press release exists.
+  Source these from public job-board search (Indeed, company career
+  pages, publicly-indexed postings) via WebSearch, not from LinkedIn.
+  **Do not connect to or scrape LinkedIn for this or anything else** —
+  its ToS explicitly prohibits automated data extraction and it actively
+  enforces that (rate limiting, detection, account bans, and it has sued
+  scrapers, e.g. hiQ Labs). That's the same "active bot-defense, hard
+  stop" category as the Cloudflare/Reblaze blocks noted above, not
+  something a personal login changes. LinkedIn's own API is partner-gated
+  for ads/recruiting, not general company-signal lookup.
 - **Every item needs a source URL** in `news_source_urls` (semicolon-
   separated, same order as the items in `recent_news`), same as every
   other populated field in this workbook — no asserting a corporate
