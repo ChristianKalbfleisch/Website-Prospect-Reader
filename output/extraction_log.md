@@ -790,3 +790,41 @@ treated as already processed and are skipped on re-run.
 **Running total:** 140 unique companies — {'complete': 90, 'detail_only': 50}
 
 **Notes:** Batch 2 of the full-workbook stage-3 rollout. 8 of 10 companies got real, sourced news; 2 (Atlatsa, Goldcorp Canada) were deliberately skipped since they're already flagged REVIEW as non-independent/relocated entities and a dedicated search would be low-value.
+
+## Run 2026-08-07
+
+**Source:** Stage-3 corporate-action + hiring/expansion-signal news check, batch 3.
+
+**Files processed:**
+- none
+
+- Rows added: 0
+- Rows updated: 10
+- Rows unchanged: 0
+- Conflicts: 0
+- ILLEGIBLE flags: 20
+  - Newmont Corporation: ILLEGIBLE: revenue_raw — SALES REVENUE column obscured by D&B live-chat widget overlay
+  - Teck Resources Limited: ILLEGIBLE: revenue_raw — SALES REVENUE column obscured by D&B live-chat widget overlay
+  - Teck Resources Limited: ILLEGIBLE: street_address — Vancouver HQ address not present in static HTML (site footer renders address via JavaScript, not fetched).
+  - First Quantum Minerals Ltd: ILLEGIBLE: revenue_raw — value partially covered by the floating phone-number button
+  - First Quantum Minerals Ltd: ILLEGIBLE: contact_email for Bonita To — no personal email published on official contact page
+  - Pan American Silver Corp: ILLEGIBLE: contact_email — page uses email obfuscation (renders as '*protected email*' in fetched HTML rather than an address)
+  - Capstone Copper Corp: ILLEGIBLE: contact_email — page uses email obfuscation ('[email protected]' placeholder in fetched HTML)
+  - Wheaton Precious Metals Corp: ILLEGIBLE: contact_email, contact_phone — wheatonpm.com contact page returned an active Cloudflare bot-challenge (cf-mitigated: challenge)
+  - EVR Operations Limited: ILLEGIBLE: street_address.
+  - China Gold International Resources Corp Ltd: ILLEGIBLE: contact_email — page uses email obfuscation ('[email protected]' placeholder)
+  - Artemis Gold Inc: ILLEGIBLE: contact_email — page uses email obfuscation ('[email protected]' placeholder)
+  - Amerigo Resources Ltd: ILLEGIBLE: contact_email — both the general and CEO email addresses render as obfuscated placeholders in the fetched HTML
+  - Guanajuato Silver Company Ltd: ILLEGIBLE: contact_email — page uses JavaScript-based spambot protection instead of a plain-text address
+  - Titan Mining Corporation: ILLEGIBLE: street_address — the fetched contact page only lists the company's US mine-site address (Gouverneur, NY) alongside a Canadian phone/email
+  - Atico Mining Corporation: ILLEGIBLE: contact_email — no email published alongside the named Corporate Development contact on the official page.
+  - Heliostar Metals Ltd: ILLEGIBLE: Rob Grey's personal email — obfuscated on the official page
+  - Lida Resources Inc: ILLEGIBLE: street_address, contact_email, contact_phone, website — no official company site could be located distinct from third-party listings (CSE, BNamericas, TradingView). Company has a Vancouver corporate HQ and Lima, Peru administrative HQ per secondary sources
+  - Uranium Royalty Corp: Shares the same 1188 West Georgia Street, Suite 1830 address as Gold Royalty Corp and Uranium Energy Corp's Vancouver office (both already rows in this workbook) — a known registered-agent-suite cluster, not an error. ILLEGIBLE: contact_email — obfuscated on the official page. The company's own news feed shows a 'Sweetwater Transaction' completed and a shareholder-approved 'Arrangement' both in July 2026 — a material recent corporate action worth a stage-3 news check if this company is of interest.
+  - Gunnison Copper Corp: REVIEW: the company's own official contact page lists its head office in Phoenix, Arizona — not Vancouver — directly conflicting with the D&B listing. Recorded the verified Phoenix address rather than inferring a Vancouver one. ILLEGIBLE: contact_email — obfuscated on the official page.
+  - Gold Royalty Corp: ILLEGIBLE: contact_email — obfuscated on the official page. Same building/suite as Uranium Royalty Corp and Uranium Energy Corp's Vancouver office (registered-agent-suite cluster). A separate 'Registered and Records Office' is listed at 1000 Cathedral Place, 925 West Georgia Street — a law-firm-style address, likely legal counsel rather than an operating office.
+- Quality flags: 0
+
+**Running total:** 140 unique companies — {'complete': 90, 'detail_only': 50}
+
+**Notes:** Batch 3 of the full-workbook stage-3 rollout. 8 of 10 companies got real, sourced news; Northgate Minerals and Petaquilla Minerals were deliberately skipped as already-flagged REVIEW/defunct entities.
