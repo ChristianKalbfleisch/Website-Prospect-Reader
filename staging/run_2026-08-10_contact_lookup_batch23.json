@@ -1,0 +1,60 @@
+{
+  "run_date": "2026-08-10",
+  "run_source": "Contact lookup, batch 23 — closes out the $4.44M-$4.8M tier.",
+  "files_processed": ["https://bmcminerals.com/contact-us/"],
+  "rows": [
+    {
+      "_page_type": "detail",
+      "company_name": "BMC Minerals Ltd",
+      "street_address": "789 West Pender Street, 750",
+      "city": "Vancouver",
+      "province": "BC",
+      "postal_code": "V6C 1H2",
+      "country": "Canada",
+      "contact_email": "investors@bmcminerals.com",
+      "contact_phone": "+1 778 379 9262",
+      "website": "www.bmcminerals.com",
+      "source_file": "https://bmcminerals.com/contact-us/",
+      "date_captured": "2026-08-10",
+      "notes": "Confirmed very active — recently completed an AU$100 million ASX IPO (July 2026), advancing the Kudz Ze Kayah project in Yukon. Registered office is separately listed at 2900-550 Burrard Street; recorded the principal place of business instead."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Prodigy Gold Inc",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "search-engine snippets (Cambridge House, energy-oil-gas.com — dated, current status unclear)",
+      "date_captured": "2026-08-10",
+      "notes": "Formed from a merger of Kodiak Exploration and Golden Goose Resources, led by President/CEO Brian Maher, per older sources. No confirmation of current active status or a locatable official website. Recommend manual verification before treating as active."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Xrapplied Technologies Inc",
+      "contact_email": null,
+      "contact_phone": null,
+      "website": null,
+      "source_file": "search-engine snippets (Bloomberg, CSE listing page)",
+      "date_captured": "2026-08-10",
+      "notes": "REVIEW: this is an AR/VR, omnichannel-communications, and supply-chain software company (CSE: XRA), not a mining company. Likely a NAICS misclassification. Not a mining prospect."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Arlac Transamerican Oilfield Services Inc",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "no public record located",
+      "date_captured": "2026-08-10",
+      "notes": "REVIEW: no official website, news coverage, or financial-database listing could be located. Recommend manual verification via BC Registry before treating as a live prospect."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Bucking Horse Energy Inc",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "no public record located",
+      "date_captured": "2026-08-10",
+      "notes": "REVIEW: no official website, news coverage, or financial-database listing could be located. Recommend manual verification via BC Registry before treating as a live prospect."
+    }
+  ],
+  "run_notes": "Closes out this revenue tier. BMC Minerals confirmed strongly active (recent ASX IPO). Xrapplied Technologies flagged as a NAICS misclassification. Arlac Transamerican and Bucking Horse Energy had no locatable record."
+}
