@@ -1601,3 +1601,89 @@ treated as already processed and are skipped on re-run.
 **Running total:** 311 unique companies — {'complete': 137, 'detail_only': 124, 'listing_only': 50}
 
 **Notes:** 5 companies processed. Important finding: eCobalt Solutions' former domain (ecobalt.com) has been taken over by an unrelated gambling/sweepstakes affiliate site — same domain-squatting pattern as Cache Exploration flagged earlier in this project. Not used for anything.
+
+## Run 2026-08-10
+
+**Source:** Contact lookup, batch 25 — full sweep of the remaining 50 untouched listing_only backlog companies (5 parallel research passes, A-E). Web-egress in the research sandboxes was blocked for direct site fetches; most results are sourced from search-engine-indexed snippets of official pages rather than freshly fetched pages, flagged per company.
+
+**Files processed:**
+- none
+
+- Rows added: 0
+- Rows updated: 50
+- Rows unchanged: 0
+- Conflicts: 35
+  - Design Maintenance Systems Inc: CONFLICT: province=British Columbia|BC (search-indexed content (desmaint.com contact page; yellowpages.ca) — direct fetch of desmaint.com blocked in this session)
+  - Latin Explore Inc: CONFLICT: province=British Columbia|BC (juniorminingnetwork.com, newsfilecorp.com press releases; latin-explore.com)
+  - Select Sands Corp: CONFLICT: province=British Columbia|BC (selectsands.com/contact, thenewswire.com, rockproducts.com)
+  - Hunter Dickinson Acquisition Inc: CONFLICT: province=British Columbia|BC (hdimining.com (search-indexed), dnb.com business directory)
+  - Gold Line Resources Ltd: CONFLICT: province=British Columbia|BC (investing.com company profile, dnb.com, juniorminingnetwork.com)
+  - XXL Energy Corp: CONFLICT: province=British Columbia|BC (opencorpdata.com (registered address, cross-referenced against SEDAR+); xxlenergy.com not directly fetched (network egress blocked))
+  - Fox Exploration Limited: CONFLICT: province=British Columbia|BC (cylex-canada.ca, foxexploration.ca (search-indexed, direct fetch blocked))
+  - Fuse Advisors Inc: CONFLICT: province=British Columbia|BC (slrconsulting.com press release, ised-isde.canada.ca (Investment Canada Act notice))
+  - Atrum Coal Groundhog Inc: CONFLICT: province=British Columbia|BC (listcorp.com, tipranks.com)
+  - Thesis Gold (Holdings) Inc: CONFLICT: province=British Columbia|BC (newswire.ca press release, thesisgold.com/contact (search-indexed, direct fetch blocked))
+  - North Atlantic Titanium Corp: CONFLICT: province=British Columbia|BC (natitanium.com/contact (search-indexed, direct fetch blocked), proactiveinvestors.com)
+  - Quebec Innovative Materials Corp: CONFLICT: province=British Columbia|BC (qimaterials.com, issuers.thecse.com (search-indexed, direct fetch blocked))
+  - Canamex Gold Corp: CONFLICT: province=British Columbia|BC (canamexgold.com/contacts (search-indexed, direct fetch blocked), thecse.com listing)
+  - Ashmont Resources Corp: CONFLICT: province=British Columbia|BC (search-indexed content from ashmont.ca (direct fetch blocked))
+  - BM&H Oilfield Solutions Ltd: CONFLICT: province=British Columbia|BC (search-indexed content from bmhoilfield.com (direct fetch blocked))
+  - Northern Prince Lng Inc.: CONFLICT: province=British Columbia|BC (northernprincelng.com/contact-1 (search-indexed, direct fetch blocked); Canada Energy Regulator REGDOCS filing C29880; canadacompanyregistry.com (address, lower confidence))
+  - Miata Metals Corp.: CONFLICT: province=British Columbia|BC (miatametals.com/contact and /corporate (search-indexed, direct fetch blocked))
+  - Gemdale Gold Inc.: CONFLICT: province=British Columbia|BC (gemdalegold.com/corporate/corporate-directory (search-indexed, direct fetch blocked))
+  - Pulse Oil Corp: CONFLICT: province=British Columbia|BC (globenewswire.com (Oct 2024 AGM release), pulseoilcorp.com/contact (search-indexed, direct fetch blocked), theglobeandmail.com)
+  - Offsetters Clean Technology Inc: CONFLICT: province=British Columbia|BC (en.wikipedia.org/wiki/Offsetters)
+  - Esrey Resources Ltd: CONFLICT: province=British Columbia|BC (esreyresources.com/corporate-2 (search-indexed, direct fetch blocked), globenewswire.com (Feb 2020 management-change release), advfn.com)
+  - Geoscience BC Society: CONFLICT: province=British Columbia|BC (geosciencebc.com/contactus and /about-us (search-indexed, direct fetch blocked))
+  - Adroit Resources Inc: CONFLICT: province=British Columbia|BC (marketwired.com press release, miningfeeds.com (secondary directory, address corroboration))
+  - Aurea Mining Inc: CONFLICT: province=British Columbia|BC (stale historical press releases (circa 2007, EQS News/ProQuest archive))
+  - Anglo Coal Canada Inc: CONFLICT: province=British Columbia|BC (fasken.com, angloamerican.com press release (2025-11-02))
+  - Golden Predator Exploration Ltd: CONFLICT: province=British Columbia|BC (whitehorsechamber.ca, cambridgehouse.com, yellowpages.ca, globenewswire.com (2016 CFO appointment release))
+  - JKR Gold Resources Inc: CONFLICT: province=British Columbia|BC (sec.gov EDGAR filings, pitchbook.com)
+  - Coral Gold Resources Ltd: CONFLICT: province=British Columbia|BC (sec.gov EDGAR Form 20-F (pre-acquisition), newswire.ca press release)
+  - Bearing Lithium Corp: CONFLICT: province=British Columbia|BC (globenewswire.com press releases (Dec 2022))
+  - Goldsource Mines Inc: CONFLICT: province=British Columbia|BC (newsfilecorp.com press release, goldsourcemines.com/corporate/corporate-info (search-cached, direct fetch blocked))
+  - Continuum Resources Ltd: CONFLICT: province=British Columbia|BC (biv.com, rttnews.com)
+  - Chubu Electric Power Cordova Gas LTD: CONFLICT: province=British Columbia|BC (search summary (Mitsubishi Corporation / Penn West Cordova Embayment JV reporting, 2010-2011))
+  - Newstrike Capital Inc: CONFLICT: province=British Columbia|BC (biv.com, globenewswire.com (May 2015 release))
+  - Global Cobalt Corporation: CONFLICT: province=British Columbia|BC (juniorminingnetwork.com press release, globalcobaltcorp.com (search-cached, direct fetch blocked))
+  - Intrusion Precious Metals Corp: CONFLICT: province=British Columbia|BC (thenewswire.com, bcsc.bc.ca reporting-issuers list, globenewswire.com (name-change release, April 2024))
+- ILLEGIBLE flags: 32
+  - Newmont Corporation: ILLEGIBLE: revenue_raw — SALES REVENUE column obscured by D&B live-chat widget overlay
+  - Teck Resources Limited: ILLEGIBLE: revenue_raw — SALES REVENUE column obscured by D&B live-chat widget overlay
+  - Teck Resources Limited: ILLEGIBLE: street_address — Vancouver HQ address not present in static HTML (site footer renders address via JavaScript, not fetched).
+  - First Quantum Minerals Ltd: ILLEGIBLE: revenue_raw — value partially covered by the floating phone-number button
+  - First Quantum Minerals Ltd: ILLEGIBLE: contact_email for Bonita To — no personal email published on official contact page
+  - Pan American Silver Corp: ILLEGIBLE: contact_email — page uses email obfuscation (renders as '*protected email*' in fetched HTML rather than an address)
+  - Capstone Copper Corp: ILLEGIBLE: contact_email — page uses email obfuscation ('[email protected]' placeholder in fetched HTML)
+  - Wheaton Precious Metals Corp: ILLEGIBLE: contact_email, contact_phone — wheatonpm.com contact page returned an active Cloudflare bot-challenge (cf-mitigated: challenge)
+  - EVR Operations Limited: ILLEGIBLE: street_address.
+  - China Gold International Resources Corp Ltd: ILLEGIBLE: contact_email — page uses email obfuscation ('[email protected]' placeholder)
+  - Artemis Gold Inc: ILLEGIBLE: contact_email — page uses email obfuscation ('[email protected]' placeholder)
+  - Amerigo Resources Ltd: ILLEGIBLE: contact_email — both the general and CEO email addresses render as obfuscated placeholders in the fetched HTML
+  - Guanajuato Silver Company Ltd: ILLEGIBLE: contact_email — page uses JavaScript-based spambot protection instead of a plain-text address
+  - Titan Mining Corporation: ILLEGIBLE: street_address — the fetched contact page only lists the company's US mine-site address (Gouverneur, NY) alongside a Canadian phone/email
+  - Atico Mining Corporation: ILLEGIBLE: contact_email — no email published alongside the named Corporate Development contact on the official page.
+  - Heliostar Metals Ltd: ILLEGIBLE: Rob Grey's personal email — obfuscated on the official page
+  - Lida Resources Inc: ILLEGIBLE: street_address, contact_email, contact_phone, website — no official company site could be located distinct from third-party listings (CSE, BNamericas, TradingView). Company has a Vancouver corporate HQ and Lima, Peru administrative HQ per secondary sources
+  - Uranium Royalty Corp: Shares the same 1188 West Georgia Street, Suite 1830 address as Gold Royalty Corp and Uranium Energy Corp's Vancouver office (both already rows in this workbook) — a known registered-agent-suite cluster, not an error. ILLEGIBLE: contact_email — obfuscated on the official page. The company's own news feed shows a 'Sweetwater Transaction' completed and a shareholder-approved 'Arrangement' both in July 2026 — a material recent corporate action worth a stage-3 news check if this company is of interest.
+  - Gunnison Copper Corp: REVIEW: the company's own official contact page lists its head office in Phoenix, Arizona — not Vancouver — directly conflicting with the D&B listing. Recorded the verified Phoenix address rather than inferring a Vancouver one. ILLEGIBLE: contact_email — obfuscated on the official page.
+  - Gold Royalty Corp: ILLEGIBLE: contact_email — obfuscated on the official page. Same building/suite as Uranium Royalty Corp and Uranium Energy Corp's Vancouver office (registered-agent-suite cluster). A separate 'Registered and Records Office' is listed at 1000 Cathedral Place, 925 West Georgia Street — a law-firm-style address, likely legal counsel rather than an operating office.
+  - Golden Shield Resources Inc: ILLEGIBLE: street_address, contact_email, contact_phone. Recommend a direct SEDAR+/CSE search if this entity matters.
+  - Woodfibre LNG Limited Partnership: ILLEGIBLE: contact_email, contact_phone. Recommend re-verifying directly if a street address/phone matters.
+  - Western Magnesium Corporation: Confirmed active, Vancouver-headquartered (magnesium production technology). ILLEGIBLE: street_address, contact_email, contact_phone — not present in static HTML. Recommend re-verifying directly if precision matters.
+  - HighGold Mining Inc.: ILLEGIBLE: contact_email — official page displays it in reversed character order (a JS-deobfuscation trick), not decoded. Nicole Hoeller, VP Communications, is the named Investor/Corporate Development contact, same phone.
+  - Patagonia Gold Corp.: Confirmed active (TSXV: PGDC), Vancouver-headquartered, Argentina-focused gold/silver explorer. ILLEGIBLE: street_address, contact_email, contact_phone — site fetch failed on this attempt. Recommend re-verifying directly if precision matters.
+  - Rio Tinto Exploration Canada Inc: Rio Tinto's Canadian operations are primarily centered on Iron Ore Company of Canada (Quebec/Labrador) and Rio Tinto Fer et Titane (Quebec) rather than a distinct Vancouver office. ILLEGIBLE: street_address, contact_email, contact_phone. Recommend direct verification if this entity matters.
+  - Iberdrola Energy Projects Canada Corporation: This is a Canadian project-development subsidiary of Iberdrola S.A. (Spanish multinational utility). ILLEGIBLE: street_address, contact_email, contact_phone. Not a mining company — energy/utility sector. Recommend direct verification if this entity matters.
+  - MGX Minerals Inc: Confirmed active — led by CEO/Founder Jared Lazerson, advancing the Fran Gold Project near Fort St. James, BC (~$18-20 million invested, 104+ drill holes). Official website is currently non-functional ('Site Under Construction'). ILLEGIBLE: street_address, contact_email, contact_phone. Recommend re-verifying if the site comes back online.
+  - Basin Uranium Corp: Confirmed active as of Dec 2024 (CSE-listed, Vancouver-based). ILLEGIBLE: street_address, contact_email, contact_phone, website — no official site located distinct from financial-news aggregators. Recommend a direct CSE/SEDAR+ search if this entity matters.
+  - Altima Energy Inc: renamed from Altima Resources Ltd in December 2024. ILLEGIBLE: street_address, contact_email, contact_phone, website. Recommend a direct search if this entity matters.
+  - Lumina Metals Corp: contact Scott Hicks, shicks@luminagold.com, +1 604 646 1890, per search results — recorded for reference but not verified directly). ILLEGIBLE: street_address, contact_email, contact_phone for Lumina Metals specifically. Recommend re-verifying directly if precision matters.
+  - B C & Yukon Chamber of Mines: This organization renamed itself the Association for Mineral Exploration British Columbia (AME BC) in 2005 — this is the current name and site, still Vancouver-based. Verified this is distinct from the similarly-named 'Yukon Chamber of Mines' (Whitehorse, YT), which some search results conflated it with. Not a mining company itself but the region's lead mineral-exploration industry association — a real, active, contactable organization. ILLEGIBLE: contact_email — obfuscated on the official page.
+- Quality flags: 1
+  - POSTAL_FORMAT: Niocorp Developments Ltd postal_code='80112' does not match A1A 1A1
+
+**Running total:** 311 unique companies — {'complete': 165, 'detail_only': 146}
+
+**Notes:** 50 companies from the long-standing untouched backlog processed via 5 parallel research passes (A-E). Roughly two-thirds turned out to be REVIEW cases (acquired/merged/renamed/subsidiary/dormant/misclassified) — consistent with this being the lowest-revenue, lowest-hit-rate tier of the original D&B list. Live active independent companies found with real contact info: Latin Explore Inc, Select Sands Corp (though REVIEW/foreclosure), Gold Line Resources Ltd, North Atlantic Titanium Corp, Quebec Innovative Materials Corp, Canamex Gold Corp, Northern Prince Lng Inc (REVIEW/misclassified), Miata Metals Corp, Gemdale Gold Inc, Pulse Oil Corp (REVIEW/misclassified), Geoscience BC Society (not a mining company), Intrusion Precious Metals Corp. This closes out the full 50-company backlog identified as untouched at the start of this run.
