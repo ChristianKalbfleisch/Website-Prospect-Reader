@@ -999,3 +999,52 @@ treated as already processed and are skipped on re-run.
 **Running total:** 243 unique companies — {'complete': 97, 'detail_only': 56, 'listing_only': 90}
 
 **Notes:** This closes the revenue gap flagged in the previous batch — the sequence is now continuous from Gold Royalty Corp ($10.1M) down through this batch to Design Maintenance Systems Inc ($4.26M, already merged).
+
+## Run 2026-08-10
+
+**Source:** Contact lookup, batch 15 — first 10 of the 90 remaining listing_only companies (highest revenue tier of this set, $9.6M-$7.35M). Mix of direct fetches and search-engine snippets.
+
+**Files processed:**
+- `https://www.1911gold.com/contact/`
+- `https://highgoldmining.com/contact/`
+
+- Rows added: 0
+- Rows updated: 10
+- Rows unchanged: 0
+- Conflicts: 6
+  - Barrick Gold Inc: CONFLICT: province=British Columbia|BC (search-engine snippets (yellowpages.ca listing for a separate Barrick Technology Centre at 323 Alexander St; barrick.com contact page for general IR email; not fetched directly))
+  - HighGold Mining Inc.: CONFLICT: province=British Columbia|BC (https://highgoldmining.com/contact/)
+  - Pamicon Developments Ltd: CONFLICT: province=British Columbia|BC (search-engine snippets (yellowpages.ca/Kompass directory listings, not an official company site))
+  - 1911 Gold Corporation: CONFLICT: province=British Columbia|BC (https://www.1911gold.com/contact/)
+  - NEMI Northern Energy & Mining Inc: CONFLICT: province=British Columbia|BC (search-engine snippet (resourceconnector.ca directory listing, not the company's own site))
+  - Sunoil Ltd.: CONFLICT: province=British Columbia|BC (search-engine snippets (yellowpages.ca directory listing, not the company's own site))
+- ILLEGIBLE flags: 24
+  - Newmont Corporation: ILLEGIBLE: revenue_raw — SALES REVENUE column obscured by D&B live-chat widget overlay
+  - Teck Resources Limited: ILLEGIBLE: revenue_raw — SALES REVENUE column obscured by D&B live-chat widget overlay
+  - Teck Resources Limited: ILLEGIBLE: street_address — Vancouver HQ address not present in static HTML (site footer renders address via JavaScript, not fetched).
+  - First Quantum Minerals Ltd: ILLEGIBLE: revenue_raw — value partially covered by the floating phone-number button
+  - First Quantum Minerals Ltd: ILLEGIBLE: contact_email for Bonita To — no personal email published on official contact page
+  - Pan American Silver Corp: ILLEGIBLE: contact_email — page uses email obfuscation (renders as '*protected email*' in fetched HTML rather than an address)
+  - Capstone Copper Corp: ILLEGIBLE: contact_email — page uses email obfuscation ('[email protected]' placeholder in fetched HTML)
+  - Wheaton Precious Metals Corp: ILLEGIBLE: contact_email, contact_phone — wheatonpm.com contact page returned an active Cloudflare bot-challenge (cf-mitigated: challenge)
+  - EVR Operations Limited: ILLEGIBLE: street_address.
+  - China Gold International Resources Corp Ltd: ILLEGIBLE: contact_email — page uses email obfuscation ('[email protected]' placeholder)
+  - Artemis Gold Inc: ILLEGIBLE: contact_email — page uses email obfuscation ('[email protected]' placeholder)
+  - Amerigo Resources Ltd: ILLEGIBLE: contact_email — both the general and CEO email addresses render as obfuscated placeholders in the fetched HTML
+  - Guanajuato Silver Company Ltd: ILLEGIBLE: contact_email — page uses JavaScript-based spambot protection instead of a plain-text address
+  - Titan Mining Corporation: ILLEGIBLE: street_address — the fetched contact page only lists the company's US mine-site address (Gouverneur, NY) alongside a Canadian phone/email
+  - Atico Mining Corporation: ILLEGIBLE: contact_email — no email published alongside the named Corporate Development contact on the official page.
+  - Heliostar Metals Ltd: ILLEGIBLE: Rob Grey's personal email — obfuscated on the official page
+  - Lida Resources Inc: ILLEGIBLE: street_address, contact_email, contact_phone, website — no official company site could be located distinct from third-party listings (CSE, BNamericas, TradingView). Company has a Vancouver corporate HQ and Lima, Peru administrative HQ per secondary sources
+  - Uranium Royalty Corp: Shares the same 1188 West Georgia Street, Suite 1830 address as Gold Royalty Corp and Uranium Energy Corp's Vancouver office (both already rows in this workbook) — a known registered-agent-suite cluster, not an error. ILLEGIBLE: contact_email — obfuscated on the official page. The company's own news feed shows a 'Sweetwater Transaction' completed and a shareholder-approved 'Arrangement' both in July 2026 — a material recent corporate action worth a stage-3 news check if this company is of interest.
+  - Gunnison Copper Corp: REVIEW: the company's own official contact page lists its head office in Phoenix, Arizona — not Vancouver — directly conflicting with the D&B listing. Recorded the verified Phoenix address rather than inferring a Vancouver one. ILLEGIBLE: contact_email — obfuscated on the official page.
+  - Gold Royalty Corp: ILLEGIBLE: contact_email — obfuscated on the official page. Same building/suite as Uranium Royalty Corp and Uranium Energy Corp's Vancouver office (registered-agent-suite cluster). A separate 'Registered and Records Office' is listed at 1000 Cathedral Place, 925 West Georgia Street — a law-firm-style address, likely legal counsel rather than an operating office.
+  - Golden Shield Resources Inc: ILLEGIBLE: street_address, contact_email, contact_phone. Recommend a direct SEDAR+/CSE search if this entity matters.
+  - Western Magnesium Corporation: Confirmed active, Vancouver-headquartered (magnesium production technology). ILLEGIBLE: street_address, contact_email, contact_phone — not present in static HTML. Recommend re-verifying directly if precision matters.
+  - HighGold Mining Inc.: ILLEGIBLE: contact_email — official page displays it in reversed character order (a JS-deobfuscation trick), not decoded. Nicole Hoeller, VP Communications, is the named Investor/Corporate Development contact, same phone.
+  - Patagonia Gold Corp.: Confirmed active (TSXV: PGDC), Vancouver-headquartered, Argentina-focused gold/silver explorer. ILLEGIBLE: street_address, contact_email, contact_phone — site fetch failed on this attempt. Recommend re-verifying directly if precision matters.
+- Quality flags: 0
+
+**Running total:** 243 unique companies — {'complete': 105, 'detail_only': 58, 'listing_only': 80}
+
+**Notes:** First batch of 10 from the 90-company backlog. 1 flagged REVIEW as dormant/stalled (Avanti Kitsault Mine); 1 flagged REVIEW as a regional office of a Toronto-headquartered parent (Barrick Gold Inc). Several small/thinly-documented companies (Rochester Resources, Pamicon Developments, Sunoil) had no official site locatable — recorded what directory listings offered rather than leaving entirely blank.
