@@ -908,3 +908,53 @@ treated as already processed and are skipped on re-run.
 **Running total:** 204 unique companies — {'complete': 90, 'detail_only': 50, 'listing_only': 64}
 
 **Notes:** There is a revenue gap between the previous batch's bottom row (Gold Royalty Corp, $10.1M) and this batch's top row (Design Maintenance Systems Inc, $4.26M) — screenshots covering that range were not provided. Flagging so a future run knows to fill it if completeness matters.
+
+## Run 2026-08-10
+
+**Source:** First contact-lookup pass on the $2.33M-$4.26M revenue tier. Mix of direct fetches and search-engine snippets. This tier is showing a much higher rate of acquired/dormant/unverifiable shell entities than earlier, higher-revenue batches.
+
+**Files processed:**
+- `https://www.natbridgeresources.com/contact-us/`
+- `https://www.mn25.ca/contact`
+
+- Rows added: 0
+- Rows updated: 13
+- Rows unchanged: 0
+- Conflicts: 10
+  - Anglo American Exploration (Canada) Ltd: CONFLICT: province=British Columbia|BC (search-engine snippets of yellowpages.ca/allbiz.ca listings (not the company's own site directly; two different Vancouver addresses appeared in results, this one matched the more complete contact record))
+  - Gatos Silver Canada Corp: CONFLICT: province=British Columbia|BC (secondary sources (First Majestic Silver acquisition press release, not fetched directly))
+  - South32 Canada Inc: CONFLICT: province=British Columbia|BC (south32.net/contact-us (live fetch 403'd; address sourced from search-engine snippet of the company's own official site))
+  - NatBridge Resources Ltd: CONFLICT: city=Vancouver|Burnaby (https://www.natbridgeresources.com/contact-us/)
+  - NatBridge Resources Ltd: CONFLICT: province=British Columbia|BC (https://www.natbridgeresources.com/contact-us/)
+  - Kaizen Discovery Inc: CONFLICT: province=British Columbia|BC (secondary sources (Ivanhoe Electric acquisition press release, not fetched directly))
+  - Ivanhoe Electric Inc: CONFLICT: city=Vancouver|Tempe (secondary sources (Kaizen Discovery acquisition press release, not fetched directly))
+  - Ivanhoe Electric Inc: CONFLICT: province=British Columbia|AZ (secondary sources (Kaizen Discovery acquisition press release, not fetched directly))
+  - Ivanhoe Electric Inc: CONFLICT: country=Canada|United States (secondary sources (Kaizen Discovery acquisition press release, not fetched directly))
+  - Euro Manganese Inc: CONFLICT: province=British Columbia|BC (https://www.mn25.ca/contact)
+- ILLEGIBLE flags: 21
+  - Newmont Corporation: ILLEGIBLE: revenue_raw — SALES REVENUE column obscured by D&B live-chat widget overlay
+  - Teck Resources Limited: ILLEGIBLE: revenue_raw — SALES REVENUE column obscured by D&B live-chat widget overlay
+  - Teck Resources Limited: ILLEGIBLE: street_address — Vancouver HQ address not present in static HTML (site footer renders address via JavaScript, not fetched).
+  - First Quantum Minerals Ltd: ILLEGIBLE: revenue_raw — value partially covered by the floating phone-number button
+  - First Quantum Minerals Ltd: ILLEGIBLE: contact_email for Bonita To — no personal email published on official contact page
+  - Pan American Silver Corp: ILLEGIBLE: contact_email — page uses email obfuscation (renders as '*protected email*' in fetched HTML rather than an address)
+  - Capstone Copper Corp: ILLEGIBLE: contact_email — page uses email obfuscation ('[email protected]' placeholder in fetched HTML)
+  - Wheaton Precious Metals Corp: ILLEGIBLE: contact_email, contact_phone — wheatonpm.com contact page returned an active Cloudflare bot-challenge (cf-mitigated: challenge)
+  - EVR Operations Limited: ILLEGIBLE: street_address.
+  - China Gold International Resources Corp Ltd: ILLEGIBLE: contact_email — page uses email obfuscation ('[email protected]' placeholder)
+  - Artemis Gold Inc: ILLEGIBLE: contact_email — page uses email obfuscation ('[email protected]' placeholder)
+  - Amerigo Resources Ltd: ILLEGIBLE: contact_email — both the general and CEO email addresses render as obfuscated placeholders in the fetched HTML
+  - Guanajuato Silver Company Ltd: ILLEGIBLE: contact_email — page uses JavaScript-based spambot protection instead of a plain-text address
+  - Titan Mining Corporation: ILLEGIBLE: street_address — the fetched contact page only lists the company's US mine-site address (Gouverneur, NY) alongside a Canadian phone/email
+  - Atico Mining Corporation: ILLEGIBLE: contact_email — no email published alongside the named Corporate Development contact on the official page.
+  - Heliostar Metals Ltd: ILLEGIBLE: Rob Grey's personal email — obfuscated on the official page
+  - Lida Resources Inc: ILLEGIBLE: street_address, contact_email, contact_phone, website — no official company site could be located distinct from third-party listings (CSE, BNamericas, TradingView). Company has a Vancouver corporate HQ and Lima, Peru administrative HQ per secondary sources
+  - Uranium Royalty Corp: Shares the same 1188 West Georgia Street, Suite 1830 address as Gold Royalty Corp and Uranium Energy Corp's Vancouver office (both already rows in this workbook) — a known registered-agent-suite cluster, not an error. ILLEGIBLE: contact_email — obfuscated on the official page. The company's own news feed shows a 'Sweetwater Transaction' completed and a shareholder-approved 'Arrangement' both in July 2026 — a material recent corporate action worth a stage-3 news check if this company is of interest.
+  - Gunnison Copper Corp: REVIEW: the company's own official contact page lists its head office in Phoenix, Arizona — not Vancouver — directly conflicting with the D&B listing. Recorded the verified Phoenix address rather than inferring a Vancouver one. ILLEGIBLE: contact_email — obfuscated on the official page.
+  - Gold Royalty Corp: ILLEGIBLE: contact_email — obfuscated on the official page. Same building/suite as Uranium Royalty Corp and Uranium Energy Corp's Vancouver office (registered-agent-suite cluster). A separate 'Registered and Records Office' is listed at 1000 Cathedral Place, 925 West Georgia Street — a law-firm-style address, likely legal counsel rather than an operating office.
+  - Golden Shield Resources Inc: ILLEGIBLE: street_address, contact_email, contact_phone. Recommend a direct SEDAR+/CSE search if this entity matters.
+- Quality flags: 0
+
+**Running total:** 204 unique companies — {'complete': 97, 'detail_only': 56, 'listing_only': 51}
+
+**Notes:** First pass of the $2.33M-$4.26M tier: 6 of 13 flagged REVIEW (2 acquired, 1 receivership-parent, 1 subsidiary of an already-verified row, 1 not-actually-Vancouver, 2 unlocatable shells). This tier is showing meaningfully more dormant/unverifiable entities than the higher-revenue tiers already processed — worth a scope decision on whether exhaustive research on the remaining ~50 companies in this batch is worth the time given the hit rate so far.
