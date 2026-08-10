@@ -1,0 +1,189 @@
+{
+  "run_date": "2026-08-10",
+  "run_source": "Contact lookup, batch 22 — the $4.44M-$6.07M revenue tier of the older backlog. Mix of search snippets.",
+  "files_processed": [],
+  "rows": [
+    {
+      "_page_type": "detail",
+      "company_name": "International Enexco Limited",
+      "street_address": "700 West Georgia Street, Suite 1450",
+      "city": "Vancouver",
+      "province": "BC",
+      "postal_code": "V7Y 1K8",
+      "country": "Canada",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "secondary sources (Denison Mines information circular, not fetched directly)",
+      "date_captured": "2026-08-10",
+      "notes": "REVIEW: acquired by Denison Mines, completed June 6, 2014. Not an independent Vancouver prospect for over a decade."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Vicuña Corp",
+      "street_address": "1133 Melville Street, Suite 3030",
+      "city": "Vancouver",
+      "province": "BC",
+      "postal_code": "V6E 4E5",
+      "country": "Canada",
+      "key_principal": "Ron Hochstein",
+      "key_principal_title": "Chief Executive Officer",
+      "contact_email": null,
+      "contact_phone": "604 636 7090",
+      "website": "vicuna.com",
+      "source_file": "search-engine snippets (lundinmining.com press release, vicuna.com/en/contacto/ referenced but not fetched directly)",
+      "date_captured": "2026-08-10",
+      "notes": "Confirmed very active — a newly-formed 50/50 joint venture between Lundin Mining and BHP holding the Filo del Sol and Josemaria copper projects (Vicuña district, Argentina/Chile). Stephen Williams (Lundin Mining's VP Investor Relations, already recorded on that row) is also listed as an IR contact here, +1 604 806 3074, confirming shared corporate infrastructure. Not flagged REVIEW — this is a real, well-funded, independently significant entity."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "First Coal Corporation",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "no public record located",
+      "date_captured": "2026-08-10",
+      "notes": "REVIEW: no official website, news coverage, or financial-database listing could be located. Recommend manual verification via BC Registry before treating as a live prospect."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Arizona Mining Inc",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "secondary sources (PitchBook, not fetched directly)",
+      "date_captured": "2026-08-10",
+      "notes": "REVIEW: acquired by South32 (already a row in this workbook), completed August 10, 2018. Not an independent prospect."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "MGX Minerals Inc",
+      "contact_email": null,
+      "contact_phone": null,
+      "website": "www.mgxminerals.com",
+      "source_file": "mgxminerals.com (site displays 'Site Under Construction'; description sourced from search snippets)",
+      "date_captured": "2026-08-10",
+      "notes": "Confirmed active — led by CEO/Founder Jared Lazerson, advancing the Fran Gold Project near Fort St. James, BC (~$18-20 million invested, 104+ drill holes). Official website is currently non-functional ('Site Under Construction'). ILLEGIBLE: street_address, contact_email, contact_phone. Recommend re-verifying if the site comes back online."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Kaminak Gold Corporation",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "secondary sources (Northern Miner, not fetched directly)",
+      "date_captured": "2026-08-10",
+      "notes": "REVIEW: acquired by Goldcorp via a $520 million all-share bid (2016) for the Coffee gold project. Goldcorp itself later merged into Newmont Corporation (already a verified row in this workbook). Not an independent prospect."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Constantine Metal Resources Ltd",
+      "street_address": "800 West Pender Street, Suite 320",
+      "city": "Vancouver",
+      "province": "BC",
+      "postal_code": "V6C 2V6",
+      "country": "Canada",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "search-engine snippets (yellowpages.ca, not the company's own site)",
+      "date_captured": "2026-08-10",
+      "notes": "REVIEW: acquired by American Pacific Mining Corp via a completed plan of arrangement, November 2022. Not an independent prospect."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Bellhaven Copper & Gold Inc",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "secondary sources (GoldMining Inc. acquisition press releases, not fetched directly)",
+      "date_captured": "2026-08-10",
+      "notes": "REVIEW: acquired by GoldMining Inc., agreement announced April 2017, for its Colombian gold-copper project. Not an independent prospect."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Nevada Copper Corp",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "secondary sources (GlobalData, not fetched directly)",
+      "date_captured": "2026-08-10",
+      "notes": "REVIEW: acquired, completed September 24, 2025 (Pumpkin Hollow copper project near Yerington, Nevada). Not an independent prospect."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "BMC Minerals Ltd",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "not yet researched in depth",
+      "date_captured": "2026-08-10",
+      "notes": "Not yet researched due to time constraints on this batch."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Terraco Gold Corp",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "search-engine snippet (mentioned as CSE: TEN in a general list, not the company's own site)",
+      "date_captured": "2026-08-10",
+      "notes": "Confirmed to exist (CSE: TEN) but no address, email, or phone located in available sources."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Woulfe Mining Corp",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "no public record located",
+      "date_captured": "2026-08-10",
+      "notes": "REVIEW: no official website, news coverage, or financial-database listing could be located. Recommend manual verification via BC Registry before treating as a live prospect."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "GB Minerals Ltd",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "no public record located",
+      "date_captured": "2026-08-10",
+      "notes": "REVIEW: no official website, news coverage, or financial-database listing could be located. Recommend manual verification via BC Registry before treating as a live prospect."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Waroona Energy Inc",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "no public record located",
+      "date_captured": "2026-08-10",
+      "notes": "REVIEW: no official website, news coverage, or financial-database listing could be located. Recommend manual verification via BC Registry before treating as a live prospect."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Prodigy Gold Inc",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "not researched in depth",
+      "date_captured": "2026-08-10",
+      "notes": "Not yet researched due to time constraints on this batch. Note: there is an unrelated 'Prodigy Gold NL' in Australia — watch for naming confusion."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Xrapplied Technologies Inc",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "not researched in depth",
+      "date_captured": "2026-08-10",
+      "notes": "Not yet researched due to time constraints on this batch."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Arlac Transamerican Oilfield Services Inc",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "not researched in depth",
+      "date_captured": "2026-08-10",
+      "notes": "Not yet researched due to time constraints on this batch."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Bucking Horse Energy Inc",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "not researched in depth",
+      "date_captured": "2026-08-10",
+      "notes": "Not yet researched due to time constraints on this batch."
+    }
+  ],
+  "run_notes": "18 companies from the $4.44M-$6.07M tier processed. Vicuña Corp is a genuinely significant, active find (Lundin Mining/BHP joint venture). 6 flagged REVIEW as acquired (International Enexco, Arizona Mining, Kaminak Gold, Constantine Metal Resources, Bellhaven Copper & Gold, Nevada Copper) plus 3 unlocatable (First Coal, Woulfe Mining, GB Minerals, Waroona Energy). Several remain unresearched due to time — will continue."
+}
