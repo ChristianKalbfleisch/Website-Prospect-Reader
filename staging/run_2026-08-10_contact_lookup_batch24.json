@@ -1,0 +1,74 @@
+{
+  "run_date": "2026-08-10",
+  "run_source": "Contact lookup, batch 24 — continuing the older backlog's $2.04M-$4.26M tier.",
+  "files_processed": [],
+  "rows": [
+    {
+      "_page_type": "detail",
+      "company_name": "CapitalEnergy Corporation",
+      "street_address": "837 West Hastings Street, Suite 700",
+      "city": "Vancouver",
+      "province": "BC",
+      "postal_code": "V6C 3N6",
+      "country": "Canada",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "search-engine snippets (scrapmonster.com, not the company's own site)",
+      "date_captured": "2026-08-10",
+      "notes": "A privately-held North American midstream/upstream natural gas company, active since 2005. No email/phone located."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Yellowhead Mining Inc",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "secondary sources (Taseko Mines acquisition press release, not fetched directly)",
+      "date_captured": "2026-08-10",
+      "notes": "REVIEW: acquired by Taseko Mines Limited in 2019 for the Yellowhead Copper Project near Kamloops. Taseko Mines is already a verified row in this workbook (recently renamed Trekor Metals Limited). Not an independent prospect."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "eCobalt Solutions Inc",
+      "street_address": "999 West Hastings Street, 1810",
+      "city": "Vancouver",
+      "province": "BC",
+      "postal_code": "V6C 2W2",
+      "country": "Canada",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "search-engine snippet (D&B directory listing for the address; ecobalt.com itself was checked directly and found squatted)",
+      "date_captured": "2026-08-10",
+      "notes": "REVIEW / DOMAIN SQUATTED: ecobalt.com now serves unrelated online-casino/sweepstakes affiliate content, not the company's own material — the same domain-takeover pattern already flagged for Cache Exploration Inc earlier in this project. Did not use this domain for anything. The company's Idaho Cobalt Project funding is understood to have collapsed around 2019; likely defunct. Recommend manual verification via BC Registry before treating as a live prospect."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Mason Resources Corp",
+      "street_address": "1066 West Hastings Street",
+      "city": "Vancouver",
+      "province": "BC",
+      "postal_code": "V6E 3X1",
+      "country": "Canada",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "secondary sources (name-change filings, not fetched directly)",
+      "date_captured": "2026-08-10",
+      "notes": "REVIEW: the entity behind this name changed to 'Transoceanic Investments Inc.' effective April 13, 2026 — a very recent rename. Earlier corporate history includes a 2017 Entree Resources merger/name change and a 2018 Hudbay Minerals acquisition bid. Recommend treating this specific name as no longer current; verify Transoceanic Investments Inc. separately if this entity matters."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Woodfibre LNG Limited Partnership",
+      "street_address": "PO Box 17533, The Ritz PO",
+      "city": "Vancouver",
+      "province": "BC",
+      "postal_code": "V6E 0B2",
+      "country": "Canada",
+      "contact_email": null,
+      "contact_phone": null,
+      "website": "woodfibrelng.ca",
+      "source_file": "search-engine snippet (mailing address only; the live contact page renders via JavaScript, no static content found)",
+      "date_captured": "2026-08-10",
+      "notes": "Confirmed active — a major LNG export project near Squamish, BC, operated by the privately-held Woodfibre Management Ltd. This is a mailing address (PO Box), not a street address; ILLEGIBLE: contact_email, contact_phone. Recommend re-verifying directly if a street address/phone matters."
+    }
+  ],
+  "run_notes": "5 companies processed. Important finding: eCobalt Solutions' former domain (ecobalt.com) has been taken over by an unrelated gambling/sweepstakes affiliate site — same domain-squatting pattern as Cache Exploration flagged earlier in this project. Not used for anything."
+}
