@@ -1,0 +1,128 @@
+{
+  "run_date": "2026-08-10",
+  "run_source": "Contact lookup, batch 16 — next 10 of the 90-company backlog ($7M-$6.07M revenue tier). Mix of direct fetches and search-engine snippets.",
+  "files_processed": [
+    "https://trillionenergy.com/contact/"
+  ],
+  "rows": [
+    {
+      "_page_type": "detail",
+      "company_name": "Orca Sand & Gravel Limited Partnership",
+      "street_address": "6505 Island Highway",
+      "city": "Port McNeill",
+      "province": "BC",
+      "postal_code": "V0N 2R0",
+      "country": "Canada",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "secondary sources (Vulcan Materials, Natural Resources Canada, not fetched directly)",
+      "date_captured": "2026-08-10",
+      "notes": "REVIEW: this is the operating quarry (Orca Quarry), majority-owned (88%) by Polaris Minerals Corporation / Vulcan Materials Company, with 'Namgis First Nation holding 12%. Polaris Materials Corporation is already flagged REVIEW in this workbook as a Vulcan Materials subsidiary. Not a separate Vancouver corporate office — the physical address is the Port McNeill quarry site, not Vancouver."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Valhalla Resources Ltd",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "no public record located",
+      "date_captured": "2026-08-10",
+      "notes": "REVIEW: no official website, news coverage, or financial-database listing could be located for this entity. Recommend manual verification via BC Registry before treating as a live prospect."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Rio Tinto Exploration Canada Inc",
+      "contact_email": null,
+      "contact_phone": null,
+      "website": "www.riotinto.com",
+      "source_file": "riotinto.com (general Canada operations pages checked; no Vancouver-specific exploration office contact located)",
+      "date_captured": "2026-08-10",
+      "notes": "This is a Rio Tinto plc exploration subsidiary; Rio Tinto's Canadian operations are primarily centered on Iron Ore Company of Canada (Quebec/Labrador) and Rio Tinto Fer et Titane (Quebec) rather than a distinct Vancouver office. ILLEGIBLE: street_address, contact_email, contact_phone. Recommend direct verification if this entity matters."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Foran Mining Corporation",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "secondary sources (Eldorado Gold acquisition press releases, already documented for the related McIlvenna Bay Operating Ltd row, not re-fetched)",
+      "date_captured": "2026-08-10",
+      "notes": "REVIEW: Foran Mining was acquired by Eldorado Gold Corporation, completed April 2026 (Eldorado Gold is already a verified row in this workbook). This is the same acquisition already flagged on the McIlvenna Bay Operating Ltd row (Foran's McIlvenna Bay project). Not an independent prospect."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Trillion Energy International Inc",
+      "street_address": "838 West Hastings St., Suite 700",
+      "city": "Vancouver",
+      "province": "BC",
+      "postal_code": "V6C 0A6",
+      "country": "Canada",
+      "key_principal": null,
+      "key_principal_title": null,
+      "contact_email": "info@trillionenergy.com",
+      "contact_phone": "1-778-819-1585",
+      "website": "www.trillionenergy.com",
+      "source_file": "https://trillionenergy.com/contact/",
+      "date_captured": "2026-08-10",
+      "notes": "Oil exploration & development company focused on southeast Turkiye, not a mining company per se, but energy-sector aligned with the D&B directory's broader NAICS grouping."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Alderon Iron Ore Corp",
+      "street_address": null,
+      "contact_email": "info@alderonironore.com",
+      "contact_phone": "604-681-8030",
+      "website": "alderonironore.com",
+      "source_file": "search-engine snippet (SEC filing; the live domain failed to load with a TLS handshake error, not an expired-cert rejection but a broken/unreachable server — not connected to insecurely)",
+      "date_captured": "2026-08-10",
+      "notes": "REVIEW: Alderon Iron Ore filed for CCAA creditor protection in 2018 after financing for its Kami iron ore project in Labrador collapsed; the company's own domain appears to be down/unreachable now, consistent with a defunct entity. Recorded the old contact info found in a 2013 SEC filing with a clear caveat rather than treating it as current."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Sierra Madre Gold and Silver Ltd",
+      "street_address": "1455 Bellevue Ave.",
+      "city": "West Vancouver",
+      "province": "BC",
+      "postal_code": "V7T 1C3",
+      "country": "Canada",
+      "key_principal": null,
+      "key_principal_title": null,
+      "contact_email": "investor@sierramadregoldandsilver.com",
+      "contact_phone": "(604) 765-1604",
+      "website": "www.sierramadregoldandsilver.com",
+      "source_file": "search-engine snippet of the company's own official site (not fetched directly)",
+      "date_captured": "2026-08-10",
+      "notes": "Recommend re-verifying directly if precision matters."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Craigmont Mines (A Joint Venture)",
+      "contact_email": "info@nicolamining.com",
+      "contact_phone": "(778) 385-1213",
+      "key_principal": "Peter Espig",
+      "website": "www.nicolamining.com",
+      "source_file": "secondary sources (Nicola Mining Inc. press releases, not fetched directly)",
+      "date_captured": "2026-08-10",
+      "notes": "REVIEW: the historical Craigmont Mines (copper, near Merritt, BC) closed in 1982. The 'New Craigmont' property is now held and operated by Nicola Mining Inc., adjacent to Teck's Highland Valley Copper mine — recorded Nicola Mining's contact as the likely current operator, but this is a inference based on project-name continuity, not a confirmed identical legal entity. Recommend manual verification before treating as the same entity."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Iberdrola Energy Projects Canada Corporation",
+      "contact_email": null,
+      "contact_phone": null,
+      "website": "www.iberdrola.com",
+      "source_file": "not researched in depth — parent company confirmed (Iberdrola S.A., Spain), no Vancouver-specific office contact located",
+      "date_captured": "2026-08-10",
+      "notes": "This is a Canadian project-development subsidiary of Iberdrola S.A. (Spanish multinational utility). ILLEGIBLE: street_address, contact_email, contact_phone. Not a mining company — energy/utility sector. Recommend direct verification if this entity matters."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "WellteQ Digital Health Inc",
+      "contact_email": null,
+      "contact_phone": null,
+      "website": null,
+      "source_file": "wellteq.co (checked; connection timed out — not fetched)",
+      "date_captured": "2026-08-10",
+      "notes": "REVIEW: WellteQ Digital Health is a corporate wellness/digital health technology company (CSE-listed), not a mining company. Likely a NAICS misclassification, similar to BioHarvest Sciences and Sixth Wave Innovations flagged in earlier batches. Not a mining prospect."
+    }
+  ],
+  "run_notes": "3 of 10 flagged REVIEW as acquired/subsidiary (Orca Sand & Gravel, Foran Mining, Alderon Iron Ore/dormant), 1 flagged REVIEW as misclassified non-mining (WellteQ Digital Health), and 1 flagged REVIEW as an inferred-not-confirmed entity match (Craigmont Mines / Nicola Mining). Two entities (Valhalla Resources, and full details for Rio Tinto Exploration Canada / Iberdrola Energy Projects Canada) could not be pinned down beyond parent-company confirmation."
+}

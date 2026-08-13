@@ -1,0 +1,98 @@
+{
+  "run_date": "2026-08-07",
+  "run_source": "Stage-3 corporate-action + hiring/expansion-signal news check, batch 2 (companies ranked 12-21 by revenue).",
+  "files_processed": [],
+  "rows": [
+    {
+      "_page_type": "detail",
+      "company_name": "OceanaGold Corporation",
+      "recent_news": "expansion/new project: planning ~$280 million in 2026 growth capital, including ~$150 million toward the Waihi North project (New Zealand); expansion/new project: Haile mine (South Carolina) expected to produce ~35% more gold in 2026 with a completed waste-removal program opening access to higher-grade ore; capital raise: increased 2025 share buyback program by 75% to $175 million",
+      "news_source_urls": "https://www.kitco.com/opinion/investment-trends/2026-03-16/oceanagold-targets-2026-growth-haile-expansion-and-nyse; https://www.kitco.com/opinion/investment-trends/2026-03-16/oceanagold-targets-2026-growth-haile-expansion-and-nyse; https://www.kitco.com/opinion/investment-trends/2026-03-16/oceanagold-targets-2026-growth-haile-expansion-and-nyse",
+      "date_captured": "2026-08-07",
+      "source_file": "stage-3 news check",
+      "notes": ""
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Lundin Gold Inc",
+      "recent_news": "expansion/new project: evaluating expanding Fruta del Norte mine/mill capacity beyond 5,500 t/d, with an investment decision targeted for H2 2026; expansion/new project: launched its largest-ever US$85 million exploration program (133,000 metres of drilling) to extend mine life and evaluate the Fruta del Norte South deposit, development decision expected H1 2026",
+      "news_source_urls": "https://lundingold.com/news/lundin-gold-provides-2026-guidance-and-strategic-t-122826/; https://lundingold.com/news/lundin-gold-provides-2026-guidance-and-strategic-t-122826/",
+      "date_captured": "2026-08-07",
+      "source_file": "stage-3 news check",
+      "notes": "Company explicitly stated these expansions are funded from operating cash flow, no capital raise announced."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Fortuna Mining Corp",
+      "recent_news": "expansion/new project: approved a 30% capacity expansion of the Seguela Gold Mine (Cote d'Ivoire), $109 million construction capital, funded from operating cash flow; construction begins H2 2026, underground mining (Sunbird) starts Q2 2027, full ramp-up H2 2028; capital raise: returned $80.2 million to shareholders via share repurchases in Q2 2026",
+      "news_source_urls": "https://www.globenewswire.com/news-release/2026/07/30/3335699/0/en/Fortuna-Approves-30-Capacity-Expansion-of-the-S%C3%A9gu%C3%A9la-Gold-Mine-in-C%C3%B4te-d-Ivoire.html; https://investingnews.com/fortuna-reports-second-quarter-2026-production-of-72217-gold-equivalent-ounces-and-advances-key-growth-initiatives/",
+      "date_captured": "2026-08-07",
+      "source_file": "stage-3 news check",
+      "notes": "The Seguela expansion (30% capacity increase, ~10 years of 200,000+ oz/year production) is a strong hiring/expansion signal, though no specific job-count figure was published."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Ero Copper Corp",
+      "recent_news": "expansion/new project: achieved commercial production at the Tucuma mine (Brazil), Q3 2025, now expected to contribute ~40% of 2026 revenue; capital raise: amended Senior Credit Facility to increase the limit from $150M to $200M and extend maturity to December 2028 (January 2025); capital raise: received $50 million upfront cash under streaming agreements, bringing total streaming proceeds to $160 million",
+      "news_source_urls": "https://www.ainvest.com/news/ero-copper-tucuma-project-track-h1-2025-commercial-production-2505/; https://www.investing.com/news/stock-market-news/ero-copper-upgraded-to-b-by-fitch-on-tucuma-rampup-93CH-4418181; https://www.investing.com/news/stock-market-news/ero-copper-upgraded-to-b-by-fitch-on-tucuma-rampup-93CH-4418181",
+      "date_captured": "2026-08-07",
+      "source_file": "stage-3 news check",
+      "notes": ""
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "China Gold International Resources Corp Ltd",
+      "recent_news": "expansion/new project: completed a mineral resource/reserve update and NI 43-101 technical report for the Jiama Copper-Gold Polymetallic Project (Tibet), June 30, 2026, showing a 51% rise in total reserves and a strategic shift toward underground mining",
+      "news_source_urls": "https://simplywall.st/stocks/ca/materials/tsx-cgg/china-gold-international-resources-shares/news/should-jiamas-underground-reserve-surge-reshape-the-long-ter/amp",
+      "date_captured": "2026-08-07",
+      "source_file": "stage-3 news check",
+      "notes": "A 2026 shareholder vote on capital mandates and 'key China National Gold deals' was mentioned in search results without further detail; not recorded as a specific item since no primary source with details was found."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Artemis Gold Inc",
+      "recent_news": "expansion/new project: Phase 1A Blackwater mill expansion (33% capacity increase, 6 to 8 Mtpa) 57% complete as of Q2 2026, on schedule for Q4 2026 commissioning, cost raised to $120 million; expansion/new project: Expanded Phase 2 (EP2) project targeting 21 Mtpa throughput and 500,000+ oz/year gold production by end of 2028, $1.44 billion cost; capital raise: issued $450 million of five-year senior unsecured notes to repay revolving credit facility, ending 2025 with $852.7 million pro-forma available liquidity",
+      "news_source_urls": "https://www.tipranks.com/news/company-announcements/artemis-gold-posts-strong-2025-results-and-accelerates-blackwater-expansion; https://www.artemisgoldinc.com/news/media-releases/2025/artemis-gold-announces-33-increase-to-phase-1-processing-plant-capacity-at-blackwater-mine-and-places-order-for-long-lead-equipment-for-phase-2-expansion; https://www.tipranks.com/news/company-announcements/artemis-gold-posts-strong-2025-results-and-accelerates-blackwater-expansion",
+      "date_captured": "2026-08-07",
+      "source_file": "stage-3 news check",
+      "notes": "The EP2 expansion (targeting production growth to 500,000+ oz/year) is a major hiring/expansion signal for the Blackwater site, though no specific headcount figure was published."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "International Petroleum Corporation",
+      "recent_news": "expansion/new project: achieved first steam injection at the Blackrod Phase 1 project, December 2025, first oil now expected Q3 2026 (a quarter ahead of original guidance); capital raise: increased Canadian revolving credit facility to CAD 348.5 million and extended maturity to May 2028, April 2026",
+      "news_source_urls": "https://www.globenewswire.com/news-release/2026/02/10/3235015/0/en/International-Petroleum-Corporation-Announces-2025-Year-End-Financial-and-Operational-Results-and-2026-Budget-Reserves-and-Guidance.html; https://www.international-petroleum.com/post/ipc-announces-2025-year-end-financial-and-operational-results-and-2026-budget-reserves-and-guidance",
+      "date_captured": "2026-08-07",
+      "source_file": "stage-3 news check",
+      "notes": ""
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "EVR Operations Limited",
+      "recent_news": "acquisition/merger: Glencore received final regulatory approval for its acquisition of a 77% interest in Elk Valley Resources (EVR) for US$6.93 billion, now operating EVR as a joint venture with Nippon Steel (20%) and POSCO (3%)",
+      "news_source_urls": "https://www.glencore.com/media-and-insights/news/glencore-receives-final-regulatory-approval-for-the-acquisition-of-elk-valley-resources",
+      "date_captured": "2026-08-07",
+      "source_file": "stage-3 news check",
+      "notes": "REVIEW-adjacent: EVR is now majority-owned and operated by Glencore, a company not otherwise in this workbook. Not flagging as REVIEW since EVR still operates under its own name with its own Vancouver office (already verified in an earlier batch), but worth knowing outreach may now need to account for Glencore's ownership. EVR operates four steelmaking coal mines in the Elk Valley employing ~5,500 people — a large regional workforce, though this is existing headcount, not a new hiring signal."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Atlatsa Resources Corporation",
+      "recent_news": null,
+      "news_source_urls": null,
+      "date_captured": "2026-08-07",
+      "source_file": "stage-3 news check",
+      "notes": "Skipped dedicated news search — already flagged REVIEW (went private, HQ relocated to Sandton, South Africa in 2018-19). No indication this status has changed."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Goldcorp Canada Ltd",
+      "recent_news": null,
+      "news_source_urls": null,
+      "date_captured": "2026-08-07",
+      "source_file": "stage-3 news check",
+      "notes": "Skipped dedicated news search — already flagged REVIEW (folded into Newmont Corporation after the 2019 merger; any current news would appear under Newmont Corporation's own stage-3 entry, already checked in batch 1)."
+    }
+  ],
+  "run_notes": "Batch 2 of the full-workbook stage-3 rollout. 8 of 10 companies got real, sourced news; 2 (Atlatsa, Goldcorp Canada) were deliberately skipped since they're already flagged REVIEW as non-independent/relocated entities and a dedicated search would be low-value."
+}

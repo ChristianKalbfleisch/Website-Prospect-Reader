@@ -1,0 +1,98 @@
+{
+  "run_date": "2026-08-07",
+  "run_source": "Stage-3 corporate-action + hiring/expansion-signal news check, batch 4.",
+  "files_processed": [],
+  "rows": [
+    {
+      "_page_type": "detail",
+      "company_name": "Silvercorp Metals Inc",
+      "recent_news": "acquisition/merger: expanded into South America and Central Asia via acquisitions of Adventus Mining Corporation and Chaarat Gold Holdings, diversifying into copper and gold across three continents; capital raise: completed a $150 million convertible senior notes offering (Nov 2024) and launched a share buyback program (NCIB, up to ~4% of shares, starting Sept 19, 2025); expansion/new project: completed a 1,500 tpd mill expansion at the Ying Mine (China), operational by January 2025, boosting capacity to 4,000 tpd",
+      "news_source_urls": "https://www.tipranks.com/news/company-announcements/silvercorp-metals-reports-strong-fiscal-2025-results-and-strategic-expansion; https://silvercorpmetals.com/silvercorp-renews-share-repurchase-program-2/; https://www.tipranks.com/news/company-announcements/silvercorp-metals-reports-strong-fiscal-2025-results-and-strategic-expansion",
+      "date_captured": "2026-08-07",
+      "source_file": "stage-3 news check",
+      "notes": ""
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Orezone Gold Corporation",
+      "recent_news": "expansion/new project: Bomboré hard rock expansion (Burkina Faso) commissioned in 2025, first gold poured Dec 15, 2025, commercial production declared Jan 16, 2026, raising 2026 production guidance 45% to 170,000-185,000 oz; expansion/new project: advancing Bomboré Stage 2 hard rock expansion, targeting 220,000-250,000 oz/year, estimated cost $90-95 million; capital raise: closed a $24 million offering to fund Stage 2 and exploration; acquisition/merger: completed acquisition of the Casa Berardi gold mine from Hecla Mining Company",
+      "news_source_urls": "https://finance.yahoo.com/news/bombor-expansion-near-completion-production-131020997.html; https://www.mining-technology.com/news/orezone-bombore-gold-mine/; https://www.mining-technology.com/news/orezone-bombore-gold-mine/; https://www.globenewswire.com/news-release/2026/03/25/3262583/0/en/Orezone-Gold-Reports-Fourth-Quarter-2025-Results-and-Provides-2026-Guidance.html",
+      "date_captured": "2026-08-07",
+      "source_file": "stage-3 news check",
+      "notes": "IPO/listing change: also planning a secondary ASX listing targeted for mid-2025, per the same source."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "SantaCruz Silver Mining Ltd",
+      "recent_news": "capital raise: Bolivian subsidiary San Lucas S.A. raised a total of 140 million Bolivian Bolivianos across two promissory-note offerings (Feb and Aug 2025); capital raise: eliminated all Glencore debt by January 2026, ending with ~$80 million treasury; IPO/listing change: achieved a dual NASDAQ listing, January 2026; expansion/new project: finalized a preliminary mine plan and is pursuing production permitting at the Soracaya Project (Bolivia), October 2025",
+      "news_source_urls": "https://discoveryalert.com.au/strategic-capital-markets-silver-mining-2026/; https://discoveryalert.com.au/strategic-capital-markets-silver-mining-2026/; https://finance.yahoo.com/news/santacruz-silver-mining-tsxv-scz-211052346.html",
+      "date_captured": "2026-08-07",
+      "source_file": "stage-3 news check",
+      "notes": "Correction/clarification: the company sold its Zacatecas, Mexico property in 2020 and current operations are centered on Bolivia — not related to the 'Vancouver' contact-page address confirmed in an earlier batch, just noting the company's operational focus has shifted geographically."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Steppe Gold Ltd",
+      "recent_news": "expansion/new project: ATO Phase 2 expansion (Mongolia) fully funded via a $150 million financing deal with the Trade and Development Bank of Mongolia; revised feasibility study expected H2 2026; total gold production expected to rise to ~160,000 oz/year in 2026 as Phase 2 comes onstream",
+      "news_source_urls": "https://kalkine.ca/news/mining/why-is-steppe-gold-stock-rising-today-investors-focus-on-mongolia-growth-story-and-expansion-plans",
+      "date_captured": "2026-08-07",
+      "source_file": "stage-3 news check",
+      "notes": "Note: company reported very low cash ($68,295) and working capital ($107,336) as of Dec 31, 2025 in the same source — a financial-health signal worth flagging even though it's not one of the fixed categories."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Galiano Gold Inc",
+      "recent_news": "acquisition/merger: consolidated ownership of the Asanko Gold Mine (Ghana) by acquiring Gold Fields' 45% interest, boosting Galiano's stake to 90% (2024, ongoing payments through 2026); expansion/new project: 2025-2026 development capital of $60-65 million primarily for Nkran Cut 3 waste stripping, secondary crushing circuit completion, and a tailings facility expansion",
+      "news_source_urls": "https://www.streetinsider.com/PRNewswire/GALIANO+GOLD+CONSOLIDATES+OWNERSHIP+OF+THE+ASANKO+GOLD+MINE+IN+TRANSFORMATIONAL+TRANSACTION/22553720.html; https://www.prnewswire.com/news-releases/galiano-gold-announces-2025-guidance-and-provides-mineral-reserve-and-mineral-resource-update-302362570.html",
+      "date_captured": "2026-08-07",
+      "source_file": "stage-3 news check",
+      "notes": ""
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Target Exploration and Mining Corp",
+      "recent_news": null,
+      "news_source_urls": null,
+      "date_captured": "2026-08-07",
+      "source_file": "stage-3 news check",
+      "notes": "Skipped dedicated news search — already flagged REVIEW (no verifiable official site located)."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Leagold Mining Corporation",
+      "recent_news": null,
+      "news_source_urls": null,
+      "date_captured": "2026-08-07",
+      "source_file": "stage-3 news check",
+      "notes": "Skipped dedicated news search — already flagged REVIEW (merged into Equinox Gold Corp, 2020)."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Silvermex Resources Inc",
+      "recent_news": null,
+      "news_source_urls": null,
+      "date_captured": "2026-08-07",
+      "source_file": "stage-3 news check",
+      "notes": "Skipped dedicated news search — already flagged REVIEW (acquired by First Majestic Silver, 2012)."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Teck Highland Valley Copper Partnership",
+      "recent_news": null,
+      "news_source_urls": null,
+      "date_captured": "2026-08-07",
+      "source_file": "stage-3 news check",
+      "notes": "Skipped dedicated news search — the relevant news (Highland Valley Copper Mine Life Extension) was already captured under Teck Resources Limited's stage-3 entry in batch 1, since this is a Teck operating partnership, not a separate Vancouver office."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Nevsun Resources Ltd",
+      "recent_news": null,
+      "news_source_urls": null,
+      "date_captured": "2026-08-07",
+      "source_file": "stage-3 news check",
+      "notes": "Skipped dedicated news search — already flagged REVIEW (wholly-owned Zijin Mining subsidiary since 2019)."
+    }
+  ],
+  "run_notes": "Batch 4 of the full-workbook stage-3 rollout. 5 of 10 companies got real, sourced news; 5 were deliberately skipped as already-flagged REVIEW/subsidiary entries."
+}

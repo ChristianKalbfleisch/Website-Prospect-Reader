@@ -1,0 +1,181 @@
+{
+  "run_date": "2026-08-10",
+  "run_source": "Contact lookup, batch 21 — closes out the newest listing batch. Mix of direct fetches and search snippets.",
+  "files_processed": [
+    "https://www.strategxcorp.com/contact",
+    "https://amebc.ca/contact/"
+  ],
+  "rows": [
+    {
+      "_page_type": "detail",
+      "company_name": "StrategX Elements Corp",
+      "street_address": "409 Granville Street, Unit 1500",
+      "city": "Vancouver",
+      "province": "BC",
+      "postal_code": "V6C 1T2",
+      "country": "Canada",
+      "contact_email": "info@strategxcorp.com",
+      "contact_phone": "778-231-2767",
+      "website": "www.strategxcorp.com",
+      "source_file": "https://www.strategxcorp.com/contact",
+      "date_captured": "2026-08-10",
+      "notes": ""
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "B C & Yukon Chamber of Mines",
+      "street_address": "889 West Pender Street, Suite 800",
+      "city": "Vancouver",
+      "province": "BC",
+      "postal_code": "V6C 3B2",
+      "country": "Canada",
+      "contact_email": null,
+      "contact_phone": "604-689-5271",
+      "website": "amebc.ca",
+      "source_file": "https://amebc.ca/contact/",
+      "date_captured": "2026-08-10",
+      "notes": "This organization renamed itself the Association for Mineral Exploration British Columbia (AME BC) in 2005 — this is the current name and site, still Vancouver-based. Verified this is distinct from the similarly-named 'Yukon Chamber of Mines' (Whitehorse, YT), which some search results conflated it with. Not a mining company itself but the region's lead mineral-exploration industry association — a real, active, contactable organization. ILLEGIBLE: contact_email — obfuscated on the official page."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "CanXGold Mining Corp",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "secondary sources (PwC insolvency records, Grand Forks Gazette receivership notice, not fetched directly)",
+      "date_captured": "2026-08-10",
+      "notes": "REVIEW: a receiver (PwC) was appointed November 20, 2023; the receiver subsequently agreed to sell all company assets to Phoenix Copper Company Inc. (formerly known as Golden Dawn Minerals Inc. / Kettle River Resources Ltd.). Not a live independent prospect."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Africo Resources Ltd",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "secondary sources (Wikipedia, not fetched directly)",
+      "date_captured": "2026-08-10",
+      "notes": "REVIEW: majority ownership acquired by Camrose Resources Limited in 2016. Not an independent Vancouver prospect for close to a decade."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Valory Resources Inc.",
+      "street_address": "1111 West Hastings St., Suite 905",
+      "city": "Vancouver",
+      "province": "BC",
+      "country": "Canada",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "search-engine snippet (D&B directory listing, not the company's own site)",
+      "date_captured": "2026-08-10",
+      "notes": "Coal mining industry per available description. No official website, email, or phone located."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Lumina Metals Corp",
+      "contact_email": null,
+      "contact_phone": null,
+      "website": "www.luminametals.com",
+      "source_file": "luminametals.com (site loads but contact page returned an error on this attempt; not a policy block)",
+      "date_captured": "2026-08-10",
+      "notes": "Confirmed very active — a Ross Beaty-led company advancing multiple copper-silver projects in Poland; completed a C$406.2 million Toronto IPO. Not to be confused with the separate, related company Lumina Gold Corp (Vancouver, Ecuador-focused; contact Scott Hicks, shicks@luminagold.com, +1 604 646 1890, per search results — recorded for reference but not verified directly). ILLEGIBLE: street_address, contact_email, contact_phone for Lumina Metals specifically. Recommend re-verifying directly if precision matters."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Xemplar Energy Corp",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "no public record located",
+      "date_captured": "2026-08-10",
+      "notes": "REVIEW: no official website, news coverage, or financial-database listing could be located. Recommend manual verification via BC Registry before treating as a live prospect."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Coronation Mines Ltd",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "no public record located",
+      "date_captured": "2026-08-10",
+      "notes": "REVIEW: no official website, news coverage, or financial-database listing could be located. Recommend manual verification via BC Registry before treating as a live prospect."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Norra Metals Corp",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "no public record located",
+      "date_captured": "2026-08-10",
+      "notes": "REVIEW: no official website, news coverage, or financial-database listing could be located. Recommend manual verification via BC Registry before treating as a live prospect."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Pegmatite One Lithium and Gold Corp",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "not researched in depth",
+      "date_captured": "2026-08-10",
+      "notes": "Not yet researched due to time constraints."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Canadian De Hua International Trading Ltd",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "no public record located",
+      "date_captured": "2026-08-10",
+      "notes": "REVIEW: no official website, news coverage, or financial-database listing could be located. Name suggests an import/export trading company rather than a mining operator; possible NAICS misclassification. Recommend manual verification via BC Registry before treating as a live prospect."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Magnus International Resources Inc",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "no public record located",
+      "date_captured": "2026-08-10",
+      "notes": "REVIEW: no official website, news coverage, or financial-database listing could be located. Recommend manual verification via BC Registry before treating as a live prospect."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "XCite Resources Inc",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "no public record located distinct from unrelated 'Xcite Energy'",
+      "date_captured": "2026-08-10",
+      "notes": "REVIEW: no official website or clear record located for this specific entity. Recommend manual verification via BC Registry before treating as a live prospect."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Contango Mining Canada, Inc",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "no public record located distinct from unrelated 'Contango ORE' (Alaska)",
+      "date_captured": "2026-08-10",
+      "notes": "REVIEW: no official website or clear record located for this specific Canadian entity, distinct from the similarly-named US company Contango ORE. Recommend manual verification via BC Registry before treating as a live prospect."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Adonis Minerals Corp",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "no public record located",
+      "date_captured": "2026-08-10",
+      "notes": "REVIEW: no official website, news coverage, or financial-database listing could be located. Recommend manual verification via BC Registry before treating as a live prospect."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Riva Gold Corporation",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "no public record located",
+      "date_captured": "2026-08-10",
+      "notes": "REVIEW: no official website, news coverage, or financial-database listing could be located. Recommend manual verification via BC Registry before treating as a live prospect."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Viscount Mining Resources Ltd",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "no public record located distinct from unrelated 'Viscount Mining Corp' (US-focused silver company)",
+      "date_captured": "2026-08-10",
+      "notes": "REVIEW: no official website or clear record located for this specific North Vancouver entity, distinct from the similarly-named US-focused Viscount Mining Corp. Recommend manual verification via BC Registry before treating as a live prospect."
+    }
+  ],
+  "run_notes": "This closes out the newest (49-company) listing batch. StrategX Elements and B C & Yukon Chamber of Mines (now AME BC) verified with real Vancouver addresses. CanXGold Mining and Africo Resources flagged REVIEW as insolvent/acquired. Lumina Metals confirmed very active (major 2025 IPO) but direct contact not obtained. The remaining ~11 companies had no locatable public record — the highest unverifiable rate of any batch in this project, consistent with this being the lowest revenue tier processed so far ($2.04M-$2.09M)."
+}

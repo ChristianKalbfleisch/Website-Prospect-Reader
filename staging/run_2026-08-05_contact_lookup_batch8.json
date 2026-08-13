@@ -1,0 +1,125 @@
+{
+  "run_date": "2026-08-05",
+  "run_source": "Mix of direct official-page fetches and secondary sources for historical/relocated entities. This is the final batch covering all remaining listing_only companies.",
+  "files_processed": [
+    "https://bearcreekmining.com/investors/contact/contact-us/",
+    "https://lucaradiamond.com/contact/contact-info/",
+    "https://queensrdcapital.com/contact/offices/"
+  ],
+  "rows": [
+    {
+      "_page_type": "detail",
+      "company_name": "Bear Creek Mining Corporation",
+      "street_address": "Suite 3200, 733 Seymour Street",
+      "city": "Vancouver",
+      "province": "BC",
+      "postal_code": "V6B 0S6",
+      "country": "Canada",
+      "key_principal": "Barbara Henderson",
+      "key_principal_title": "VP Corporate Communications",
+      "contact_email": "barb@bearcreekmining.com",
+      "contact_phone": "(604) 628-1111",
+      "website": "www.bearcreekmining.com",
+      "source_file": "https://bearcreekmining.com/investors/contact/contact-us/",
+      "date_captured": "2026-08-05",
+      "notes": ""
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "17411979 Canada Inc",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "no official site or public record located",
+      "date_captured": "2026-08-05",
+      "notes": "REVIEW: this is a generic federal numbered company (Canada Business Corporations Act); no official website, news coverage, or public registry detail was located under this number. Numbered companies are frequently shell/holding entities without a public presence. Recommend manual verification via Corporations Canada before treating as a live prospect."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Ridgetop Forwarding Ltd.",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "no verified official site located",
+      "date_captured": "2026-08-05",
+      "notes": "REVIEW: no evidence found connecting this name to a mining company — search results returned only unrelated Vancouver freight-forwarding/logistics listings. The name and business type suggest this D&B listing entry may be a logistics/customs-forwarding company misclassified under the mining NAICS code, not an actual mining prospect. Recommend manual verification."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Lucara Diamond Corp",
+      "street_address": "Suite 2800, Four Bentall Centre, 1055 Dunsmuir Street",
+      "city": "Vancouver",
+      "province": "BC",
+      "postal_code": "V7X 1L2",
+      "country": "Canada",
+      "key_principal": null,
+      "key_principal_title": null,
+      "contact_email": "info@lucaradiamond.com",
+      "contact_phone": "+1 604 674 0272",
+      "website": "www.lucaradiamond.com",
+      "source_file": "https://lucaradiamond.com/contact/contact-info/",
+      "date_captured": "2026-08-05",
+      "notes": "General public email used for both general and Investor Relations inquiries on the official page; no distinct personal contact confirmed there."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Puna Operations Inc",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "secondary sources (SEC filings, BNamericas — not fetched directly, no official standalone site located)",
+      "date_captured": "2026-08-05",
+      "notes": "REVIEW: sources conflict on ownership (one describes this as an SSR Mining venture, others associate it with Pan American Silver's Argentina operations). No standalone official website was located. Recommend manual verification of current ownership/contact before treating as an independent prospect."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Pretium Exploration Inc",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "secondary sources (Newcrest acquisition press releases, not fetched directly)",
+      "date_captured": "2026-08-05",
+      "notes": "REVIEW: Pretium Resources (Brucejack mine) was fully acquired by Newcrest Mining in March 2022 and delisted; Newcrest itself was subsequently acquired by Newmont in 2023. Newmont Corporation is already a separate row in this workbook. Not an independent Vancouver prospect."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "New Guinea Gold Corporation",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "secondary sources (Yahoo Finance, Northern Miner — not fetched directly)",
+      "date_captured": "2026-08-05",
+      "notes": "REVIEW: available sources describe this company as headquartered in Brisbane, Australia, not Vancouver, with its most recent located news dating to 2013. The D&B listing's Vancouver location could not be corroborated; likely stale or a registered-agent address only. Recommend manual verification."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Queen's Road Capital Investment Ltd",
+      "street_address": "Cheung Kong Centre, Suite 2006, 2 Queen's Road Central",
+      "city": "Hong Kong",
+      "province": null,
+      "country": "Hong Kong",
+      "key_principal": null,
+      "key_principal_title": null,
+      "contact_email": "info@queensrdcapital.com",
+      "contact_phone": null,
+      "website": "queensrdcapital.com",
+      "source_file": "https://queensrdcapital.com/contact/offices/",
+      "date_captured": "2026-08-05",
+      "notes": "REVIEW: the company's own official 'Offices' page lists only a Hong Kong address — no Vancouver office is published anywhere on the site. This directly conflicts with the D&B listing's Vancouver location. Recorded the verified Hong Kong address rather than inferring a Canadian one; recommend treating this as NOT a Vancouver prospect unless independently confirmed otherwise."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Rockgate Capital Corp",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "secondary sources (acquisition history, not fetched directly)",
+      "date_captured": "2026-08-05",
+      "notes": "REVIEW: Rockgate Capital Corp was acquired by Denison Mines in 2013 and no longer exists as an independent entity. The D&B listing entry is stale, over a decade old."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Newmont Canada Corporation",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "secondary sources (Newmont/Goldcorp merger reporting, not fetched directly)",
+      "date_captured": "2026-08-05",
+      "notes": "REVIEW: Newmont Canada Corporation appears to be the same Vancouver office/entity as Newmont Corporation (already a separate row in this workbook, verified with a Vancouver address and contact information), reflecting Newmont's Canadian corporate structure post-Goldcorp merger rather than a distinct company. Recommend treating as the same physical office as Newmont Corporation."
+    }
+  ],
+  "run_notes": "This is the final batch of the 66-company set. 8 of 10 rows flagged REVIEW: two unverifiable/likely-shell entities (17411979 Canada Inc, Ridgetop Forwarding), and six historical/relocated/subsidiary entities whose D&B Vancouver listing does not reflect current independent operations (Puna Operations, Pretium Exploration, New Guinea Gold, Queen's Road Capital [confirmed Hong Kong, not Vancouver], Rockgate Capital, Newmont Canada Corporation). Only Bear Creek Mining and Lucara Diamond Corp were fully verified as independent, active Vancouver companies in this batch."
+}

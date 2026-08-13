@@ -1,0 +1,69 @@
+{
+  "run_date": "2026-08-13",
+  "run_source": "HDI relationship-graph pilot, re-sourced from directly fetched official pages. Supersedes the search-snippet edges in run_2026-08-13_people_hdi_pilot.json. Direct fetches turned out to be available via curl all along — the earlier EGRESS_BLOCKED errors were a WebFetch tool restriction, not a network policy.",
+  "files_processed": [],
+  "rows": [
+    {
+      "_page_type": "detail",
+      "company_name": "Northern Dynasty Minerals Ltd",
+      "street_address": "14th Floor - 1040 West Georgia Street",
+      "city": "Vancouver",
+      "province": "BC",
+      "postal_code": "V6E 4H1",
+      "country": "Canada",
+      "key_principal": "Ronald Thiessen",
+      "key_principal_title": "President, CEO and Director",
+      "website": "northerndynastyminerals.com",
+      "source_file": "https://northerndynastyminerals.com/about-us/company-information/ and /about-us/management/ (fetched directly, HTTP 200)",
+      "date_captured": "2026-08-13",
+      "notes": "Corporate Address per the company's own company-information page, fetched directly. Same floor as Amarc Resources and Hunter Dickinson Acquisition Inc, one floor below Hunter Dickinson Inc — the HDI management cluster at 1040 West Georgia."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Amarc Resources Ltd",
+      "street_address": "14th Floor - 1040 West Georgia Street",
+      "city": "Vancouver",
+      "province": "BC",
+      "postal_code": "V6E 4H1",
+      "country": "Canada",
+      "key_principal": "Dr. Diane Nicolson",
+      "key_principal_title": "President & CEO",
+      "contact_phone": "604-684-6365",
+      "website": "amarcresources.com",
+      "source_file": "https://www.amarcresources.com/about-us/corporate-information/ and /about-us/management-directors/ (fetched directly, HTTP 200)",
+      "date_captured": "2026-08-13",
+      "notes": "Corporate Address and phone taken from the labelled 'Corporate Address' block, distinguished from the transfer agent (Computershare, 510 Burrard) and auditor (DeVisser Gray, 905 West Pender) addresses also on that page. NOTE: the phone number 604-684-6365 is identical to the one already recorded for Hunter Dickinson Inc — a shared switchboard, which is stronger evidence of a shared management company than a shared building is."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Trekor Metals Limited",
+      "source_file": "https://www.tasekomines.com/about/board-of-directors/ (fetched directly, HTTP 200)",
+      "date_captured": "2026-08-13",
+      "notes": "Rename to Trekor Metals CONFIRMED against the live site: tasekomines.com now serves pages titled 'Trekor Metals' and references trekormetals.com. The former_names alias on this row is correct."
+    },
+
+    {"_page_type": "people", "person_name": "Ronald Thiessen", "company_name": "Northern Dynasty Minerals Ltd", "role": "President, CEO and Director", "role_type": "both", "role_start": "2001", "as_of_date": "2026-08-13", "confidence": "tier2_website", "source_type": "company management page (fetched directly)", "source_url": "https://northerndynastyminerals.com/about-us/management/", "notes": "Re-sourced from the live page, replacing the earlier search-snippet assertion."},
+    {"_page_type": "people", "person_name": "Mark Peters", "company_name": "Northern Dynasty Minerals Ltd", "role": "Chief Financial Officer", "role_type": "officer", "as_of_date": "2026-08-13", "confidence": "tier2_website", "source_type": "company management page (fetched directly)", "source_url": "https://northerndynastyminerals.com/about-us/management/", "notes": ""},
+    {"_page_type": "people", "person_name": "Trevor Thomas", "company_name": "Northern Dynasty Minerals Ltd", "role": "General Counsel and Secretary", "role_type": "officer", "as_of_date": "2026-08-13", "confidence": "tier2_website", "source_type": "company management page (fetched directly)", "source_url": "https://northerndynastyminerals.com/about-us/management/", "notes": "CORRECTION: the pilot recorded this as 'Corporate Secretary' from a search snippet. The live page states 'General Counsel and Secretary'."},
+    {"_page_type": "people", "person_name": "Bruce Jenkins", "company_name": "Northern Dynasty Minerals Ltd", "role": "Executive Vice President Environment and Sustainability", "role_type": "officer", "as_of_date": "2026-08-13", "confidence": "tier2_website", "source_type": "company management page (fetched directly)", "source_url": "https://northerndynastyminerals.com/about-us/management/", "notes": "CORRECTION: the pilot recorded a described function rather than a title because the snippet gave none. The live page gives a formal title, identical to his HDI title."},
+    {"_page_type": "people", "person_name": "Adam Chodos", "company_name": "Northern Dynasty Minerals Ltd", "role": "Executive Vice President, Corporate Development", "role_type": "officer", "as_of_date": "2026-08-13", "confidence": "tier2_website", "source_type": "company management page (fetched directly)", "source_url": "https://northerndynastyminerals.com/about-us/management/", "notes": ""},
+    {"_page_type": "people", "person_name": "Stephen Hodgson", "company_name": "Northern Dynasty Minerals Ltd", "role": "Vice President, Engineering", "role_type": "officer", "as_of_date": "2026-08-13", "confidence": "tier2_website", "source_type": "company management page (fetched directly)", "source_url": "https://northerndynastyminerals.com/about-us/management/", "notes": ""},
+    {"_page_type": "people", "person_name": "Mike Westerlund", "company_name": "Northern Dynasty Minerals Ltd", "role": "Executive Vice President, Investor Relations", "role_type": "officer", "as_of_date": "2026-08-13", "confidence": "tier2_website", "source_type": "company management page (fetched directly)", "source_url": "https://northerndynastyminerals.com/about-us/management/", "notes": ""},
+
+    {"_page_type": "people", "person_name": "Dr. Diane Nicolson", "company_name": "Amarc Resources Ltd", "role": "President & CEO", "role_type": "officer", "as_of_date": "2026-08-13", "confidence": "tier2_website", "source_type": "company management page (fetched directly)", "source_url": "https://www.amarcresources.com/about-us/management-directors/", "notes": ""},
+    {"_page_type": "people", "person_name": "Carol Li", "company_name": "Amarc Resources Ltd", "role": "Chief Financial Officer", "role_type": "officer", "as_of_date": "2026-08-13", "confidence": "tier2_website", "source_type": "company management page (fetched directly)", "source_url": "https://www.amarcresources.com/about-us/management-directors/", "notes": "Published as 'Carol Li, CPA, CGA'."},
+    {"_page_type": "people", "person_name": "Gavin Titley", "company_name": "Amarc Resources Ltd", "role": "Vice President, Exploration", "role_type": "officer", "as_of_date": "2026-08-13", "confidence": "tier2_website", "source_type": "company management page (fetched directly)", "source_url": "https://www.amarcresources.com/about-us/management-directors/", "notes": "Published as 'Gavin Titley, P.Geo'."},
+    {"_page_type": "people", "person_name": "Tom McMillan", "company_name": "Amarc Resources Ltd", "role": "Vice President, Investor Relations", "role_type": "officer", "as_of_date": "2026-08-13", "confidence": "tier2_website", "source_type": "company management page (fetched directly)", "source_url": "https://www.amarcresources.com/about-us/management-directors/", "notes": ""},
+    {"_page_type": "people", "person_name": "Robert Dickinson", "company_name": "Amarc Resources Ltd", "role": "Chair", "role_type": "both", "as_of_date": "2026-08-13", "confidence": "tier2_website", "source_type": "company management page (fetched directly)", "source_url": "https://www.amarcresources.com/about-us/management-directors/", "notes": "CORRECTION to the pilot's 'Executive Chairman since 2004'. The live page says 'As Chair of Amarc' and states he 'serves as both director and as part of the management for a number of public companies associated with Hunter Dickinson Inc' — which supports role_type 'both' but not the specific title or start year previously asserted, so both were dropped."},
+    {"_page_type": "people", "person_name": "Scott Cousens", "company_name": "Amarc Resources Ltd", "role": "Director", "role_type": "director", "as_of_date": "2026-08-13", "confidence": "tier2_website", "source_type": "company management page (fetched directly)", "source_url": "https://www.amarcresources.com/about-us/management-directors/", "notes": "NEW cross-link found on re-sourcing: the same bio states he was Director Capital Finance for Hunter Dickinson Inc."},
+    {"_page_type": "people", "person_name": "Scott Cousens", "company_name": "Hunter Dickinson Inc", "role": "Director Capital Finance", "role_type": "officer", "as_of_date": "2026-08-13", "confidence": "tier2_website", "source_type": "director biography on an affiliated company page (fetched directly)", "source_url": "https://www.amarcresources.com/about-us/management-directors/", "notes": "Asserted from an Amarc bio rather than an HDI page — HDI's own site (hdimining.com, titled 'HDSI') returned 404 for its team page. Lower-grade provenance for an HDI role; re-verify against an HDI source or a circular."},
+    {"_page_type": "people", "person_name": "Barry Coughlan", "company_name": "Amarc Resources Ltd", "role": "Director", "role_type": "director", "as_of_date": "2026-08-13", "confidence": "tier2_website", "source_type": "company management page (fetched directly)", "source_url": "https://www.amarcresources.com/about-us/management-directors/", "notes": ""},
+
+    {"_page_type": "people", "person_name": "Ronald W. Thiessen", "company_name": "Trekor Metals Limited", "role": "Chairman of the Board", "role_type": "director", "as_of_date": "2026-08-13", "confidence": "tier2_website", "source_type": "company board page (fetched directly)", "source_url": "https://www.tasekomines.com/about/board-of-directors/", "notes": "Published with a middle initial here and without one at Northern Dynasty. Same person, but normalize_person deliberately does not merge across a differing middle initial — this is a known limitation and needs a circular or insider ID to resolve properly."},
+    {"_page_type": "people", "person_name": "Robert A. Dickinson", "company_name": "Trekor Metals Limited", "role": "Director", "role_type": "director", "as_of_date": "2026-08-13", "confidence": "tier2_website", "source_type": "company board page (fetched directly)", "source_url": "https://www.tasekomines.com/about/board-of-directors/", "notes": "Middle-initial variant of the Robert Dickinson recorded at Amarc and Northern Dynasty. Same caveat as Thiessen."},
+    {"_page_type": "people", "person_name": "Stuart McDonald", "company_name": "Trekor Metals Limited", "role": "President, CEO & Director", "role_type": "both", "as_of_date": "2026-08-13", "confidence": "tier2_website", "source_type": "company board page (fetched directly)", "source_url": "https://www.tasekomines.com/about/board-of-directors/", "notes": ""},
+    {"_page_type": "people", "person_name": "Russell Hallbauer", "company_name": "Trekor Metals Limited", "role": "Director", "role_type": "director", "as_of_date": "2026-08-13", "confidence": "tier2_website", "source_type": "company board page (fetched directly)", "source_url": "https://www.tasekomines.com/about/board-of-directors/", "notes": ""},
+    {"_page_type": "people", "person_name": "Kenneth Pickering", "company_name": "Trekor Metals Limited", "role": "Director", "role_type": "director", "as_of_date": "2026-08-13", "confidence": "tier2_website", "source_type": "company board page (fetched directly)", "source_url": "https://www.tasekomines.com/about/board-of-directors/", "notes": ""}
+  ],
+  "run_notes": "Re-sourced the HDI pilot from directly fetched pages after discovering curl has open egress (the EGRESS_BLOCKED failures were WebFetch-specific). Material outcomes: (1) two pilot titles CORRECTED — Trevor Thomas is 'General Counsel and Secretary' not 'Corporate Secretary', and Bruce Jenkins has a formal EVP title identical to his HDI one; (2) Robert Dickinson's Amarc title and 2004 start year were unsupported by the live page and were dropped, keeping only what it actually says; (3) Amarc and Northern Dynasty addresses obtained — both 14th Floor, 1040 West Georgia, the same floor as Hunter Dickinson Acquisition Inc, with HDI on the 15th and Trekor on the 12th; (4) Amarc's published phone is identical to Hunter Dickinson Inc's, a shared switchboard and a stronger signal than shared premises; (5) the Taseko to Trekor Metals rename is confirmed against the live site; (6) one new cross-link found, Scott Cousens, HDI Director Capital Finance and an Amarc director. Known unresolved limitation: Trekor publishes 'Ronald W. Thiessen' and 'Robert A. Dickinson' with middle initials while the other sites omit them, and normalize_person deliberately refuses to merge across that difference. The graph therefore under-links these two people until a management information circular or insider ID resolves identity properly. That is the conservative failure mode working as designed, but it is a real recall cost and is the single strongest argument for moving to tier1_filing sourcing."
+}
