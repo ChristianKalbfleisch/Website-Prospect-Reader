@@ -40,7 +40,7 @@ running the same payload twice adds nothing.
   "files_processed": ["listing_p1.png"],
   "rows": [
     {
-      "_page_type": "listing",          // or "detail" — drives the status column
+      "_page_type": "listing",          // "listing" | "detail" | "people"
       "company_name": "Teck Resources Limited",
       "revenue_raw": "$1,802M",
       "revenue_usd_millions": 1802,
@@ -57,6 +57,25 @@ running the same payload twice adds nothing.
 
 Only `company_name` and `source_file` are required; omit or `null` anything not
 legibly printed.
+
+A `"people"` row is an edge in the relationship graph rather than a company:
+`person_name`, `company_name`, `role`, `role_type` (`officer|director|both`),
+`role_start`, `role_end`, `as_of_date`, `confidence`
+(`tier1_filing|tier2_website|registry`), `source_type`, `source_url`, `notes`.
+One payload may mix all three `_page_type` values.
+
+## Workbook sheets
+
+- **Companies** — one row per company. The deliverable.
+- **People** — append-only edge list, one row per `(person, company, role)`
+  assertion. Source of truth for the relationship graph.
+
+`co_located_with`, `related_companies` and `management_group` on Companies are
+*derived* from the People sheet plus verified addresses and are recomputed on
+every merge. Never hand-edit them; `--derive` recomputes on demand.
+
+See `CLAUDE.md` for the source hierarchy, entity-resolution rules and the
+officer-over-director weighting that govern how edges are collected.
 
 ## Merge rules
 
@@ -80,7 +99,23 @@ Run on every merge and reportable on demand with `--check`:
 - `key_principal` containing corporate tokens (looks like an entity, not a person)
 - duplicate normalized names that were not merged
 
+On the People sheet: edges missing a `source_url`, an unrecognised `confidence`
+tier or `role_type`, a `company_name` that is neither a row nor a registered
+former name, a person name that looks corporate, and any person asserted as an
+officer of more than six companies at once (usually two people collapsed by
+normalisation rather than a real finding).
+
 Flags are reported, never silently corrected.
+
+## Reserved delimiter
+
+`"; "` separates items in `notes`, `source_file`, `recent_news`,
+`news_source_urls` and `former_names`. A single value written into one of those
+must not contain a semicolon — it would be read back as two items, so a value
+the pipeline constructs (such as a `CONFLICT:` note embedding a source string)
+is passed through `sanitize_item()` first. Skipping that step made re-runs
+append a fresh copy of the same note every time and grow the cell without
+bound.
 
 ## Known field caveats
 

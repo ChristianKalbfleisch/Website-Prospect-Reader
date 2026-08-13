@@ -154,6 +154,149 @@ search for material corporate-action news and record it in two columns —
   companies/which subset to run this against before starting; don't
   assume "the whole workbook" by default.
 
+## Stage 4: the relationship graph (shared officers, directors, offices)
+
+Vancouver junior mining runs on shared boards, shared management companies
+and shared office suites. Hunter Dickinson Inc is the textbook case — a
+private group providing management and technical services to a portfolio of
+listed companies, holding the lease itself while the listed entities are
+effectively tenants of its service model. Mapping those links turns one
+conversation into several prospects and, more importantly, identifies who
+actually signs a lease.
+
+**Why it earns its place for CBRE:** one meeting can reach every company in
+a management group; the real decision-maker is the management company, not
+the listed shell; a shared officer is a warm-intro path; and it dedupes the
+workbook by revealing which "companies" are really one office.
+
+### Schema
+
+`People` is a second worksheet, deliberately not more columns on
+`Companies`: person-to-company is many-to-many and will not flatten into one
+cell without losing the role, the dates and the provenance that make an edge
+trustworthy. (This is the opposite call from `recent_news`, which *is* 1:1
+with a company and so stayed on the main sheet.)
+
+One row per `(person, company, role)` assertion, append-only. Nothing is
+overwritten; a contradicting source becomes its own edge and is surfaced by
+`people_checks()`. Derived onto `Companies`: `co_located_with`,
+`related_companies`, `management_group` — recomputed by `--derive` on every
+run, never hand-edited.
+
+### Source hierarchy — Tier 1 is the spine, Tier 2 is a freshness overlay
+
+Never the reverse.
+
+- **tier1_filing** — management information circulars (Form 51-102F5), which
+  disclose each director nominee's *other public-company directorships*
+  along with age and city of residence; insider filings, which are
+  person-keyed and carry a persistent identifier plus dated
+  appointment/departure events; AIFs (51-102F2); CSE Form 2A listing
+  statements.
+- **registry** — BC Corporate Registry. The only option for the many
+  non-reporting private companies here. Note OrgBook BC does *not* carry
+  director data any more than it carries addresses.
+- **tier2_website** — company Board/Management pages. Fresher than an annual
+  circular but unstructured, and companies routinely fail to remove
+  departed people.
+- **Never** — data brokers, LinkedIn, or org-chart aggregators. theorg.com
+  and theofficialboard.com both surface in searches for this and are both
+  derivative.
+
+Before any bulk retrieval from SEDAR+, check its terms: there is no open
+public API, and automated bulk access may not be permitted. Targeted manual
+lookups are fine. Treat this the same as the other hard rules — verify, do
+not assume.
+
+### Invert the crawl
+
+Do not iterate companies. Insider reporting is **person-keyed**: one lookup
+returns every issuer a person is an insider of, including companies not yet
+in the workbook. Seed from officers of companies already clustered, then
+expand one or two hops. Fewer queries, better recall, and every edge comes
+from a filing rather than a marketing page.
+
+### Entity resolution — where this quietly breaks
+
+**Company name is not a key.** This workbook has already hit eight
+near-collisions (Prodigy Gold Inc vs Prodigy Gold NL, Viscount Mining
+Resources vs Viscount Mining Corp, Contango Mining Canada vs Contango ORE,
+Irwin vs Irving Resources, XCite Resources vs Xcite Energy, Uec Resources vs
+Uranium Energy, Adroit Resources mining vs Adroit Resources IT-staffing,
+Lumina Metals vs Lumina Gold) and a dozen renames (Muzhu → North Atlantic
+Titanium, Benchmark → Thesis Gold → Thesis Gold & Silver, Taseko → Trekor
+Metals, Major Precious Metals → Intrusion, EMC Metals → Scandium
+International, and more). Record every former name in `former_names`;
+`build_alias_index()` resolves staging entries that use an older name onto
+the existing row instead of creating a duplicate. Anchor identity to a hard
+identifier where available — BC incorporation number, or CUSIP/ISIN.
+
+**Person disambiguation: never merge on name alone.** Require two
+corroborating attributes. `normalize_person()` strips honorifics and
+post-nominals but deliberately does *not* collapse initials onto full names,
+because "J. Smith" and "John Smith" may be different people. Available
+discriminators: middle initials, professional suffixes (P.Geo, CPA, ICD.D),
+age and city of residence from circulars, and the persistent insider ID,
+which is definitive when present.
+
+### Date every edge
+
+A graph without dates is wrong. Every edge carries `role_start`, `role_end`,
+`as_of_date` and its source's filing date; "current board" is a query, not a
+stored fact. Acting on a stale interlock is the Sid Keswani error at graph
+scale — that trap has already been hit twice in this project.
+
+### Weighting — shared officers, not shared directors
+
+Interlocking directorates here are so common they are nearly meaningless
+raw. A non-executive board seat never drives a lease; a shared officer does.
+
+| Signal | Weight |
+| --- | --- |
+| Shared officer (CEO/CFO/COO/GC/VP) | High |
+| Shared executive chairman | High (recorded `role_type: both`) |
+| Shared non-executive director | Low — `related_companies` only |
+| Same suite | Medium, corroborating |
+| Same building only | Weak, labelled as such |
+| Registered/records office suite | Zero — in `EXCLUDED_CLUSTER_SUITES` |
+
+`management_group` requires **≥2 shared officers, or ≥1 shared officer plus
+co-location.** A shared board seat alone never forms a group.
+
+Two address subtleties learned the hard way:
+
+- Exclusions are keyed by **suite, not building**. Cathedral Place holds both
+  a law firm acting as registered office *and* First Majestic's genuine head
+  office; excluding the tower wrongly dropped a real co-location.
+- Group corroboration uses **building level, not suite level**. A management
+  company spreads its entities across floors — Hunter Dickinson occupies the
+  12th, 14th and 15th of 1040 West Georgia — so a suite test misses exactly
+  the pattern this is meant to catch. The shared-officer requirement carries
+  the weight; the address only guards against a lone coincidence.
+
+`people_checks()` flags any officer asserted at more than six companies at
+once: that is usually two people collapsed by normalisation, not a finding.
+
+### Validate before scaling
+
+Run the method against a company whose answer is already knowable and score
+it. The HDI pilot (`staging/run_2026-08-13_people_hdi_pilot.json`) is the
+reference: it correctly grouped HDI with Northern Dynasty on three shared
+officers, correctly *declined* to group Trekor Metals where only directors
+are shared, resolved the Taseko→Trekor rename through the alias index, and
+discovered two companies the D&B candidate list never contained. Then audit
+a random 10% against primary filings and write the error rate down, so the
+dataset can be handed over with a stated precision rather than a shrug.
+
+Report confidence tiers separately. Do not blend tier1 filing edges,
+website edges and registry edges into a single number.
+
+### Cost
+
+One research pass per company, same profile as contact enrichment — so the
+same rule applies: **ask which subset before starting.** Never assume the
+whole workbook.
+
 ## Generalizing beyond Vancouver mining
 
 The contact-enrichment half of this pipeline (stage 2 above) is already
