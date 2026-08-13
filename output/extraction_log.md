@@ -1743,3 +1743,54 @@ treated as already processed and are skipped on re-run.
 **Running total:** 359 unique companies — {'complete': 165, 'detail_only': 145, 'listing_only': 49}
 
 **Notes:** 49 unique companies added from the $2.04M-$1.46M revenue tier (one duplicate, Computational Geosciences Inc, appeared across two overlapping screenshots and was merged into a single row). Per user instruction, no advanced/contact-search research performed at this tier — listing data only. First Coal Corporation was already a row in the workbook (previously flagged REVIEW/no public record located in batch 22); this listing entry will just backfill its revenue figure. Quest Mortgage Corp flagged as a likely NAICS misclassification (name suggests a lending company, not mining).
+
+## Run 2026-08-13
+
+**Source:** Stage 3 (recent news / corporate actions) — single-company request: Thesis Gold. 12-month lookback from 2026-08-13 (back to ~2025-08-13).
+
+**Files processed:**
+- none
+
+- Rows added: 0
+- Rows updated: 1
+- Rows unchanged: 0
+- Conflicts: 0
+- ILLEGIBLE flags: 32
+  - Newmont Corporation: ILLEGIBLE: revenue_raw — SALES REVENUE column obscured by D&B live-chat widget overlay
+  - Teck Resources Limited: ILLEGIBLE: revenue_raw — SALES REVENUE column obscured by D&B live-chat widget overlay
+  - Teck Resources Limited: ILLEGIBLE: street_address — Vancouver HQ address not present in static HTML (site footer renders address via JavaScript, not fetched).
+  - First Quantum Minerals Ltd: ILLEGIBLE: revenue_raw — value partially covered by the floating phone-number button
+  - First Quantum Minerals Ltd: ILLEGIBLE: contact_email for Bonita To — no personal email published on official contact page
+  - Pan American Silver Corp: ILLEGIBLE: contact_email — page uses email obfuscation (renders as '*protected email*' in fetched HTML rather than an address)
+  - Capstone Copper Corp: ILLEGIBLE: contact_email — page uses email obfuscation ('[email protected]' placeholder in fetched HTML)
+  - Wheaton Precious Metals Corp: ILLEGIBLE: contact_email, contact_phone — wheatonpm.com contact page returned an active Cloudflare bot-challenge (cf-mitigated: challenge)
+  - EVR Operations Limited: ILLEGIBLE: street_address.
+  - China Gold International Resources Corp Ltd: ILLEGIBLE: contact_email — page uses email obfuscation ('[email protected]' placeholder)
+  - Artemis Gold Inc: ILLEGIBLE: contact_email — page uses email obfuscation ('[email protected]' placeholder)
+  - Amerigo Resources Ltd: ILLEGIBLE: contact_email — both the general and CEO email addresses render as obfuscated placeholders in the fetched HTML
+  - Guanajuato Silver Company Ltd: ILLEGIBLE: contact_email — page uses JavaScript-based spambot protection instead of a plain-text address
+  - Titan Mining Corporation: ILLEGIBLE: street_address — the fetched contact page only lists the company's US mine-site address (Gouverneur, NY) alongside a Canadian phone/email
+  - Atico Mining Corporation: ILLEGIBLE: contact_email — no email published alongside the named Corporate Development contact on the official page.
+  - Heliostar Metals Ltd: ILLEGIBLE: Rob Grey's personal email — obfuscated on the official page
+  - Lida Resources Inc: ILLEGIBLE: street_address, contact_email, contact_phone, website — no official company site could be located distinct from third-party listings (CSE, BNamericas, TradingView). Company has a Vancouver corporate HQ and Lima, Peru administrative HQ per secondary sources
+  - Uranium Royalty Corp: Shares the same 1188 West Georgia Street, Suite 1830 address as Gold Royalty Corp and Uranium Energy Corp's Vancouver office (both already rows in this workbook) — a known registered-agent-suite cluster, not an error. ILLEGIBLE: contact_email — obfuscated on the official page. The company's own news feed shows a 'Sweetwater Transaction' completed and a shareholder-approved 'Arrangement' both in July 2026 — a material recent corporate action worth a stage-3 news check if this company is of interest.
+  - Gunnison Copper Corp: REVIEW: the company's own official contact page lists its head office in Phoenix, Arizona — not Vancouver — directly conflicting with the D&B listing. Recorded the verified Phoenix address rather than inferring a Vancouver one. ILLEGIBLE: contact_email — obfuscated on the official page.
+  - Gold Royalty Corp: ILLEGIBLE: contact_email — obfuscated on the official page. Same building/suite as Uranium Royalty Corp and Uranium Energy Corp's Vancouver office (registered-agent-suite cluster). A separate 'Registered and Records Office' is listed at 1000 Cathedral Place, 925 West Georgia Street — a law-firm-style address, likely legal counsel rather than an operating office.
+  - Golden Shield Resources Inc: ILLEGIBLE: street_address, contact_email, contact_phone. Recommend a direct SEDAR+/CSE search if this entity matters.
+  - Woodfibre LNG Limited Partnership: ILLEGIBLE: contact_email, contact_phone. Recommend re-verifying directly if a street address/phone matters.
+  - Western Magnesium Corporation: Confirmed active, Vancouver-headquartered (magnesium production technology). ILLEGIBLE: street_address, contact_email, contact_phone — not present in static HTML. Recommend re-verifying directly if precision matters.
+  - HighGold Mining Inc.: ILLEGIBLE: contact_email — official page displays it in reversed character order (a JS-deobfuscation trick), not decoded. Nicole Hoeller, VP Communications, is the named Investor/Corporate Development contact, same phone.
+  - Patagonia Gold Corp.: Confirmed active (TSXV: PGDC), Vancouver-headquartered, Argentina-focused gold/silver explorer. ILLEGIBLE: street_address, contact_email, contact_phone — site fetch failed on this attempt. Recommend re-verifying directly if precision matters.
+  - Rio Tinto Exploration Canada Inc: Rio Tinto's Canadian operations are primarily centered on Iron Ore Company of Canada (Quebec/Labrador) and Rio Tinto Fer et Titane (Quebec) rather than a distinct Vancouver office. ILLEGIBLE: street_address, contact_email, contact_phone. Recommend direct verification if this entity matters.
+  - Iberdrola Energy Projects Canada Corporation: This is a Canadian project-development subsidiary of Iberdrola S.A. (Spanish multinational utility). ILLEGIBLE: street_address, contact_email, contact_phone. Not a mining company — energy/utility sector. Recommend direct verification if this entity matters.
+  - MGX Minerals Inc: Confirmed active — led by CEO/Founder Jared Lazerson, advancing the Fran Gold Project near Fort St. James, BC (~$18-20 million invested, 104+ drill holes). Official website is currently non-functional ('Site Under Construction'). ILLEGIBLE: street_address, contact_email, contact_phone. Recommend re-verifying if the site comes back online.
+  - Basin Uranium Corp: Confirmed active as of Dec 2024 (CSE-listed, Vancouver-based). ILLEGIBLE: street_address, contact_email, contact_phone, website — no official site located distinct from financial-news aggregators. Recommend a direct CSE/SEDAR+ search if this entity matters.
+  - Altima Energy Inc: renamed from Altima Resources Ltd in December 2024. ILLEGIBLE: street_address, contact_email, contact_phone, website. Recommend a direct search if this entity matters.
+  - Lumina Metals Corp: contact Scott Hicks, shicks@luminagold.com, +1 604 646 1890, per search results — recorded for reference but not verified directly). ILLEGIBLE: street_address, contact_email, contact_phone for Lumina Metals specifically. Recommend re-verifying directly if precision matters.
+  - B C & Yukon Chamber of Mines: This organization renamed itself the Association for Mineral Exploration British Columbia (AME BC) in 2005 — this is the current name and site, still Vancouver-based. Verified this is distinct from the similarly-named 'Yukon Chamber of Mines' (Whitehorse, YT), which some search results conflated it with. Not a mining company itself but the region's lead mineral-exploration industry association — a real, active, contactable organization. ILLEGIBLE: contact_email — obfuscated on the official page.
+- Quality flags: 1
+  - POSTAL_FORMAT: Niocorp Developments Ltd postal_code='80112' does not match A1A 1A1
+
+**Running total:** 359 unique companies — {'complete': 165, 'detail_only': 145, 'listing_only': 49}
+
+**Notes:** Stage 3 on one company (Thesis Gold) at user request. Five in-window items found across four categories: expansion/new project (x2), management change, IPO/listing change, capital raise. No insolvency or acquisition-of-this-company signals — the company is the acquirer/consolidator side of its history, and is well capitalised. Also corrects a factual error in the batch-25 REVIEW note for this row (Centerra was miscast as a merger party, and the 2023 Benchmark combination was omitted).
