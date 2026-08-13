@@ -267,7 +267,11 @@ def _clean_address(value) -> str:
     a = re.sub(r"\bpender st w\b", "west pender street", a)
     a = re.sub(r"\bgeorgia st w\b", "west georgia street", a)
     a = re.sub(r"\bst\b", "street", a)
-    return re.sub(r"\s+", " ", a).strip()
+    a = re.sub(r"\s+", " ", a).strip()
+    # Removing a leading "14th Floor - " leaves a stray separator. No real
+    # address begins with one, so stripping is safe — and leaving it in forks
+    # one building into two keys.
+    return re.sub(r"^[\s\-–,]+", "", a).strip()
 
 
 def address_building_key(value) -> str:
@@ -291,21 +295,38 @@ def address_building_key(value) -> str:
     return re.sub(r"\s+", " ", " ".join(tokens)).strip()
 
 
-def address_suite_key(value) -> str:
-    """Full address including the suite, with the suite number sorted to front.
+FLOOR_RE = re.compile(
+    r"(?:\b(\d+)(?:st|nd|rd|th)?\s*(?:floor|fl)\b|\b(?:floor|fl)\s*(\d+)(?:st|nd|rd|th)?\b)",
+    re.I,
+)
 
-    Two companies sharing this occupy the same suite, which is strong evidence
-    of a shared management company or corporate-services provider. Handles the
-    two orderings the same suite appears in across sources ("1830 - 1188 West
-    Georgia" and "1188 West Georgia Street 1830").
+
+def address_suite_key(value) -> str:
+    """Full address including its unit designator, unit sorted to the front.
+
+    Two companies sharing this occupy the same suite or the same floor, which is
+    strong evidence of a shared management company or corporate-services
+    provider. Handles the orderings the same unit appears in across sources
+    ("1830 - 1188 West Georgia" and "1188 West Georgia Street 1830").
+
+    A floor counts as the unit when no suite number is given. Discarding floors
+    was a real miss: Hunter Dickinson's cluster puts Amarc Resources, Northern
+    Dynasty and HDI Acquisition all on the 14th floor of 1040 West Georgia
+    while Trekor Metals sits on the 12th, and a floor-blind key cannot tell
+    those apart.
     """
-    a = _clean_address(value)
+    raw = str(value or "")
+    a = _clean_address(raw)
     if not a:
         return ""
-    building = address_building_key(value)
-    suite = a.replace(building, " ").strip()
-    suite = re.sub(r"[-–]", " ", suite)
-    suite = re.sub(r"\s+", "", suite)
+    building = address_building_key(raw)
+    if not building:
+        return ""
+    suite = re.sub(r"\s+", "", re.sub(r"[-–]", " ", a.replace(building, " ").strip()))
+    if not suite:
+        match = FLOOR_RE.search(raw)
+        if match:
+            suite = "f" + (match.group(1) or match.group(2))
     return f"{suite}|{building}" if suite else ""
 
 
@@ -831,6 +852,32 @@ def people_checks(people: list[dict], rows: list[dict]) -> list[str]:
                 f"EDGE_HIGH_DEGREE: {pkey!r} is an officer of {len(companies)} "
                 f"companies — verify this is one person, not a name collision"
             )
+
+    # normalize_person() refuses to merge "Robert Dickinson" with
+    # "Robert A. Dickinson" because initials genuinely distinguish some people.
+    # That is the right default, but it means one person can enter the graph
+    # twice under two spellings. Where both variants appear on the SAME company
+    # they are almost certainly one person, so surface it for a human instead of
+    # merging silently. Resolve with a circular or insider ID, not a guess.
+    per_company: dict[str, set[str]] = {}
+    for edge in people:
+        ckey = normalize(edge.get("company_name", ""))
+        pkey = normalize_person(edge.get("person_name", ""))
+        if ckey and pkey:
+            per_company.setdefault(ckey, set()).add(pkey)
+    for ckey, names in per_company.items():
+        ordered = sorted(names)
+        for i, a in enumerate(ordered):
+            at = a.split()
+            for b in ordered[i + 1:]:
+                bt = b.split()
+                if len(at) < 2 or len(bt) < 2 or a == b:
+                    continue
+                if at[0] == bt[0] and at[-1] == bt[-1] and len(at) != len(bt):
+                    flags.append(
+                        f"EDGE_NAME_VARIANT: {ckey!r} carries both {a!r} and "
+                        f"{b!r} — likely one person recorded twice"
+                    )
 
     return flags
 
