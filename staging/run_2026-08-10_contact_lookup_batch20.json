@@ -1,0 +1,171 @@
+{
+  "run_date": "2026-08-10",
+  "run_source": "Contact lookup, batch 20 — remaining companies from the newest listing batch. Given how consistently unlocatable this tier has been, entities with no search hits after a reasonable attempt are flagged and left rather than exhaustively re-searched, per instruction.",
+  "files_processed": [],
+  "rows": [
+    {
+      "_page_type": "detail",
+      "company_name": "Cariboo Copper Corp",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "opengovca.com Vancouver business licence listing (not the company's own site)",
+      "date_captured": "2026-08-10",
+      "notes": "REVIEW: business licence on file was issued December 2011 and expired December 31, 2012. No evidence of activity since. Recommend treating as dormant."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Pembrook Copper Corp",
+      "contact_email": null,
+      "contact_phone": null,
+      "website": "pembrookmining.com",
+      "source_file": "search-engine snippet (pembrookmining.com is an old-style site; no confirmation of recent activity)",
+      "date_captured": "2026-08-10",
+      "notes": "Peru-focused copper/gold/silver exploration company, Vancouver-headquartered per company description, but the official site appears dated and no recent (post-2020) activity could be confirmed. Recommend manual verification of current status before treating as active."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "East West Minerals Ltd",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "search-engine snippets (Simply Wall St, MarketScreener)",
+      "date_captured": "2026-08-10",
+      "notes": "Confirmed active — an oil and gas company (Canada/New Zealand/Romania), recently renamed to 'East West Minerals Ltd' as of October 2025 (previously a different name, per naming-change reference). No official website, address, or contact located."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Charlotte Resources Ltd",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "no public record located",
+      "date_captured": "2026-08-10",
+      "notes": "REVIEW: no official website, news coverage, or financial-database listing could be located. Recommend manual verification via BC Registry before treating as a live prospect."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Red Dragon Resources Corp",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "no public record located",
+      "date_captured": "2026-08-10",
+      "notes": "REVIEW: no official website, news coverage, or financial-database listing could be located. Recommend manual verification via BC Registry before treating as a live prospect."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "International Bethlehem Mining Corp",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "no public record located",
+      "date_captured": "2026-08-10",
+      "notes": "REVIEW: no official website, news coverage, or financial-database listing could be located. Recommend manual verification via BC Registry before treating as a live prospect."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Palo Duro Energy Inc",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "directory listing only, no official site located",
+      "date_captured": "2026-08-10",
+      "notes": "REVIEW: appears in a general energy-company directory listing but no official website, address, or contact could be located. Recommend manual verification via BC Registry before treating as a live prospect."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "RB Energy Inc",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "no public record located distinct from an unrelated historical Quebec lithium company of the same name (RB Energy / Canada Lithium, ceased operations 2015)",
+      "date_captured": "2026-08-10",
+      "notes": "REVIEW: an unrelated historical company named RB Energy Inc (Quebec lithium, entered CCAA in 2014-2015) surfaced in search results, but no confirmation this is the same entity as the Vancouver company in this listing. Recommend manual verification via BC Registry before treating as a live prospect."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "International Barytex Resources Ltd",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "no public record located",
+      "date_captured": "2026-08-10",
+      "notes": "REVIEW: no official website, news coverage, or financial-database listing could be located. Recommend manual verification via BC Registry before treating as a live prospect."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "K+S Legacy GP Inc",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "not researched separately",
+      "date_captured": "2026-08-10",
+      "notes": "REVIEW: almost certainly a related general-partner entity to K+S Canada Holdings Ltd (already a row in this workbook, part of K+S Potash Canada's Legacy project). Same corporate family, likely same registered office; not independently verified."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Torrent Gold Inc",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "no public record located",
+      "date_captured": "2026-08-10",
+      "notes": "REVIEW: no official website, news coverage, or financial-database listing could be located. Recommend manual verification via BC Registry before treating as a live prospect."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Sniper Resources Ltd",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "no public record located",
+      "date_captured": "2026-08-10",
+      "notes": "REVIEW: no official website, news coverage, or financial-database listing could be located. Recommend manual verification via BC Registry before treating as a live prospect."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Riva Gold Corporation",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "not researched in depth",
+      "date_captured": "2026-08-10",
+      "notes": "Not yet researched due to time constraints on this batch."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Great Michael Resources Ltd",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "no public record located",
+      "date_captured": "2026-08-10",
+      "notes": "REVIEW: no official website, news coverage, or financial-database listing could be located. Recommend manual verification via BC Registry before treating as a live prospect."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Norzan Enterprises Ltd",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "no public record located",
+      "date_captured": "2026-08-10",
+      "notes": "REVIEW: no official website, news coverage, or financial-database listing could be located. Recommend manual verification via BC Registry before treating as a live prospect."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Uec Resources Ltd",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "no public record located distinct from unrelated 'UEC' (Uranium Energy Corp, already a row) ticker collisions",
+      "date_captured": "2026-08-10",
+      "notes": "REVIEW: no official website distinct from Uranium Energy Corp (already a row in this workbook, unrelated entity) could be located. Recommend manual verification via BC Registry before treating as a live prospect."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "HD Mining International Ltd",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "secondary sources (Wikipedia — HD Mining International, Murray River coal project)",
+      "date_captured": "2026-08-10",
+      "notes": "REVIEW: known for a controversial temporary foreign worker permit dispute around 2012-2013 involving its Murray River coal project; no confirmation of current active status found. Recommend manual verification before treating as a live prospect."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Viscount Mining Resources Ltd",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "not researched separately",
+      "date_captured": "2026-08-10",
+      "notes": "Not yet researched due to time constraints on this batch. Note: distinct from 'Viscount Mining Corp' (a different, US-focused silver company) — possible naming confusion to watch for."
+    }
+  ],
+  "run_notes": "18 companies triaged from the newest listing batch. Given the very low hit rate at this revenue tier (most searches return either nothing or confirm dormancy/acquisition), remaining unresearched entries were flagged rather than exhaustively searched one-by-one. Still to do: Riva Gold Corporation, Viscount Mining Resources Ltd (partial), StrategX Elements Corp, Pegmatite One Lithium and Gold Corp, Coronation Mines Ltd, Lumina Metals Corp, Canadian De Hua International Trading Ltd, Magnus International Resources Inc, B C & Yukon Chamber of Mines, CanXGold Mining Corp, Norra Metals Corp, Xemplar Energy Corp, XCite Resources Inc, Africo Resources Ltd, Valory Resources Inc., Contango Mining Canada Inc, Adonis Minerals Corp — plus the entire older 71-company backlog."
+}

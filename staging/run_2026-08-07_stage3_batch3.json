@@ -1,0 +1,98 @@
+{
+  "run_date": "2026-08-07",
+  "run_source": "Stage-3 corporate-action + hiring/expansion-signal news check, batch 3.",
+  "files_processed": [],
+  "rows": [
+    {
+      "_page_type": "detail",
+      "company_name": "Meren Energy Inc",
+      "recent_news": "expansion/new project: preparing 2026 drilling campaigns across Nigerian producing hubs (Agbami, Akija, Aegina, Akpo), rigs contracted; capital raise: refinanced its reserves-based lending facility, strengthening liquidity (Q1 2026)",
+      "news_source_urls": "https://www.directorstalkinterviews.com/meren-energy-sets-out-growth-priorities-after-first-quarter-update/4121255340; https://www.directorstalkinterviews.com/meren-energy-highlights-strong-earnings-liquidity-and-african-market-positioning/4121255787",
+      "date_captured": "2026-08-07",
+      "source_file": "stage-3 news check",
+      "notes": ""
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "First Majestic Silver Corp",
+      "recent_news": "expansion/new project: increased 2026 capex budget to $318-344 million (from $213-236 million), primarily for the Jerritt Canyon restart (Nevada, $75 million) and Santa Elena plant expansion to 3,500 tpd; acquisition/merger: sold the San Martin Silver Mine for US$90 million (agreement, July 2026) and the Del Toro Silver Mine to Sierra Madre Gold and Silver (completed 2026, announced Dec 2025)",
+      "news_source_urls": "https://www.tipranks.com/news/company-announcements/first-majestic-silver-lifts-2026-guidance-on-strong-q2-output-and-mexican-mine-expansion; https://www.tipranks.com/news/company-announcements/first-majestic-silver-lifts-2026-guidance-on-strong-q2-output-and-mexican-mine-expansion",
+      "date_captured": "2026-08-07",
+      "source_file": "stage-3 news check",
+      "notes": "The Jerritt Canyon restart is a hiring/expansion signal (new underground equipment, 12,800+ metres of exploration drilling) though no specific headcount figure was published."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Aris Mining Corporation",
+      "recent_news": "expansion/new project: advancing the Marmato bulk mine and CIP plant expansion (Colombia), first gold expected Q4 2026, Lower Mine expanded 25% to 5,000 tpd, total project cost risen to ~$400 million; expansion/new project: Segovia and Marmato expansions together targeting ~500,000 oz/year gold production",
+      "news_source_urls": "https://www.tipranks.com/news/company-announcements/aris-mining-posts-strong-q2-2026-results-and-advances-marmato-expansion; https://www.tipranks.com/news/company-announcements/aris-mining-posts-strong-q2-2026-results-and-advances-marmato-expansion",
+      "date_captured": "2026-08-07",
+      "source_file": "stage-3 news check",
+      "notes": "Company stated no equity financing since Feb 2021 and no current plans to issue securities, funding growth from operating cash flow."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Imperial Metals Corporation",
+      "recent_news": "expansion/new project: advancing a feasibility study for the Red Chris Block Cave underground expansion project, with completion and possible joint-venture approval expected H2 2026",
+      "news_source_urls": "https://www.globenewswire.com/news-release/2026/02/19/3241640/0/en/Imperial-Provides-Update-on-Red-Chris-2025-Production-and-Production-Guidance-for-2026.html",
+      "date_captured": "2026-08-07",
+      "source_file": "stage-3 news check",
+      "notes": "Red Chris is majority-owned/operated by Newmont (already a row in this workbook); Imperial holds a 30% interest. Mount Polley 2026 guidance also confirmed active operations."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Endeavour Silver Corp",
+      "recent_news": "expansion/new project: Terronera mine (Mexico) commenced commercial production October 1, 2025, ramping toward 30% production growth in 2026 (2,000 t/d plant throughput); capital raise/expansion: increased 2026 capex guidance to $181 million (from $157 million), including $48 million for Pitarrilla and $18 million for Kolpa infrastructure; acquisition/merger: sold the Bolanitos mine, January 2026, as part of asset rebalancing",
+      "news_source_urls": "https://www.investing.com/news/company-news/endeavour-silver-july-2026-slides-30-production-growth-targets-93CH-4825967; https://www.tipranks.com/news/company-announcements/endeavour-silver-boosts-q2-2026-output-as-terronera-and-kolpa-ramp-up; https://www.tipranks.com/news/company-announcements/endeavour-silver-boosts-q2-2026-output-as-terronera-and-kolpa-ramp-up",
+      "date_captured": "2026-08-07",
+      "source_file": "stage-3 news check",
+      "notes": ""
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Northgate Minerals Corporation",
+      "recent_news": null,
+      "news_source_urls": null,
+      "date_captured": "2026-08-07",
+      "source_file": "stage-3 news check",
+      "notes": "Skipped dedicated news search — already flagged REVIEW (absorbed into AuRico Gold in 2011, over a decade defunct). No indication this status has changed."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Asante Gold Corporation",
+      "recent_news": "capital raise: completed a $500 million financing package by August 2025 to fund Bibiani ramp-up, including a $175 million commitment from Appian Capital Advisory and a $170 million facility from Rand Merchant Bank, plus a $30 million accordion from GCB Bank; expansion/new project: commissioned the Bibiani sulphide treatment plant, gold recovery improved from 60% to over 90% following oxygen plant installation (December 2025), targeting ~450,000 oz in 2026 from Bibiani and Chirano combined",
+      "news_source_urls": "https://www.ecofinagency.com/news/1906-47334-asante-gold-seeks-470-million-to-scale-up-production-in-ghana; https://www.ainvest.com/news/asante-gold-operational-turnaround-growth-potential-2026-2512/",
+      "date_captured": "2026-08-07",
+      "source_file": "stage-3 news check",
+      "notes": ""
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Trekor Metals Limited",
+      "recent_news": "IPO/listing change: shareholders approved renaming Taseko Mines Limited to Trekor Metals Limited at the AGM held June 24, 2026 in Vancouver; expansion/new project: Florence Copper (Arizona) SX/EW plant began operations February 2026, first cathodes produced early March, 5.2 million lbs copper produced in Q2 2026; expansion/new project: Yellowhead Project (south-central BC) advancing, positioned as a potential future leading North American copper asset",
+      "news_source_urls": "https://www.mining.com/taseko-seeks-rebrands-as-trekor-to-reflect-growth/; https://www.juniorminingnetwork.com/junior-miner-news/press-releases/738-tsx/tko/207318-trekor-announces-36-million-pounds-of-copper-production-from-gibraltar-and-florence-copper-in-the-second-quarter.html",
+      "date_captured": "2026-08-07",
+      "source_file": "stage-3 news check",
+      "notes": "This confirms and dates the Taseko-to-Trekor rename already noted in an earlier contact-verification batch."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Petaquilla Minerals Ltd",
+      "recent_news": null,
+      "news_source_urls": null,
+      "date_captured": "2026-08-07",
+      "source_file": "stage-3 news check",
+      "notes": "Skipped dedicated news search — already flagged REVIEW (delisted 2015, mine abandoned same year). No indication this status has changed."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "K92 Mining Inc",
+      "recent_news": "expansion/new project: Stage 3 process plant construction/commissioning completed under budget, first production October 2025, record 2025 annual production of 174 koz AuEq; expansion/new project: advancing the fully-funded Stage 4 expansion targeting 400,000+ oz/year by late 2027 (~200% throughput increase from 2025 levels, 1.8 Mtpa); expansion/new project: increasing 2026 exploration budget by 50%+ to US$31-35 million, up to 14 drill rigs active",
+      "news_source_urls": "https://pngmining.com/k92-posts-record-quarter-as-kainantu-development-surges/; https://www.mining.com/k92-minings-kainantu-expansion-pours-first-gold; https://www.k92mining.com/news/k92-mining-announces-2025-q4-and-annual-financial-13421/",
+      "date_captured": "2026-08-07",
+      "source_file": "stage-3 news check",
+      "notes": "Stage 4 expansion (200% throughput increase) is a major hiring/expansion signal for the Kainantu operation, though no specific headcount figure was published for the Vancouver corporate office."
+    }
+  ],
+  "run_notes": "Batch 3 of the full-workbook stage-3 rollout. 8 of 10 companies got real, sourced news; Northgate Minerals and Petaquilla Minerals were deliberately skipped as already-flagged REVIEW/defunct entities."
+}

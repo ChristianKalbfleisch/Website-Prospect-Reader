@@ -1,0 +1,143 @@
+{
+  "run_date": "2026-08-06",
+  "run_source": "Mix of direct official-page fetches and search-engine snippets where noted. Several entities flagged REVIEW as historical/merged/subsidiary/domain-parked.",
+  "files_processed": [
+    "https://www.tridentresourcescorp.com/corporate/overview/",
+    "https://shamaranpetroleum.com/contact/contact-info/",
+    "https://lucamining.com/contact/",
+    "https://www.hivedigitaltechnologies.com/contact"
+  ],
+  "rows": [
+    {
+      "_page_type": "detail",
+      "company_name": "Trident Resources Corp.",
+      "street_address": "505 Burrard Street, Suite 1030",
+      "city": "Vancouver",
+      "province": "BC",
+      "postal_code": "V7X 1M5",
+      "country": "Canada",
+      "key_principal": "Lubica Keighery",
+      "key_principal_title": "IR and Corporate Development",
+      "contact_email": "Lubica.keighery@tridentresourcescorp.com",
+      "contact_phone": "+1 778 889 5476 (direct); (604) 687-3376 (general office)",
+      "website": "www.tridentresourcescorp.com",
+      "source_file": "https://www.tridentresourcescorp.com/corporate/overview/",
+      "date_captured": "2026-08-06",
+      "notes": "Recently rebranded from Rockridge/MAS Gold/Eros three-way consolidation (2025); currently active Saskatchewan gold exploration company."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Magellan Minerals Ltd",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "magellanminerals.com (domain redirects to a parking-page lander)",
+      "date_captured": "2026-08-06",
+      "notes": "REVIEW: magellanminerals.com now redirects to a generic domain-parking lander page, indicating the company's official web presence has lapsed. Search results conflict — one 2016 report describes an acquisition by Anfield Nickel Corp, while other secondary sources reference 2026 news activity — but no live official site could be verified. Recommend manual verification before treating as a live Vancouver prospect."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "HIVE Digital Technologies Ltd",
+      "street_address": "789 W Pender Street, Suite 855",
+      "city": "Vancouver",
+      "province": "BC",
+      "postal_code": "V6C 1H2",
+      "country": "Canada",
+      "key_principal": null,
+      "key_principal_title": null,
+      "contact_email": "info@hivedigitaltech.com",
+      "contact_phone": "604-664-1078",
+      "website": "www.hivedigitaltechnologies.com",
+      "source_file": "https://www.hivedigitaltechnologies.com/contact (email/phone fetched directly; street address sourced from a search-engine snippet of the same official site, not present on the contact page itself)",
+      "date_captured": "2026-08-06",
+      "notes": "Email and phone confirmed via direct fetch. Address not shown on the fetched contact page; sourced from search snippet instead. Recommend re-verifying the address directly if precision matters."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Mcilvenna Bay Operating Ltd",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "secondary sources (Foran Mining / Eldorado Gold acquisition reporting, not fetched directly)",
+      "date_captured": "2026-08-06",
+      "notes": "REVIEW: McIlvenna Bay is a copper project operated by Foran Mining Corporation, which was itself acquired by Eldorado Gold in April 2026 (Eldorado Gold is already a separate row in this workbook). This is a mine-site operating entity, not an independent Vancouver corporate office."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Queenstake Resources Ltd",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "secondary sources (SEC filings, acquisition history, not fetched directly)",
+      "date_captured": "2026-08-06",
+      "notes": "REVIEW: Queenstake Resources was acquired by Veris Gold in 2007; Veris Gold itself filed for bankruptcy in 2014 and is now inactive. This entity has been defunct for close to two decades — the D&B listing entry is stale."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "ShaMaran Petroleum Corp",
+      "street_address": "1055 Dunsmuir Street, Suite 2800",
+      "city": "Vancouver",
+      "province": "BC",
+      "postal_code": "V7X 1L2",
+      "country": "Canada",
+      "key_principal": null,
+      "key_principal_title": null,
+      "contact_email": "info@shamaranpetroleum.com",
+      "contact_phone": "+1-604-689-7842",
+      "website": "www.shamaranpetroleum.com",
+      "source_file": "https://shamaranpetroleum.com/contact/contact-info/",
+      "date_captured": "2026-08-06",
+      "notes": "The only named Investor Relations contact published (Robert Eriksson) is based in Sweden, not Vancouver, so a Canadian general email/phone was used instead. Shares the same Vancouver registered-office building (1055 Dunsmuir Street) as several other Lundin-family companies already in this workbook — a known registered-agent-suite pattern, not an error."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Copper Mountain Mining Inc",
+      "street_address": "700 West Pender Street, Suite 1700",
+      "city": "Vancouver",
+      "province": "BC",
+      "postal_code": "V6C 1G8",
+      "country": "Canada",
+      "key_principal": null,
+      "key_principal_title": null,
+      "contact_email": null,
+      "contact_phone": null,
+      "website": "www.cumtn.com",
+      "source_file": "cumtn.com/investors/contact/ (live fetch 403'd; sourced from search-engine snippet of the company's own official page)",
+      "date_captured": "2026-08-06",
+      "notes": "Live fetch returned 403; address sourced from a search-engine snippet of the same official domain, no email/phone surfaced in that snippet. Recommend re-verifying directly if precision matters."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Veris Gold Corp",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "secondary sources (SEC/bankruptcy court filings, not fetched directly)",
+      "date_captured": "2026-08-06",
+      "notes": "REVIEW: Veris Gold filed for Chapter 15 bankruptcy in 2014; its Jerritt Canyon assets were sold off in 2015 and the bankruptcy case formally closed in 2018. This is an inactive BC corporation with no current operations."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Luca Mining Corp",
+      "street_address": "1111 Melville Street, Suite 410",
+      "city": "Vancouver",
+      "province": "BC",
+      "postal_code": "V6E 3V6",
+      "country": "Canada",
+      "key_principal": null,
+      "key_principal_title": null,
+      "contact_email": "ir@lucamining.com",
+      "contact_phone": "+1-604-684-8071",
+      "website": "www.lucamining.com",
+      "source_file": "https://lucamining.com/contact/",
+      "date_captured": "2026-08-06",
+      "notes": ""
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Klondex Mines Unlimited Liability Company",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "secondary sources (Hecla Mining acquisition press releases, not fetched directly)",
+      "date_captured": "2026-08-06",
+      "notes": "REVIEW: Klondex Mines was acquired by Hecla Mining in July 2018 (Nevada assets); its Canadian operations were spun off separately into Havilah Mining Corp, which is not in this workbook. Klondex has not existed independently since 2018."
+    }
+  ],
+  "run_notes": "5 of 10 companies in this batch flagged REVIEW as historical/merged/defunct/domain-parked: Magellan Minerals (parked domain), Mcilvenna Bay Operating (Foran Mining/Eldorado Gold subsidiary), Queenstake Resources (defunct since 2007/2014), Veris Gold (bankrupt since 2014), Klondex Mines (acquired by Hecla 2018)."
+}

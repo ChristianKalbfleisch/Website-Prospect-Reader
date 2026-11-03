@@ -1,0 +1,188 @@
+{
+  "run_date": "2026-08-10",
+  "run_source": "Contact lookup, batch 19 — from the newest ($2.04M-$2.09M) listing batch. Mix of search snippets; several dormant/acquired entities flagged and left without deep research per instruction.",
+  "files_processed": [
+    "https://pstlaw.ca/contact/"
+  ],
+  "rows": [
+    {
+      "_page_type": "detail",
+      "company_name": "B2Gold Corp",
+      "street_address": "Park Place, Suite 3400, 666 Burrard Street",
+      "city": "Vancouver",
+      "province": "BC",
+      "postal_code": "V6C 2X8",
+      "country": "Canada",
+      "contact_email": "info@b2gold.com",
+      "contact_phone": "+1 604 681 8371; toll free +1 800 316 8855",
+      "website": "www.b2gold.com",
+      "source_file": "b2gold.com/contact/contact-us/ (live fetch still returns an active Cloudflare bot-challenge, unchanged from earlier batches; address sourced from a search-engine snippet of the company's own official page instead)",
+      "date_captured": "2026-08-10",
+      "notes": "Resolves the long-standing gap on this row — B2Gold's contact page has been Cloudflare-blocked since the first contact-enrichment batch of this project. This address/phone/email come from a search snippet of the official b2gold.com page, not a direct fetch (still blocked). Recommend re-verifying directly if precision matters."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Red Chris Development Company Ltd",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "secondary sources (Newmont operations page, not fetched directly)",
+      "date_captured": "2026-08-10",
+      "notes": "REVIEW: Red Chris mine is now a Newmont Corporation operation (via the 2023 Newcrest acquisition; Newmont is already a verified row in this workbook). Not an independent Vancouver prospect."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Newcrest Red Chris Mining Limited",
+      "street_address": "1066 West Hastings St, Suite 800",
+      "city": "Vancouver",
+      "province": "BC",
+      "postal_code": "V6E 3X1",
+      "country": "Canada",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "search-engine snippet (D&B directory listing, not the company's own site)",
+      "date_captured": "2026-08-10",
+      "notes": "REVIEW: same Red Chris/Newcrest/Newmont chain as Red Chris Development Company Ltd above. Newmont Corporation is already a verified row in this workbook. Not an independent prospect."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Goldcorp Inc",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "not researched separately",
+      "date_captured": "2026-08-10",
+      "notes": "REVIEW: distinct D&B entry from 'Goldcorp Canada Ltd' (already flagged REVIEW in an earlier batch) but almost certainly part of the same corporate family, folded into Newmont Corporation after the 2019 merger (already a verified row in this workbook). Not an independent prospect."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Hecla Canada Ltd",
+      "street_address": "800 West Pender Street, Suite 970",
+      "city": "Vancouver",
+      "province": "BC",
+      "postal_code": "V6C 2V6",
+      "country": "Canada",
+      "contact_email": null,
+      "contact_phone": "+1 604.682.6201",
+      "source_file": "search-engine snippet (D&B directory listing, not the company's own site)",
+      "date_captured": "2026-08-10",
+      "notes": "This is a Canadian subsidiary office of Hecla Mining Company (headquartered in Coeur d'Alene, Idaho, USA) — a real, independently-contactable Vancouver office, not flagged REVIEW. Recommend re-verifying directly if precision matters."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "B2Gold Logistics Corp",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "not researched separately",
+      "date_captured": "2026-08-10",
+      "notes": "REVIEW: almost certainly a logistics subsidiary of B2Gold Corp (already a row in this workbook, Park Place, Suite 3400 - 666 Burrard Street, Vancouver BC V6C 2X8). Same corporate office presumed. Not an independent prospect."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "NioCorp Developments Ltd",
+      "street_address": "7000 S. Yosemite Street, Suite 115",
+      "city": "Centennial",
+      "province": "CO",
+      "postal_code": "80112",
+      "country": "United States",
+      "key_principal": "Jim Sims",
+      "key_principal_title": "Corporate Communications Officer",
+      "contact_email": "jim.sims@niocorp.com",
+      "contact_phone": "(720) 334-7066; general office 720-639-4647",
+      "website": "www.niocorp.com",
+      "source_file": "https://www.niocorp.com/contact-us/ (verified via search snippet of the official page)",
+      "date_captured": "2026-08-10",
+      "notes": "REVIEW: the company's own official contact page lists its head office in Centennial, Colorado — not Vancouver. Recorded the verified Colorado address rather than inferring a Vancouver one."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Rare Element Resources Ltd",
+      "street_address": null,
+      "city": "Littleton",
+      "province": "CO",
+      "country": "United States",
+      "contact_email": null,
+      "contact_phone": "(720) 278-2460",
+      "website": "www.rareelementresources.com",
+      "source_file": "search-engine snippets (SEC filings, company FAQ page, not fetched directly)",
+      "date_captured": "2026-08-10",
+      "notes": "REVIEW: headquartered in Colorado, not Vancouver; now a subsidiary of General Atomic Technologies Corporation, developing the Bear Lodge rare-earth project in Wyoming. Recorded the verified Colorado information rather than a Vancouver address."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Deakin Equipment Ltd.",
+      "street_address": "1361 Powell Street",
+      "city": "Vancouver",
+      "province": "BC",
+      "postal_code": "V5L 1G8",
+      "country": "Canada",
+      "contact_email": null,
+      "contact_phone": "(604) 253-2685",
+      "website": "deakin.com",
+      "source_file": "search-engine snippets (Yelp listing, not the company's own site)",
+      "date_captured": "2026-08-10",
+      "notes": "Confirmed active — a survey/outdoor/mining-supply equipment retailer, locally owned and operated in Vancouver. Not a mining company itself but a real, active local business serving the sector."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Pape Salter Teillet LLP",
+      "street_address": "595 Burrard Street, P.O. Box 48146, Bentall",
+      "city": "Vancouver",
+      "province": "BC",
+      "postal_code": "V7Z 1N8",
+      "country": "Canada",
+      "contact_email": null,
+      "contact_phone": "604 681 3002",
+      "website": "pstlaw.ca",
+      "source_file": "https://pstlaw.ca/contact/",
+      "date_captured": "2026-08-10",
+      "notes": "This is an Indigenous-rights law firm (also has a Toronto office), not a mining company. Likely a NAICS misclassification, but a real, confirmed-active Vancouver organization."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Great Bear Royalties Corp",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "secondary sources (Royal Gold acquisition press release, not fetched directly)",
+      "date_captured": "2026-08-10",
+      "notes": "REVIEW: acquired by Royal Gold Corporation (per 'Royal Gold Completes Acquisition of Great Bear Royalties' press release). Not an independent prospect."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Salmon River Resources Ltd",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "secondary sources (mining.com, 2012-dated, not fetched directly)",
+      "date_captured": "2026-08-10",
+      "notes": "REVIEW: most recent located activity is a 2012 debt-settlement arrangement. No evidence of activity since. Recommend treating as likely dormant."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Kobex Resources Ltd",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "secondary sources (PitchBook, not fetched directly)",
+      "date_captured": "2026-08-10",
+      "notes": "REVIEW: acquired September 30, 2009 by GreenFirst Forest Products. Not an independent prospect for over 15 years."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Intigold Mines Ltd",
+      "contact_email": null,
+      "contact_phone": null,
+      "website": null,
+      "source_file": "search-engine snippets (TSXV listing only, current status unclear)",
+      "date_captured": "2026-08-10",
+      "notes": "TSX Venture-listed (IGD.V) but no official website or current-status confirmation located. Recommend a direct SEDAR+/TSXV search if this entity matters."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "KazaX Minerals Inc",
+      "contact_email": null,
+      "contact_phone": null,
+      "website": null,
+      "source_file": "search-engine snippets (LinkedIn/Bloomberg, described as 'recently re-capitalised' but no date given)",
+      "date_captured": "2026-08-10",
+      "notes": "Vancouver-based, holds an interest in the Lomonosovskoye iron ore deposit in Kazakhstan. No official website or direct contact located; recency of the 're-capitalised' description is unclear."
+    }
+  ],
+  "run_notes": "14 companies processed from the newest listing batch. 8 flagged REVIEW as acquired/subsidiary/dormant/not-actually-Vancouver (Red Chris x2, Goldcorp Inc, B2Gold Logistics, NioCorp, Rare Element Resources, Great Bear Royalties, Salmon River Resources, Kobex Resources). Hecla Canada and Deakin Equipment confirmed active with real Vancouver addresses; Pape Salter Teillet confirmed active but is a law firm, not mining."
+}

@@ -1,0 +1,116 @@
+{
+  "run_date": "2026-08-06",
+  "run_source": "Mix of direct official-page fetches and search-engine snippets where noted. Several entities flagged REVIEW as historical/defunct/subsidiary/misclassified.",
+  "files_processed": [
+    "https://aticomining.com/contact-us/contact-information/",
+    "https://www.uraniumenergy.com/contact",
+    "https://avino.com/contact"
+  ],
+  "rows": [
+    {
+      "_page_type": "detail",
+      "company_name": "TAAT Global Alternatives Inc",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "taatglobal.com (checked; not a mining company)",
+      "date_captured": "2026-08-06",
+      "notes": "REVIEW: TAAT Global Alternatives makes tobacco-free/nicotine-free cigarette alternatives — a consumer products company, not a mining company. This D&B listing entry appears to be misclassified under the mining NAICS code, similar to Ridgetop Forwarding flagged earlier. Not a mining prospect."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Atico Mining Corporation",
+      "street_address": "543 Granville St., Suite 501",
+      "city": "Vancouver",
+      "province": "BC",
+      "postal_code": "V6C 1X8",
+      "country": "Canada",
+      "key_principal": "Igor Dutina",
+      "key_principal_title": "Corporate Development",
+      "contact_email": null,
+      "contact_phone": "+1.604-633-9022",
+      "website": "www.aticomining.com",
+      "source_file": "https://aticomining.com/contact-us/contact-information/",
+      "date_captured": "2026-08-06",
+      "notes": "ILLEGIBLE: contact_email — no email published alongside the named Corporate Development contact on the official page."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Uranium Energy Corp",
+      "street_address": "1188 West Georgia Street, Suite 1830",
+      "city": "Vancouver",
+      "province": "BC",
+      "postal_code": "V6E 4A2",
+      "country": "Canada",
+      "key_principal": null,
+      "key_principal_title": null,
+      "contact_email": null,
+      "contact_phone": "604 682-9775; toll free 1-866-748-1030",
+      "website": "www.uraniumenergy.com",
+      "source_file": "https://www.uraniumenergy.com/contact",
+      "date_captured": "2026-08-06",
+      "notes": "This is UEC's Vancouver office; the company's actual corporate headquarters is in Corpus Christi, Texas. No email published for the Vancouver office specifically."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Elevation Gold Mining Corporation",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "secondary sources (BC Securities Commission reporting-issuer list, not fetched directly)",
+      "date_captured": "2026-08-06",
+      "notes": "REVIEW: the BC Securities Commission lists this company as 'In Default' as of September 3, 2024. Recommend manual verification of current operating status before treating as a live prospect."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Avino Silver & Gold Mines Ltd",
+      "street_address": "570 Granville Street, Suite 900",
+      "city": "Vancouver",
+      "province": "BC",
+      "postal_code": "V6C 3P1",
+      "country": "Canada",
+      "key_principal": "Jennifer North",
+      "key_principal_title": "Head of Investor Relations",
+      "contact_email": "ir@avino.com",
+      "contact_phone": "604-682-3701",
+      "website": "www.avino.com",
+      "source_file": "https://avino.com/contact",
+      "date_captured": "2026-08-06",
+      "notes": ""
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "MineSense Technologies Ltd",
+      "street_address": "100 – 8365 Ontario Street",
+      "city": "Vancouver",
+      "province": "BC",
+      "postal_code": "V5X 3E8",
+      "country": "Canada",
+      "key_principal": null,
+      "key_principal_title": null,
+      "contact_email": "info@minesense.com",
+      "contact_phone": "+1.604.449.3780",
+      "website": "www.minesense.com",
+      "source_file": "minesense.com/contact-us/ (live fetch 403'd; sourced from search-engine snippet of the company's own official site)",
+      "date_captured": "2026-08-06",
+      "notes": "Live fetch returned 403; data sourced from a search-engine snippet of the same official domain. Recommend re-verifying directly if precision matters."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Oromin Explorations Ltd",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "secondary sources (SEC filings, Mergr ownership records, not fetched directly)",
+      "date_captured": "2026-08-06",
+      "notes": "REVIEW: Oromin Explorations was acquired by Teranga Gold Corporation in 2013 (its Sabodala/OJVG assets in Senegal). Not an independent Vancouver prospect for well over a decade."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Eskay Creek Mining Ltd",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "secondary sources (BC Environmental Assessment Office filings, Skeena Resources SEC filings, not fetched directly)",
+      "date_captured": "2026-08-06",
+      "notes": "REVIEW: this is a wholly-owned, permit-holding subsidiary of Skeena Resources Ltd (which holds the Eskay Creek gold-silver project in the Golden Triangle). Skeena Resources itself is not currently a row in this workbook. This entity is a project vehicle, not an independent Vancouver corporate office — recommend adding Skeena Resources Ltd as the actual contactable entity if this project is of interest."
+    }
+  ],
+  "run_notes": "3 of 8 companies fully verified against official sources (Atico, Avino, Uranium Energy's Canadian office); TAAT flagged as a likely NAICS misclassification (not a mining company); Elevation Gold, Oromin Explorations, and Eskay Creek Mining flagged REVIEW as default-status, historically-acquired, or subsidiary entities respectively."
+}

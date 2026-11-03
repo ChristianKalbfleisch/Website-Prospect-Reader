@@ -1,0 +1,31 @@
+{
+  "run_date": "2026-08-10",
+  "run_source": "Two new listing-page screenshots (of five pasted; three were exact duplicates of earlier batches and were skipped), continuing below the previous batch's bottom row (Continuum Resources Ltd, $2.33M).",
+  "files_processed": [
+    "chat-listing-2026-08-10-09.png",
+    "chat-listing-2026-08-10-10.png"
+  ],
+  "rows": [
+    {"_page_type": "listing", "company_name": "Newstrike Capital Inc", "revenue_raw": "$2.25M", "revenue_usd_millions": 2.25, "city": "Vancouver", "province": "British Columbia", "country": "Canada", "source_file": "chat-listing-2026-08-10-09.png", "date_captured": "2026-08-10"},
+    {"_page_type": "listing", "company_name": "Basin Uranium Corp", "revenue_raw": "$2.25M", "revenue_usd_millions": 2.25, "city": "Vancouver", "province": "British Columbia", "country": "Canada", "source_file": "chat-listing-2026-08-10-09.png", "date_captured": "2026-08-10"},
+    {"_page_type": "listing", "company_name": "Altima Energy Inc", "revenue_raw": "$2.18M", "revenue_usd_millions": 2.18, "city": "Vancouver", "province": "British Columbia", "country": "Canada", "source_file": "chat-listing-2026-08-10-09.png", "date_captured": "2026-08-10"},
+    {"_page_type": "listing", "company_name": "ZL EOR Chemicals Ltd", "revenue_raw": "$2.11M", "revenue_usd_millions": 2.11, "city": "Vancouver", "province": "British Columbia", "country": "Canada", "source_file": "chat-listing-2026-08-10-09.png", "date_captured": "2026-08-10"},
+    {"_page_type": "listing", "company_name": "Canada Stewart Energy Group Limited", "revenue_raw": "$2.1M", "revenue_usd_millions": 2.1, "city": "Vancouver", "province": "British Columbia", "country": "Canada", "source_file": "chat-listing-2026-08-10-09.png", "date_captured": "2026-08-10"},
+    {"_page_type": "listing", "company_name": "Western LNG ULC", "revenue_raw": "$2.1M", "revenue_usd_millions": 2.1, "city": "Vancouver", "province": "British Columbia", "country": "Canada", "source_file": "chat-listing-2026-08-10-09.png", "date_captured": "2026-08-10"},
+    {"_page_type": "listing", "company_name": "Maxim Resources Inc", "revenue_raw": "$2.1M", "revenue_usd_millions": 2.1, "city": "Vancouver", "province": "British Columbia", "country": "Canada", "source_file": "chat-listing-2026-08-10-09.png", "date_captured": "2026-08-10"},
+    {"_page_type": "listing", "company_name": "Northiana Energy Solutions Inc", "revenue_raw": "$2.1M", "revenue_usd_millions": 2.1, "city": "Vancouver", "province": "British Columbia", "country": "Canada", "source_file": "chat-listing-2026-08-10-09.png", "date_captured": "2026-08-10"},
+    {"_page_type": "listing", "company_name": "Berkley Renewables Inc", "revenue_raw": "$2.1M", "revenue_usd_millions": 2.1, "city": "Vancouver", "province": "British Columbia", "country": "Canada", "source_file": "chat-listing-2026-08-10-09.png", "date_captured": "2026-08-10"},
+    {"_page_type": "listing", "company_name": "Gold'n Futures Mineral Corp", "revenue_raw": "$2.09M", "revenue_usd_millions": 2.09, "city": "Vancouver", "province": "British Columbia", "country": "Canada", "source_file": "chat-listing-2026-08-10-09.png", "date_captured": "2026-08-10"},
+    {"_page_type": "listing", "company_name": "Beta Energy Corp", "revenue_raw": "$2.09M", "revenue_usd_millions": 2.09, "city": "Vancouver", "province": "British Columbia", "country": "Canada", "source_file": "chat-listing-2026-08-10-09.png", "date_captured": "2026-08-10"},
+    {"_page_type": "listing", "company_name": "Colombian Mines Corporation", "revenue_raw": "$2.09M", "revenue_usd_millions": 2.09, "city": "Vancouver", "province": "British Columbia", "country": "Canada", "source_file": "chat-listing-2026-08-10-09.png", "date_captured": "2026-08-10"},
+    {"_page_type": "listing", "company_name": "Dynasty Metals & Mining Inc.", "revenue_raw": "$2.09M", "revenue_usd_millions": 2.09, "city": "Vancouver", "province": "British Columbia", "country": "Canada", "source_file": "chat-listing-2026-08-10-09.png", "date_captured": "2026-08-10"},
+    {"_page_type": "listing", "company_name": "Cypress West Development Corporation", "revenue_raw": "$2.09M", "revenue_usd_millions": 2.09, "city": "Vancouver", "province": "British Columbia", "country": "Canada", "source_file": "chat-listing-2026-08-10-09.png", "date_captured": "2026-08-10"},
+    {"_page_type": "listing", "company_name": "Marathon Gold NI Corp.", "revenue_raw": "$2.09M", "revenue_usd_millions": 2.09, "city": "Vancouver", "province": "British Columbia", "country": "Canada", "source_file": "chat-listing-2026-08-10-09.png", "date_captured": "2026-08-10"},
+    {"_page_type": "listing", "company_name": "1560706 B.C. Ltd", "revenue_raw": "$2.09M", "revenue_usd_millions": 2.09, "city": "Vancouver", "province": "British Columbia", "country": "Canada", "source_file": "chat-listing-2026-08-10-09.png", "date_captured": "2026-08-10"},
+
+    {"_page_type": "listing", "company_name": "Redhawk Resources Inc", "revenue_raw": "$2.33M", "revenue_usd_millions": 2.33, "city": "Vancouver", "province": "British Columbia", "country": "Canada", "source_file": "chat-listing-2026-08-10-10.png", "date_captured": "2026-08-10"},
+    {"_page_type": "listing", "company_name": "Maxy Gold Corp", "revenue_raw": "$2.33M", "revenue_usd_millions": 2.33, "city": "Vancouver", "province": "British Columbia", "country": "Canada", "source_file": "chat-listing-2026-08-10-10.png", "date_captured": "2026-08-10"},
+    {"_page_type": "listing", "company_name": "Balmoral Resources Ltd", "revenue_raw": "$2.33M", "revenue_usd_millions": 2.33, "city": "Vancouver", "province": "British Columbia", "country": "Canada", "source_file": "chat-listing-2026-08-10-10.png", "date_captured": "2026-08-10"}
+  ],
+  "run_notes": "Redhawk Resources, Maxy Gold, and Balmoral Resources are additional companies tied at the $2.33M revenue level, alongside the 10 already in the workbook at that same figure — same D&B tie-breaking pattern seen throughout this project."
+}

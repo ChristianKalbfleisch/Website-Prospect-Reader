@@ -1,0 +1,98 @@
+{
+  "run_date": "2026-08-06",
+  "run_source": "Stage-3 corporate-action news check (12-month lookback) for the bottom 10 companies by revenue in the current workbook. Example/pilot run of the stage-3 workflow documented in CLAUDE.md.",
+  "files_processed": [],
+  "rows": [
+    {
+      "_page_type": "detail",
+      "company_name": "Lion One Metals Limited",
+      "recent_news": "capital raise: closed upsized LIFE offering for gross proceeds of C$18.7 million (2025); management change: CEO Ian Berzins departed effective late December 2025; management change: Ian Berzins reappointed President, CEO and Director effective June 16, 2026",
+      "news_source_urls": "https://liononemetals.com/news/news-releases/lion-one-announces-closing-of-upsized-life-offering-for-gross-proceeds-of-18.7-million/; https://liononemetals.com/news/news-releases/lion-one-announces-departure-of-ceo/; https://www.newsfilecorp.com/release/301600/Lion-One-Appoints-Ian-Berzins-as-President-CEO-and-Director",
+      "date_captured": "2026-08-06",
+      "source_file": "stage-3 news check",
+      "notes": ""
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "enCore Energy Corp",
+      "recent_news": "capital raise: closed $115M USD senior unsecured convertible notes offering, August 22, 2025; expansion/new project: acquired the 5,900-acre Tacubaya land parcel (70/30 JV with Boss Energy) to extend the Alta Mesa uranium project, October 2025",
+      "news_source_urls": "https://www.ainvest.com/news/encore-energy-corp-strategic-115m-capital-raise-catalyst-green-energy-growth-shareholder-2508/; https://www.ainvest.com/news/encore-energy-corp-strategic-115m-capital-raise-catalyst-green-energy-growth-shareholder-2508/",
+      "date_captured": "2026-08-06",
+      "source_file": "stage-3 news check",
+      "notes": "Reminder: this company's own site lists Dallas, TX as head office (see earlier REVIEW note) — Vancouver is only its transfer agent's address."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "NG Energy International Corp",
+      "recent_news": "acquisition/merger: closed sale of a 40% operating working interest in the Sinu-9 Block to Etablissements Maurel & Prom for US$150 million cash, plus acquisition of a collective 28% working interest from minority partners, leaving NGE with a 39% non-operating interest",
+      "news_source_urls": "https://www.newswire.ca/news-releases/ng-energy-announces-closing-of-sinu-9-transactions-822740107.html",
+      "date_captured": "2026-08-06",
+      "source_file": "stage-3 news check",
+      "notes": "Exact transaction date not stated in the source beyond 2025-2026 context. Reminder: this company's own site lists a Calgary, AB Canadian office (see earlier REVIEW note), not Vancouver."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Alio Gold Inc",
+      "recent_news": null,
+      "news_source_urls": null,
+      "date_captured": "2026-08-06",
+      "source_file": "stage-3 news check",
+      "notes": "No material 12-month corporate-action news found — consistent with the entity having been defunct/merged into Argonaut Gold since July 2020 (already flagged REVIEW)."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Newcastle Gold Ltd",
+      "recent_news": null,
+      "news_source_urls": null,
+      "date_captured": "2026-08-06",
+      "source_file": "stage-3 news check",
+      "notes": "No material 12-month corporate-action news found. A search result claimed a 'November 2025' NewCastle Gold/Catalyst Copper merger, but this was verified against primary sources to actually be the 2016 Catalyst Copper merger, misdated by the search summary — not treated as real 2025-2026 news. Entity remains defunct/merged into Equinox Gold since December 2017 (already flagged REVIEW)."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Hemlo Mining Corp",
+      "recent_news": "IPO/listing change: commenced trading on the TSX Venture Exchange under symbol HMMC at market-open, December 2, 2025; expansion/new project: launched a 130,000-metre 2026 exploration drilling program and $30M+ investment in 21 new pieces of mobile equipment as part of an owner-operator transition",
+      "news_source_urls": "https://markets.financialcontent.com/pennwell.pennenergy/article/accwirecq-2025-12-1-hemlo-mining-corp-announces-commencement-of-trading-on-the-tsxv-at-market-open-on-tuesday-december-2-2025; https://www.hemlomining.com/news/hemlo-mining-corp-reports-first-quarter-2026-financial-and-operating-results",
+      "date_captured": "2026-08-06",
+      "source_file": "stage-3 news check",
+      "notes": "This confirms Hemlo Mining Corp is a genuinely active, newly-listed company (formerly Carcetti Capital Corp, closed its Hemlo gold mine acquisition from Barrick November 26, 2025) rather than uncertain as previously flagged — recommend downgrading the earlier REVIEW status now that real operations are confirmed, though the Vancouver-vs-Toronto head office question from the earlier note is still unresolved."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "North American Tungsten Corporation Ltd.",
+      "recent_news": "insolvency/receivership: remains under CCAA creditor protection with the Cantung mine on care and maintenance; most recent Monitor's Report filed April 10, 2026",
+      "news_source_urls": "https://www.alvarezandmarsal.com/north-american-tungsten-corporation-ltd/monitors-reports",
+      "date_captured": "2026-08-06",
+      "source_file": "stage-3 news check",
+      "notes": "Confirms the CCAA proceeding (already flagged REVIEW, entered 2015) is still active as of April 2026, not resolved."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Golden Queen Mining Co. Ltd",
+      "recent_news": "expansion/new project: Phase 3 exploration drilling (8,100 metres total) at the Golden Queen mine intersected encouraging mineralized intervals supporting potential mine-life extension, update issued October 2025",
+      "news_source_urls": "https://www.newsfilecorp.com/release/270605/Andean-Precious-Metals-Provides-Update-on-2025-Exploration-Results-at-Golden-Queen-and-San-Bartolome",
+      "date_captured": "2026-08-06",
+      "source_file": "stage-3 news check",
+      "notes": "CORRECTION to earlier REVIEW note: current owner is Andean Precious Metals Corp, which acquired Golden Queen Mining Company, LLC from Auvergne Umbrella LLC for $66.6 million on November 24, 2023 (per canadianlawyermag.com/cl-plus/deals/1269) — not Falco Resources as previously stated. The entity remains a private/acquired asset, not an independent Vancouver prospect, but ownership chain is now corrected."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Soma Gold Corp",
+      "recent_news": null,
+      "news_source_urls": null,
+      "date_captured": "2026-08-06",
+      "source_file": "stage-3 news check",
+      "notes": "Search results referenced a 'CI Jade' merger/acquisition (Sept 9, 2025) and a mid-2026 capital raise, but no primary press release or citable source URL could be located for either claim on somagoldcorp.com/news/ or elsewhere — not recorded per the no-fabrication rule. Recommend a direct check of somagoldcorp.com's news archive pagination if this matters."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Eastern Platinum Limited",
+      "recent_news": "capital raise: secured additional credit facility, total credit available up to C$4,000,000 across three facilities; expansion/new project: targeting Zandfontein underground ramp-up to 70,000 tonnes ROM ore/month by end of 2026, per 2025 annual results and 2026 targets",
+      "news_source_urls": "https://www.eastplats.com/investors/news-releases/2026/eastern-platinum-limited-secures-additional-credit-facility/; https://www.eastplats.com/investors/news-releases/2026/eastern-platinum-limited-reports-annual-results-for-2025-and-provides-its-targets-for-2026/",
+      "date_captured": "2026-08-06",
+      "source_file": "stage-3 news check",
+      "notes": "Company also disclosed a working capital deficit of $56.9 million as at Dec 31, 2025 (up from $38.7 million a year earlier) in the same annual results release — a financial-health signal worth noting even though it's not one of the fixed categories."
+    }
+  ],
+  "run_notes": "Pilot run of the stage-3 news workflow. 2 of 10 companies (Alio Gold, Newcastle Gold) had no citable 12-month news, consistent with being long-defunct. 1 of 10 (Soma Gold) had claims in search results with no primary source found, so nothing was recorded. Golden Queen's ownership REVIEW note was corrected (Andean Precious Metals, not Falco Resources) and Hemlo Mining's uncertain status was resolved to confirmed-active based on this pass — stage-3 news checks doubling as a REVIEW-status correction mechanism, as anticipated in CLAUDE.md."
+}

@@ -1,0 +1,63 @@
+{
+  "run_date": "2026-08-10",
+  "run_source": "Contact lookup, batch 17 — companies from the newest listing batch ($2.09M-$2.33M tier). Mix of direct fetches and search snippets.",
+  "files_processed": [
+    "https://www.westernlng.com/contact"
+  ],
+  "rows": [
+    {
+      "_page_type": "detail",
+      "company_name": "Western LNG ULC",
+      "contact_email": "info@westernlng.com",
+      "contact_phone": null,
+      "website": "www.westernlng.com",
+      "source_file": "https://www.westernlng.com/contact",
+      "date_captured": "2026-08-10",
+      "notes": "REVIEW: the company's own official contact page lists its headquarters as 11 Greenway Plaza, Suite 545, Houston, Texas — not Vancouver. This is a BC unlimited-liability company (ULC), a common structure for a US parent to hold Canadian project assets (the Ksi Lisims LNG project). Recorded the verified Houston contact rather than inferring a Vancouver office; recommend treating this as NOT an independent Vancouver prospect."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Marathon Gold NI Corp.",
+      "street_address": "320 Granville Street, Suite 660",
+      "city": "Vancouver",
+      "province": "BC",
+      "postal_code": "V6C 1S9",
+      "country": "Canada",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "search-engine snippet (tmgcorporation.com, not the company's own site)",
+      "date_captured": "2026-08-10",
+      "notes": "REVIEW: 'NI' likely denotes a specific subsidiary of Marathon Gold Corporation, whose main headquarters is in Toronto (Valentine Gold Project, Newfoundland). This Vancouver address is described as a 'West Coast Office,' not the company's primary headquarters. Recommend treating outreach here as reaching a satellite office of a Toronto-headquartered company."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Basin Uranium Corp",
+      "contact_email": null,
+      "contact_phone": null,
+      "website": null,
+      "source_file": "search-engine snippet (barchart.com private-placement announcement, Dec 2024; not the company's own site)",
+      "date_captured": "2026-08-10",
+      "notes": "Confirmed active as of Dec 2024 (CSE-listed, Vancouver-based). ILLEGIBLE: street_address, contact_email, contact_phone, website — no official site located distinct from financial-news aggregators. Recommend a direct CSE/SEDAR+ search if this entity matters."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Colombian Mines Corporation",
+      "contact_email": null,
+      "contact_phone": null,
+      "website": null,
+      "source_file": "search-engine snippet (Northern Miner company profile, not the company's own site)",
+      "date_captured": "2026-08-10",
+      "notes": "Confirmed as a Vancouver-based Colombia-focused gold/copper explorer, but no official website, address, or contact was located in available sources. Recommend a direct search if this entity matters."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Dynasty Metals & Mining Inc.",
+      "contact_email": "info@dynastymining.com",
+      "contact_phone": "604-687-7810",
+      "source_file": "search-engine snippets (2016-dated press releases referencing a 'Special Committee' financial-advisor engagement and corporate update — a common precursor to a wind-down or going-private transaction)",
+      "date_captured": "2026-08-10",
+      "notes": "REVIEW: the most recent information located for this company dates to 2016, alongside language suggesting a possible going-private or restructuring process at that time. No confirmation of current active status found. Recommend manual verification before treating as a live prospect; contact info recorded is a decade old and may be stale."
+    }
+  ],
+  "run_notes": "Small batch given time constraints — 3 of 5 flagged REVIEW (Western LNG's real HQ is Houston, Marathon Gold NI Corp is a satellite office of a Toronto company, Dynasty Metals & Mining shows signs of dormancy since 2016). Remaining companies from this new batch and the older 70-company backlog still need research."
+}

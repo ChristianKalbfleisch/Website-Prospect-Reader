@@ -1,0 +1,142 @@
+{
+  "run_date": "2026-08-06",
+  "run_source": "Mix of direct official-page fetches and secondary sources for historical/relocated/misidentified entities. This is the final batch of the second listing-screenshot set.",
+  "files_processed": [
+    "https://www.eastplats.com/contacts/",
+    "https://somagoldcorp.com/contact/",
+    "https://liononemetals.com/contact/contact-info/",
+    "https://www.ngenergyintl.com/contact/contact-details/",
+    "https://encoreuranium.com/corporate/corporate-directory/"
+  ],
+  "rows": [
+    {
+      "_page_type": "detail",
+      "company_name": "Eastern Platinum Limited",
+      "street_address": "1188 West Georgia Street, Suite 1080",
+      "city": "Vancouver",
+      "province": "BC",
+      "postal_code": "V6E 4A2",
+      "country": "Canada",
+      "key_principal": null,
+      "key_principal_title": null,
+      "contact_email": "info@eastplats.com",
+      "contact_phone": "+1 604 568-8200",
+      "website": "www.eastplats.com",
+      "source_file": "https://www.eastplats.com/contacts/",
+      "date_captured": "2026-08-06",
+      "notes": ""
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Soma Gold Corp",
+      "street_address": "409 Granville Street, Suite 1500",
+      "city": "Vancouver",
+      "province": "BC",
+      "postal_code": "V6C 1T2",
+      "country": "Canada",
+      "key_principal": null,
+      "key_principal_title": null,
+      "contact_email": "info@somagoldcorp.com",
+      "contact_phone": "(604) 259-0302",
+      "website": "www.somagoldcorp.com",
+      "source_file": "https://somagoldcorp.com/contact/",
+      "date_captured": "2026-08-06",
+      "notes": ""
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Golden Queen Mining Co. Ltd",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "secondary sources (acquisition/delisting press releases, not fetched directly)",
+      "date_captured": "2026-08-06",
+      "notes": "REVIEW: Golden Queen Mining delisted from the TSX in 2019 and was acquired by Falco Resources in March 2020, becoming a private company. Not an independent, publicly-contactable Vancouver prospect."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "North American Tungsten Corporation Ltd.",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "secondary sources (CCAA insolvency records, not fetched directly)",
+      "date_captured": "2026-08-06",
+      "notes": "REVIEW: this company entered CCAA creditor protection in 2015 and its head office closed effective December 31, 2015, with all inquiries redirected to court-appointed monitor Alvarez & Marsal Canada. The Cantung Mine remains on care and maintenance. Not an active Vancouver office."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Hemlo Mining Corp",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "hemlomining.com (site loaded but is a JavaScript single-page app; no static contact page found at common paths)",
+      "date_captured": "2026-08-06",
+      "notes": "REVIEW: this is a very recently renamed entity (formerly Carcetti Capital Corp, which completed its Hemlo gold mine acquisition from Barrick on November 26, 2025). Sources conflict on head office location (Vancouver vs. Toronto), and the live site's contact page could not be located via static fetch. Recommend manual verification given how new this entity is."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Newcastle Gold Ltd",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "secondary sources (Equinox Gold formation press releases, not fetched directly)",
+      "date_captured": "2026-08-06",
+      "notes": "REVIEW: Newcastle Gold merged with Trek Mining and Anfield Gold in December 2017 to form Equinox Gold Corp, and was delisted. Equinox Gold Corp is already a verified row in this workbook. Not an independent entity."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Alio Gold Inc",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "secondary sources (Argonaut Gold merger press releases, not fetched directly)",
+      "date_captured": "2026-08-06",
+      "notes": "REVIEW: Alio Gold merged into Argonaut Gold in July 2020 and was delisted from both the TSX and NYSE American. Not an independent entity for six years."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "NG Energy International Corp",
+      "street_address": "5940 MacLeod Trail SW, Suite 321",
+      "city": "Calgary",
+      "province": "AB",
+      "country": "Canada",
+      "key_principal": null,
+      "key_principal_title": null,
+      "contact_email": null,
+      "contact_phone": null,
+      "website": "www.ngenergyintl.com",
+      "source_file": "https://www.ngenergyintl.com/contact/contact-details/",
+      "date_captured": "2026-08-06",
+      "notes": "REVIEW: the company's own official contact page lists its Canadian office in Calgary, Alberta — not Vancouver — directly conflicting with the D&B listing. Email on this page is obfuscated. Recorded the verified Calgary address rather than a Vancouver one; recommend treating this as NOT a Vancouver prospect unless independently confirmed otherwise."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "enCore Energy Corp",
+      "street_address": "13355 Noel Road, Suite 1700",
+      "city": "Dallas",
+      "province": "TX",
+      "country": "United States",
+      "key_principal": null,
+      "key_principal_title": null,
+      "contact_email": "info@encoreuranium.com",
+      "contact_phone": "(647) 847-7825",
+      "website": "www.encoreuranium.com",
+      "source_file": "https://encoreuranium.com/corporate/corporate-directory/",
+      "date_captured": "2026-08-06",
+      "notes": "REVIEW: the company's own official corporate directory lists its head office in Dallas, Texas. The only Vancouver address on the page (510 Burrard Street) belongs to Computershare, enCore's third-party transfer agent — not an enCore office. Recorded the verified Dallas head office rather than inferring a Vancouver one; recommend treating this as NOT a Vancouver prospect unless independently confirmed otherwise."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Lion One Metals Limited",
+      "street_address": "267 West Esplanade, Suite 306",
+      "city": "North Vancouver",
+      "province": "BC",
+      "postal_code": "V7M 1A5",
+      "country": "Canada",
+      "key_principal": null,
+      "key_principal_title": null,
+      "contact_email": "info@liononemetals.com",
+      "contact_phone": "1-855-805-1250",
+      "website": "www.liononemetals.com",
+      "source_file": "https://liononemetals.com/contact/contact-info/",
+      "date_captured": "2026-08-06",
+      "notes": "A newly appointed VP Corporate Development and Investor Relations (Ronan Geoghegan, per search results, appointed July 2026) was not present on the official contact page itself, so not recorded."
+    }
+  ],
+  "run_notes": "This is the final batch of the second listing-screenshot set (down to Lion One Metals at $42.21M). 5 of 10 flagged REVIEW as historical/defunct/merged (Golden Queen, North American Tungsten, Newcastle Gold, Alio Gold) or newly-uncertain (Hemlo Mining). Two more — NG Energy International and enCore Energy — are NOT actually Vancouver companies: their own official sites list Calgary and Dallas head offices respectively, directly contradicting the D&B listing's Vancouver location."
+}

@@ -1,0 +1,129 @@
+{
+  "run_date": "2026-08-10",
+  "run_source": "Contact lookup, batch 18 — remaining companies from the newest listing batch. Several had no locatable public record after repeated search attempts.",
+  "files_processed": [],
+  "rows": [
+    {
+      "_page_type": "detail",
+      "company_name": "Altima Energy Inc",
+      "contact_email": null,
+      "contact_phone": null,
+      "website": null,
+      "source_file": "search-engine snippets (Yahoo Finance, PitchBook, Newsfile — not the company's own site)",
+      "date_captured": "2026-08-10",
+      "notes": "Confirmed active (TSXV: ARH), Vancouver-headquartered, oil & gas exploration; renamed from Altima Resources Ltd in December 2024. ILLEGIBLE: street_address, contact_email, contact_phone, website. Recommend a direct search if this entity matters."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "ZL EOR Chemicals Ltd",
+      "contact_email": null,
+      "contact_phone": null,
+      "website": null,
+      "source_file": "search-engine snippets (RocketReach/LinkedIn aggregator profiles only — not used for contact data per the hard rule against data brokers)",
+      "date_captured": "2026-08-10",
+      "notes": "Confirmed active, Vancouver-headquartered polyacrylamide manufacturer for oil & gas chemical-enhanced-oil-recovery applications, ~37 employees. No official company website located; the only contact-adjacent sources found were data-broker aggregators, which were not used per this project's hard rules."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Berkley Renewables Inc",
+      "contact_email": null,
+      "contact_phone": null,
+      "website": "berkleyrenewables.com",
+      "source_file": "berkleyrenewables.com (site returned a 503 Service Unavailable from its own server — not a network/policy block)",
+      "date_captured": "2026-08-10",
+      "notes": "Confirmed to exist (renewable energy/life sciences/oil & gas venture firm, BC-based) but the official site is currently down. Recommend retrying later if this entity matters."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Gold'n Futures Mineral Corp",
+      "contact_email": null,
+      "contact_phone": null,
+      "website": null,
+      "source_file": "search-engine snippets (Newsfile, BCSC reporting-issuer list — not the company's own site)",
+      "date_captured": "2026-08-10",
+      "notes": "Confirmed active (CSE: FUTR), Vancouver-headquartered, exploring the Hercules-Elmhirst uranium/precious/base-metals project near Thunder Bay, Ontario. No official website or direct contact located."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Canada Stewart Energy Group Limited",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "no public record located",
+      "date_captured": "2026-08-10",
+      "notes": "REVIEW: no official website, news coverage, or financial-database listing could be located for this entity despite repeated searches. Recommend manual verification via BC Registry before treating as a live prospect."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Maxim Resources Inc",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "no public record located distinct from an unrelated historical 'Maxim Power Corp'",
+      "date_captured": "2026-08-10",
+      "notes": "REVIEW: no official website or clear record located for this specific entity. Recommend manual verification via BC Registry before treating as a live prospect."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Northiana Energy Solutions Inc",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "no public record located",
+      "date_captured": "2026-08-10",
+      "notes": "REVIEW: no official website, news coverage, or financial-database listing could be located for this entity. Recommend manual verification via BC Registry before treating as a live prospect."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Beta Energy Corp",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "no public record located distinct from an unrelated US-based 'Beta Energy'",
+      "date_captured": "2026-08-10",
+      "notes": "REVIEW: no official website or clear record located for this specific Vancouver entity. Recommend manual verification via BC Registry before treating as a live prospect."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Cypress West Development Corporation",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "no public record located",
+      "date_captured": "2026-08-10",
+      "notes": "REVIEW: no official website, news coverage, or financial-database listing could be located for this entity. Recommend manual verification via BC Registry before treating as a live prospect."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "1560706 B.C. Ltd",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "no public record located",
+      "date_captured": "2026-08-10",
+      "notes": "REVIEW: this is a generic BC numbered company; no official website, news coverage, or public registry detail located beyond the number itself. Numbered companies are frequently shell/holding entities without a public presence, consistent with 0908113 B.C. Ltd and 17411979 Canada Inc flagged in earlier batches."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Redhawk Resources Inc",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "no public record located",
+      "date_captured": "2026-08-10",
+      "notes": "REVIEW: no official website, news coverage, or financial-database listing could be located for this entity. Recommend manual verification via BC Registry before treating as a live prospect."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Maxy Gold Corp",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "no public record located",
+      "date_captured": "2026-08-10",
+      "notes": "REVIEW: no official website, news coverage, or financial-database listing could be located for this entity. Recommend manual verification via BC Registry before treating as a live prospect."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Balmoral Resources Ltd",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "search-engine snippet (Facebook page only, not an official company website)",
+      "date_captured": "2026-08-10",
+      "notes": "REVIEW: only a Facebook presence was located; no official website, news coverage, or financial-database listing found. Recommend manual verification via BC Registry before treating as a live prospect."
+    }
+  ],
+  "run_notes": "This batch closes out the newest (19-company) listing batch. 8 of 13 had no locatable public record at all — a markedly higher rate of unverifiable entities than any prior batch, consistent with how small (sub-$2.3M revenue) these companies are. Recommend discussing strategy for the remaining ~70-company backlog given this pattern."
+}

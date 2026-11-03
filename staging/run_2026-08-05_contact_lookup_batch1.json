@@ -1,0 +1,56 @@
+{
+  "run_date": "2026-08-05",
+  "run_source": "Live fetch of each company's own official investor-relations/contact page (curl, respectful pace, cached). Verified against the primary source only — third-party data-broker sites (RocketReach, LeadIQ, GetProspect, etc.) surfaced in search results were NOT used, since they are unverified scraped aggregations, not the company's own published data.",
+  "files_processed": [
+    "https://www.teck.com/investors/contact-us/",
+    "https://www.first-quantum.com/contact/",
+    "https://www.lundinmining.com/about/contact/"
+  ],
+  "rows": [
+    {
+      "_page_type": "detail",
+      "company_name": "Teck Resources Limited",
+      "key_principal": null,
+      "key_principal_title": "Investor Relations (general — no named individual published on contact page)",
+      "contact_email": "investors@teck.com",
+      "contact_phone": "1.877.759.6226 (toll-free Canada/US); 604.699.4257 (outside Canada/US)",
+      "source_file": "https://www.teck.com/investors/contact-us/",
+      "date_captured": "2026-08-05",
+      "notes": "ILLEGIBLE: street_address — Vancouver HQ address not present in static HTML (site footer renders address via JavaScript, not fetched)."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "First Quantum Minerals Ltd",
+      "street_address": "1133 Melville Street, Suite 3500, The Stack",
+      "city": "Vancouver",
+      "province": "BC",
+      "postal_code": "V6E 4E5",
+      "country": "Canada",
+      "key_principal": "Bonita To",
+      "key_principal_title": "Director, Investor Relations",
+      "contact_email": null,
+      "contact_phone": "+1 416 361 6400 (International); +1 877 961 6400 (Toll Free)",
+      "source_file": "https://www.first-quantum.com/contact/",
+      "date_captured": "2026-08-05",
+      "notes": "ILLEGIBLE: contact_email for Bonita To — no personal email published on official contact page; only phone. General website inquiries: website@fqml.com."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Lundin Mining Corporation",
+      "street_address": "1055 Dunsmuir Street, Suite 2800, Four Bentall Centre",
+      "city": "Vancouver",
+      "province": "BC",
+      "postal_code": "V7X 1L2",
+      "country": "Canada",
+      "key_principal": "Stephen Williams",
+      "key_principal_title": "Vice President, Investor Relations",
+      "contact_email": "stephen.williams@lundinmining.com",
+      "contact_phone": "+1 604 806-3074 (direct); +1 604 689-7842 (general office)",
+      "website": "www.lundinmining.com",
+      "source_file": "https://www.lundinmining.com/about/contact/",
+      "date_captured": "2026-08-05",
+      "notes": ""
+    }
+  ],
+  "run_notes": "Newmont Corporation and B2Gold Corp contact pages returned an active Cloudflare bot-challenge (cf-mitigated: challenge) rather than page content — treated the same as the earlier SEDAR+ active bot-block: not attempted to bypass. Left both companies' contact_email/contact_phone blank for this run rather than use unverified data-broker figures found in search results."
+}

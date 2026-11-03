@@ -1,0 +1,173 @@
+{
+  "run_date": "2026-08-13",
+  "run_source": "Relationship-graph validation pilot — Hunter Dickinson Inc (HDI). Chosen because the ground truth is publicly knowable, so the method can be scored before it is scaled. Officer/director edges plus two companies discovered by the graph that the D&B candidate list never contained.",
+  "files_processed": [],
+  "rows": [
+    {
+      "_page_type": "detail",
+      "company_name": "Trekor Metals Limited",
+      "former_names": "Taseko Mines Limited; Taseko Mines Ltd",
+      "source_file": "alias registration for entity resolution (rename previously recorded in this workbook's notes)",
+      "date_captured": "2026-08-13",
+      "notes": "Former names registered so staging entries naming the pre-rename entity resolve to this row instead of creating a duplicate."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Northern Dynasty Minerals Ltd",
+      "contact_email": null,
+      "contact_phone": null,
+      "website": "northerndynastyminerals.com",
+      "source_file": "relationship-graph discovery (northerndynastyminerals.com management and board pages, search-indexed; direct fetch blocked in this environment)",
+      "date_captured": "2026-08-13",
+      "notes": "DISCOVERED VIA RELATIONSHIP GRAPH, not the D&B candidate list — surfaced through shared HDI officers. Vancouver-headquartered, holds the Pebble copper-gold project in Alaska. ILLEGIBLE: street_address, contact_email, contact_phone — not researched in this pilot, which was scoped to validating the people-graph method. Recommend a normal stage-2 contact pass before treating as an outreach-ready prospect."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Amarc Resources Ltd",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "relationship-graph discovery (search-indexed board/management references; direct fetch blocked in this environment)",
+      "date_captured": "2026-08-13",
+      "notes": "DISCOVERED VIA RELATIONSHIP GRAPH, not the D&B candidate list — surfaced through shared HDI principals. Vancouver-headquartered BC-focused explorer. ILLEGIBLE: street_address, contact_email, contact_phone — not researched in this pilot. Recommend a normal stage-2 contact pass before treating as an outreach-ready prospect."
+    },
+    {
+      "_page_type": "people",
+      "person_name": "Mark Peters",
+      "company_name": "Hunter Dickinson Inc",
+      "role": "Chief Financial Officer",
+      "role_type": "officer",
+      "role_start": "2016",
+      "as_of_date": "2026-08-13",
+      "confidence": "tier2_website",
+      "source_type": "company management page (search-indexed)",
+      "source_url": "https://northerndynastyminerals.com/about-us/management/",
+      "notes": "Source describes the role as CFO of 'Hunter Dickinson Services Inc.' — recorded against the Hunter Dickinson Inc row as the same corporate group. Flag if the two entities need separating."
+    },
+    {
+      "_page_type": "people",
+      "person_name": "Mark Peters",
+      "company_name": "Northern Dynasty Minerals Ltd",
+      "role": "Chief Financial Officer",
+      "role_type": "officer",
+      "as_of_date": "2026-08-13",
+      "confidence": "tier2_website",
+      "source_type": "company management page (search-indexed)",
+      "source_url": "https://northerndynastyminerals.com/about-us/management/",
+      "notes": ""
+    },
+    {
+      "_page_type": "people",
+      "person_name": "Trevor Thomas",
+      "company_name": "Hunter Dickinson Inc",
+      "role": "General Counsel",
+      "role_type": "officer",
+      "as_of_date": "2026-08-13",
+      "confidence": "tier2_website",
+      "source_type": "company management page (search-indexed)",
+      "source_url": "https://northerndynastyminerals.com/about-us/management/",
+      "notes": ""
+    },
+    {
+      "_page_type": "people",
+      "person_name": "Trevor Thomas",
+      "company_name": "Northern Dynasty Minerals Ltd",
+      "role": "Corporate Secretary",
+      "role_type": "officer",
+      "as_of_date": "2026-08-13",
+      "confidence": "tier2_website",
+      "source_type": "company management page (search-indexed)",
+      "source_url": "https://northerndynastyminerals.com/about-us/management/",
+      "notes": ""
+    },
+    {
+      "_page_type": "people",
+      "person_name": "Bruce Jenkins",
+      "company_name": "Hunter Dickinson Inc",
+      "role": "Executive Vice President, Environment and Sustainability",
+      "role_type": "officer",
+      "as_of_date": "2026-08-13",
+      "confidence": "tier2_website",
+      "source_type": "company management page (search-indexed)",
+      "source_url": "https://northerndynastyminerals.com/about-us/management/",
+      "notes": ""
+    },
+    {
+      "_page_type": "people",
+      "person_name": "Bruce Jenkins",
+      "company_name": "Northern Dynasty Minerals Ltd",
+      "role": "Environmental affairs and sustainable development lead",
+      "role_type": "officer",
+      "as_of_date": "2026-08-13",
+      "confidence": "tier2_website",
+      "source_type": "company management page (search-indexed)",
+      "source_url": "https://northerndynastyminerals.com/about-us/management/",
+      "notes": "Exact officer title at Northern Dynasty not stated in the source, which describes the function rather than a formal title. Recorded as officer on the strength of the described remit."
+    },
+    {
+      "_page_type": "people",
+      "person_name": "Ronald Thiessen",
+      "company_name": "Northern Dynasty Minerals Ltd",
+      "role": "President, Chief Executive Officer & Director",
+      "role_type": "both",
+      "role_start": "2001",
+      "as_of_date": "2026-08-13",
+      "confidence": "tier2_website",
+      "source_type": "company board page (search-indexed)",
+      "source_url": "https://northerndynastyminerals.com/about-us/board-of-directors/",
+      "notes": ""
+    },
+    {
+      "_page_type": "people",
+      "person_name": "Ronald Thiessen",
+      "company_name": "Trekor Metals Limited",
+      "role": "Chairman",
+      "role_type": "director",
+      "role_start": "2006",
+      "as_of_date": "2026-08-13",
+      "confidence": "tier2_website",
+      "source_type": "company board page (search-indexed)",
+      "source_url": "https://www.tasekomines.com/about/board-of-directors/",
+      "notes": "Recorded against Trekor Metals Limited, the renamed Taseko Mines entity — resolved through the former_names alias."
+    },
+    {
+      "_page_type": "people",
+      "person_name": "Robert Dickinson",
+      "company_name": "Amarc Resources Ltd",
+      "role": "Executive Chairman",
+      "role_type": "both",
+      "role_start": "2004",
+      "as_of_date": "2026-08-13",
+      "confidence": "tier2_website",
+      "source_type": "board/management references (search-indexed)",
+      "source_url": "https://northerndynastyminerals.com/about-us/board-of-directors/",
+      "notes": "Executive Chairman treated as an officer role as well as a board seat."
+    },
+    {
+      "_page_type": "people",
+      "person_name": "Robert Dickinson",
+      "company_name": "Northern Dynasty Minerals Ltd",
+      "role": "Non-Executive Chairman",
+      "role_type": "director",
+      "role_start": "2004",
+      "as_of_date": "2026-08-13",
+      "confidence": "tier2_website",
+      "source_type": "company board page (search-indexed)",
+      "source_url": "https://northerndynastyminerals.com/about-us/board-of-directors/",
+      "notes": "Non-executive, so deliberately recorded as director only — carries low weight by design."
+    },
+    {
+      "_page_type": "people",
+      "person_name": "Robert Dickinson",
+      "company_name": "Trekor Metals Limited",
+      "role": "Independent Director",
+      "role_type": "director",
+      "role_start": "1991",
+      "as_of_date": "2026-08-13",
+      "confidence": "tier2_website",
+      "source_type": "company board page (search-indexed)",
+      "source_url": "https://www.tasekomines.com/about/board-of-directors/",
+      "notes": "Recorded against Trekor Metals Limited via the former_names alias."
+    }
+  ],
+  "run_notes": "HDI validation pilot. 11 relationship edges across 5 companies, plus 2 companies (Northern Dynasty Minerals, Amarc Resources) discovered through the graph that the D&B candidate list never contained — the clearest demonstration of why this is worth building. Deliberate omission: one source implied Ronald Thiessen is also President/CEO of Amarc Resources, but the wording was ambiguous and no second source confirmed it, so that edge was left out rather than asserted. All edges here are tier2_website (company management/board pages via search index) because direct fetches and SEDAR+ retrieval were both blocked in this environment — a real Phase 1 run should re-source these from management information circulars to reach tier1_filing. Expected behaviour to check: HDI and Northern Dynasty share 3 officers and should form a management group; Trekor Metals shares only DIRECTORS with the group and should therefore appear in related_companies but NOT in a management group. That asymmetry is the weighting working as designed, not a miss."
+}

@@ -1,0 +1,140 @@
+{
+  "run_date": "2026-08-10",
+  "run_source": "Contact lookup, batch 15 — first 10 of the 90 remaining listing_only companies (highest revenue tier of this set, $9.6M-$7.35M). Mix of direct fetches and search-engine snippets.",
+  "files_processed": [
+    "https://www.1911gold.com/contact/",
+    "https://highgoldmining.com/contact/"
+  ],
+  "rows": [
+    {
+      "_page_type": "detail",
+      "company_name": "Rochester Resources Ltd",
+      "street_address": null,
+      "contact_email": null,
+      "contact_phone": null,
+      "website": null,
+      "source_file": "search-engine snippets (PitchBook, not an official company site)",
+      "date_captured": "2026-08-10",
+      "notes": "Confirmed active Vancouver-based gold mining company (CSE: RCT, ~3 employees) but no official website, address, or contact could be located. Recommend a direct CSE/SEDAR+ search if this entity matters."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Barrick Gold Inc",
+      "street_address": "925 West Georgia Street, Suite 1600",
+      "city": "Vancouver",
+      "province": "BC",
+      "postal_code": "V6C 3L2",
+      "country": "Canada",
+      "contact_email": "investor@barrick.com",
+      "contact_phone": null,
+      "website": "www.barrick.com",
+      "source_file": "search-engine snippets (yellowpages.ca listing for a separate Barrick Technology Centre at 323 Alexander St; barrick.com contact page for general IR email; not fetched directly)",
+      "date_captured": "2026-08-10",
+      "notes": "REVIEW: Barrick's main corporate headquarters is in Toronto (Barrick Mining Corporation, formerly Barrick Gold Corporation). This appears to be a Vancouver operating/technology office rather than a standalone entity's own headquarters. Recommend treating outreach here as reaching a regional office of the Toronto-headquartered parent, not an independent Vancouver company."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Avanti Kitsault Mine Ltd",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "secondary sources (BC Environmental Assessment Office records, not fetched directly)",
+      "date_captured": "2026-08-10",
+      "notes": "REVIEW: the Kitsault molybdenum mine has been dormant since 1982 (low prices forced shutdown); a 2014 restart attempt stalled, and as of July 2026 the project is in a dispute-resolution process between the BC Environmental Assessment Office and West Moberly First Nations. No active operations or independent contact information found. Not a live prospect in its current state."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Western Magnesium Corporation",
+      "contact_email": null,
+      "contact_phone": null,
+      "website": "www.westernmagnesium.com",
+      "source_file": "westernmagnesium.com (live fetch succeeded but the contact page renders via JavaScript; no address/contact found in static HTML)",
+      "date_captured": "2026-08-10",
+      "notes": "Confirmed active, Vancouver-headquartered (magnesium production technology). ILLEGIBLE: street_address, contact_email, contact_phone — not present in static HTML. Recommend re-verifying directly if precision matters."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "HighGold Mining Inc.",
+      "street_address": "375 Water Street, Suite 405",
+      "city": "Vancouver",
+      "province": "BC",
+      "postal_code": "V6B 5C6",
+      "country": "Canada",
+      "key_principal": "Darwin Green",
+      "key_principal_title": "President & CEO",
+      "contact_email": null,
+      "contact_phone": "+1 604.629.1165; toll free +1 855.629.1165",
+      "website": "www.highgoldmining.com",
+      "source_file": "https://highgoldmining.com/contact/",
+      "date_captured": "2026-08-10",
+      "notes": "ILLEGIBLE: contact_email — official page displays it in reversed character order (a JS-deobfuscation trick), not decoded. Nicole Hoeller, VP Communications, is the named Investor/Corporate Development contact, same phone."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Pamicon Developments Ltd",
+      "street_address": "675 West Hastings Street, Suite 611",
+      "city": "Vancouver",
+      "province": "BC",
+      "country": "Canada",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "search-engine snippets (yellowpages.ca/Kompass directory listings, not an official company site)",
+      "date_captured": "2026-08-10",
+      "notes": "No official company website located; no phone/email surfaced. Recommend a direct BC Registry search if this entity matters."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Patagonia Gold Corp.",
+      "contact_email": null,
+      "contact_phone": null,
+      "website": "www.patagoniagoldcorp.com",
+      "source_file": "search-engine snippets (globenewswire filing index; live site fetch failed with a connection error, not a policy block)",
+      "date_captured": "2026-08-10",
+      "notes": "Confirmed active (TSXV: PGDC), Vancouver-headquartered, Argentina-focused gold/silver explorer. ILLEGIBLE: street_address, contact_email, contact_phone — site fetch failed on this attempt. Recommend re-verifying directly if precision matters."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "1911 Gold Corporation",
+      "street_address": "400 Burrard Street, Suite 1050",
+      "city": "Vancouver",
+      "province": "BC",
+      "postal_code": "V6C 3A6",
+      "country": "Canada",
+      "key_principal": "Suzette Ramcharan",
+      "key_principal_title": "Investor Relations",
+      "contact_email": "ir@1911gold.com",
+      "contact_phone": "(647) 284-5315; general office (604) 900-5620",
+      "website": "www.1911gold.com",
+      "source_file": "https://www.1911gold.com/contact/",
+      "date_captured": "2026-08-10",
+      "notes": ""
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "NEMI Northern Energy & Mining Inc",
+      "street_address": "700 West Georgia Street, 25th Floor",
+      "city": "Vancouver",
+      "province": "BC",
+      "postal_code": "V7Y 1B3",
+      "country": "Canada",
+      "contact_email": null,
+      "contact_phone": "(415) 339-8825",
+      "source_file": "search-engine snippet (resourceconnector.ca directory listing, not the company's own site)",
+      "date_captured": "2026-08-10",
+      "notes": "Operates as a merchant bank investing in small/micro-cap public companies (CSE-listed), not a mine operator itself. Phone number has a California area code despite the Vancouver address — recorded as found, not altered."
+    },
+    {
+      "_page_type": "detail",
+      "company_name": "Sunoil Ltd.",
+      "street_address": "999 West Hastings Street, Suite 550",
+      "city": "Vancouver",
+      "province": "BC",
+      "country": "Canada",
+      "contact_email": null,
+      "contact_phone": null,
+      "source_file": "search-engine snippets (yellowpages.ca directory listing, not the company's own site)",
+      "date_captured": "2026-08-10",
+      "notes": "Formerly Blackstream Energy Corporation / Stealth Energy Inc.; a producing oil & gas company with a Montana field office. No phone/email surfaced in available sources."
+    }
+  ],
+  "run_notes": "First batch of 10 from the 90-company backlog. 1 flagged REVIEW as dormant/stalled (Avanti Kitsault Mine); 1 flagged REVIEW as a regional office of a Toronto-headquartered parent (Barrick Gold Inc). Several small/thinly-documented companies (Rochester Resources, Pamicon Developments, Sunoil) had no official site locatable — recorded what directory listings offered rather than leaving entirely blank."
+}
